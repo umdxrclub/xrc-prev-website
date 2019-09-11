@@ -2,10 +2,7 @@
   "name": "xr-club-website",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
   "dependencies": {
-    "express": "^4.17.1",
-    "materialize-css": "^1.0.0-rc.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1"
@@ -30,18 +27,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/minersail/xr-club-website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/minersail/xr-club-website/issues"
-  },
-  "homepage": "https://github.com/minersail/xr-club-website#readme"
+  }
 }
