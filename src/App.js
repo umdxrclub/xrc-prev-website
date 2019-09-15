@@ -6,9 +6,19 @@ import React from 'react';
 import PersonCard from './PersonCard';
 import ProjectCard from './ProjectCard';
 import ContactRow from './ContactRow';
+import DateEventList from './DateEventList';
 import XR_CONSTANTS from './XR_CONSTANTS'
 
 function App() {
+
+	// Group events by date
+	var events_by_date = {};
+	XR_CONSTANTS.EVENTS_INFORMATION.forEach(event => {
+		if (events_by_date[event.date] == null) {
+			events_by_date[event.date] = [];
+		}
+		events_by_date[event.date].push(event);
+	});
 
 	return (
 		<div className="App">
@@ -19,7 +29,7 @@ function App() {
 					<a href="#" class="brand-logo center"></a>
 					<ul class="right">
 						<li><a href="#about">About</a></li>
-						<li><a href="#lab">Lab</a></li>
+						<li><a href="#events">Events</a></li>
 						<li><a href="#leadership">Leadership</a></li>
 						<li><a href="#projects">Projects</a></li>
 					</ul>
@@ -45,18 +55,32 @@ function App() {
 				<li class="collection-item">
 					<div id="about" class="section scrollspy grey-text text-darken-3 container">
 						<div class="container">
-							<h4>About Us</h4>
-							<p>The XR Club was established to create an environment in which UMD students interested in augmented and virtual reality application development can collaborate with like minded individuals, and gain access to cutting edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the club is providing the campus community with educational resources in augmented and virtual reality development through club events and hackathons.</p>
+							<h4>About</h4>
+							<p>{XR_CONSTANTS.ABOUT_US_STR}</p>
 						</div>
 					</div>
 				</li>
 
-				{/* Lab */}
+				{/* Events */}
 				<li class="collection-item">
-					<div id="lab" class="section scrollspy grey-text text-darken-3 container">
+					<div id="events" class="section scrollspy grey-text text-darken-3 container">
 						<div class="container">
-							<h4>The Lab</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ligula sit amet velit cursus congue. Duis congue feugiat ligula, non posuere ex vehicula a. Maecenas consequat lectus diam, vel vestibulum erat placerat ac. Mauris vitae ipsum cursus diam dapibus lacinia. Nulla egestas metus vitae lacus semper, ac aliquet massa bibendum. Morbi volutpat malesuada sem, feugiat laoreet est faucibus in. Ut cursus blandit lorem sed vestibulum.</p>
+							<h4>Events</h4>
+							{
+								Object.values(events_by_date).map(events => {
+									return (
+										<div class="row valign-wrapper" style={{'padding' : '0em', 'margin' : '0em'}}>
+											<div class="col s4">
+												<b>{XR_CONSTANTS.FALL_19_SEMESTER_FRIDAY_WEEK_NUMS[events[0].date]}</b><br/>
+												{events[0].date}
+											</div>
+											<div class="col s8">
+												<DateEventList events={events}/>
+											</div>
+										</div>
+									)
+								})
+							}
 						</div>
 					</div>
 				</li>

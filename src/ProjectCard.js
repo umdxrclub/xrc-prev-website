@@ -18,7 +18,7 @@ function ProjectCard(props) {
 				</div>
 				<div class="card-action">
 					{
-						props.github ? <a href={props.github}><i class="fab fa-github small grey-text text-darken-3"></i></a> : null
+						props.github ? <a href={props.github} target="_blank"><i class="fab fa-github small grey-text text-darken-3"></i></a> : null
 					}
 				</div>
 			</div>
