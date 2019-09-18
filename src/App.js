@@ -66,6 +66,12 @@ function App() {
 					<div id="events" class="section scrollspy grey-text text-darken-3 container">
 						<div class="container">
 							<h4>Events</h4>
+							<br/>
+							<div class="row" style={{'padding' : '0em', 'margin' : '0em'}}>
+								<div class="col s4"><b>Date</b></div>
+								<div class="col s8"><b>Events</b></div>
+							</div>
+							<hr style={{'border' : '0px', 'border-top' : '1px solid #dddddd'}}/>
 							{
 								Object.values(events_by_date).map(events => {
 									return (

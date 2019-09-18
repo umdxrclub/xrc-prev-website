@@ -18,6 +18,12 @@ function PersonCard(props) {
 				{
 					props.github ? <a href={props.github} target="_blank"><i class="fab fa-github small grey-text text-darken-3"></i></a> : null
 				}
+				{
+					props.web ? <a href={props.web} target="_blank"><i class="far fa-window-maximize small grey-text text-darken-3"></i></a> : null
+				}
+				{
+					props.mail ? <a href={props.mail} target="_blank"><i class="fas fa-envelope small grey-text text-darken-3"></i></a> : null
+				}
 			</div>
 		</div>
 	);

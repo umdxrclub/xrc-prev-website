@@ -3,7 +3,6 @@
  * In the future when we add more involved features to the site this information may be moved to a database.
  */
 
-
 module.exports = Object.freeze({
 
 	SLACK_STR : 'https://join.slack.com/t/xr-club/shared_invite/enQtNDQ0NTMyODAwMDUyLWUyYmUzNWU3OGNjNDY2ZWNlMTlhYWQwZDRiYTAzZjdhNzQ4NjI0YzczZmM1NWRhZjU2MzEyOGQ3NzQ2NGRjNDg',
@@ -12,8 +11,8 @@ module.exports = Object.freeze({
 	EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
 
 	ABOUT_US_STR : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
-	' and virtual reality application development can collaborate with like minded individuals, and gain access to cutting' +
-	' edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the' +
+	' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
+	' cutting-edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the' +
 	' club is providing the campus community with educational resources in augmented and virtual reality development through' + 
 	' club events and hackathons.',
 
@@ -67,13 +66,12 @@ module.exports = Object.freeze({
 
 	// Information about XR Club events throughout the semester
 	// fa_icon should be a valid font-awesome icon name, don't include an fa_icon entry if you don't want an icon
-	// TODO get correct information for time/location of these events!
 	EVENTS_INFORMATION : [
 		{
 			'name' : 'Unity Tutorial #1',
 			'date' : 'Friday, September 20th',
 			'time' : '5pm - 6pm',
-			'location' : 'Location TBD',
+			'location' : 'CSIC 3117',
 			'fa_icon' : 'fa-graduation-cap',
 		},
 		{
@@ -87,14 +85,14 @@ module.exports = Object.freeze({
 			'name' : 'Unity Tutorial #2',
 			'date' : 'Friday, September 27th',
 			'time' : '5pm - 6pm',
-			'location' : 'Location TBD',
+			'location' : 'CSIC 3117',
 			'fa_icon' : 'fa-graduation-cap',
 		},
 		{
 			'name' : 'Unity Tutorial #3',
 			'date' : 'Friday, October 4th',
 			'time' : '5pm - 6pm',
-			'location' : 'Location TBD',
+			'location' : 'CSIC 3117',
 			'fa_icon' : 'fa-graduation-cap',
 		},
 		{
@@ -111,6 +109,7 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
+		/* These are only tentative
 		{
 			'name' : 'AR Tutorial',
 			'date' : 'Friday, October 18th',
@@ -152,20 +151,7 @@ module.exports = Object.freeze({
 			'time' : 'Time TBD',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Game Night #4',
-			'date' : 'Friday, November 22nd',
-			'time' : 'Time TBD',
-			'location' : 'A.V. Williams 4176',
-			'fa_icon' : 'fa-chess-rook',
-		},
-		{
-			'name' : 'End-of-semester Event',
-			'date' : 'Friday, December 6th',
-			'time' : 'Time TBD',
-			'location' : 'Location TBD',
-		},
+		},*/
 	],
 
 	FALL_19_SEMESTER_FRIDAY_WEEK_NUMS : {
