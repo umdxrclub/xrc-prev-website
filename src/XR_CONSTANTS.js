@@ -37,14 +37,17 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Anders Julin',
 			'title' : 'Treasurer',
+			'linkedin' : 'https://www.linkedin.com/in/andersjulin',
 		},
 		{
 			'name' : 'Sahil Mayenkar',
-			'title' : 'Lead Organizer of Reality Hacks',
+			'title' : 'Head of RealityHacks, XR Mentor',
+			'github' : 'https://github.com/SahilMayenkar',
+			'linkedin' : 'https://www.linkedin.com/in/sahil-mayenkar/',
 		},
 		{
 			'name' : 'Paul Armstrong',
-			'title' : 'XR Mentor, Web Developer',
+			'title' : 'Web Developer, XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/paul-armstrong-650979159/',
 			'github' : 'https://github.com/paulbarmstrong',
 		},
