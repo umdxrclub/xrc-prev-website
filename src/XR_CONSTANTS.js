@@ -5,7 +5,8 @@
 
 module.exports = Object.freeze({
 
-	SLACK_STR : 'https://join.slack.com/t/xr-club/shared_invite/enQtNDQ0NTMyODAwMDUyLWUyYmUzNWU3OGNjNDY2ZWNlMTlhYWQwZDRiYTAzZjdhNzQ4NjI0YzczZmM1NWRhZjU2MzEyOGQ3NzQ2NGRjNDg',
+	SLACK_STR : 'https://join.slack.com/t/xr-club/shared_invite/enQtNDQ0NTMyODAwMDUyLWUyYmUzNWU3OGNjNDY2ZWNlMTlhYW' + 
+	'QwZDRiYTAzZjdhNzQ4NjI0YzczZmM1NWRhZjU2MzEyOGQ3NzQ2NGRjNDg',
 	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
 	TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club',
 	EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
@@ -21,30 +22,43 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Matt Graber',
 			'title' : 'President',
-			'linkedin' : '#'
+			'github' : 'https://github.com/grabermtw',
+			'linkedin' : 'https://www.linkedin.com/in/matthew-william-graber-umd/',
+			'web' : 'https://devpost.com/mgraber1',
 		},
 		{
 			'name' : 'John Ball',
 			'title' : 'Vice President',
-			'linkedin' : '#'
 		},
 		{
 			'name' : 'Jordan Woo',
 			'title' : 'Lead Mentor',
-			'linkedin' : '#',
-			'github' : '#'
 		},
 		{
 			'name' : 'Anders Julin',
 			'title' : 'Treasurer',
-			'linkedin' : '#',
-			'github' : '#'
 		},
 		{
 			'name' : 'Sahil Mayenkar',
 			'title' : 'Lead Organizer of Reality Hacks',
-			'linkedin' : '#',
-			'github' : '#'
+		},
+		{
+			'name' : 'Paul Armstrong',
+			'title' : 'XR Mentor, Web Developer',
+			'linkedin' : 'https://www.linkedin.com/in/paul-armstrong-650979159/',
+			'github' : 'https://github.com/paulbarmstrong',
+		},
+		{
+			'name' : 'James Biggins',
+			'title' : 'XR Mentor',
+			'web' : 'https://jabiggins.wixsite.com/website',
+			'linkedin' : 'https://www.linkedin.com/in/jbigginscs/',
+		},
+		{
+			'name' : 'Omer Bowman',
+			'title' : 'XR Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/omer-bowman/',
+			'web' : 'https://mechanicallinguistics.wordpress.com',
 		},
 	],
 	
@@ -98,7 +112,7 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Open Lab Night',
 			'date' : 'Friday, October 4th',
-			'time' : 'Time TBD',
+			'time' : '6pm - 7pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
 		},

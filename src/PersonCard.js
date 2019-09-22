@@ -13,6 +13,10 @@ function PersonCard(props) {
 			</div>
 			<div class="card-action">
 				{
+					// If there are no additional items, put an invisible icon to give the right height
+					Object.keys(props).length == 2 ? <i style={{opacity : 0}} class="fab fa-linkedin small grey-text text-darken-3"></i> : null
+				}
+				{
 					props.linkedin ? <a href={props.linkedin} target="_blank"><i class="fab fa-linkedin small grey-text text-darken-3"></i></a> : null
 				}
 				{
