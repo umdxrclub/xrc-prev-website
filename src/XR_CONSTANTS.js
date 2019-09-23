@@ -29,6 +29,9 @@ module.exports = Object.freeze({
 		{
 			'name' : 'John Ball',
 			'title' : 'Vice President',
+			'linkedin' : 'https://www.linkedin.com/in/john-ball-337231186/',
+			'web' : 'https://devpost.com/jlball',
+			'web2' : 'https://jlballportfolio.wordpress.com/',
 		},
 		{
 			'name' : 'Jordan Woo',

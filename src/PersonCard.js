@@ -26,6 +26,9 @@ function PersonCard(props) {
 					props.web ? <a href={props.web} target="_blank"><i class="far fa-window-maximize small grey-text text-darken-3"></i></a> : null
 				}
 				{
+					props.web2 ? <a href={props.web2} target="_blank"><i class="far fa-window-maximize small grey-text text-darken-3"></i></a> : null
+				}
+				{
 					props.mail ? <a href={props.mail} target="_blank"><i class="fas fa-envelope small grey-text text-darken-3"></i></a> : null
 				}
 			</div>
