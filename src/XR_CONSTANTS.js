@@ -33,6 +33,8 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Jordan Woo',
 			'title' : 'Lead Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/minersail/',
+			'github' : 'https://github.com/minersail',
 		},
 		{
 			'name' : 'Anders Julin',
