@@ -31,6 +31,9 @@ function PersonCard(props) {
 				{
 					props.mail ? <a href={props.mail} target="_blank"><i class="fas fa-envelope small grey-text text-darken-3"></i></a> : null
 				}
+				{
+					props.twitter ? <a href={props.twitter} target="_blank"><i class="fab fa-twitter-square small grey-text text-darken-3"></i></a> : null
+				}
 			</div>
 		</div>
 	);
