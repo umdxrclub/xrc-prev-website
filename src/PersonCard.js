@@ -7,11 +7,11 @@ import React from 'react';
 function PersonCard(props) {
 	return (
 		<div class="card z-depth-3">
-			<div class="card-content">
+			<div class="card-content" style={{'height' : '135px'}}>
 				<span class="card-title center">{props.name}</span>
 				<p class="center">{props.title}</p>
 			</div>
-			<div class="card-action">
+			<div class="card-action" style={{'overflow' : 'hidden', 'white-space' : 'nowrap'}}>
 				{
 					// If there are no additional items, put an invisible icon to give the right height
 					Object.keys(props).length == 2 ? <i style={{opacity : 0}} class="fab fa-linkedin small grey-text text-darken-3"></i> : null

@@ -99,7 +99,7 @@ function App() {
 							<div class="row">
 								{
 									XR_CONSTANTS.LEADERSHIP_INFORMATION.map(person => {
-										return <div class="col s12 m6 l4"><PersonCard {...person}></PersonCard></div>
+										return <div class="col s12 l6 xl4"><PersonCard {...person}></PersonCard></div>
 									})
 								}
 							</div>
