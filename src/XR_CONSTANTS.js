@@ -105,7 +105,7 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Game Night #1',
 			'date' : 'Friday, September 20th',
-			'time' : '6pm - 8pm',
+			'time' : '6pm - 7:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
@@ -120,24 +120,23 @@ module.exports = Object.freeze({
 			'name' : 'Unity Tutorial #3',
 			'date' : 'Friday, October 4th',
 			'time' : '5pm - 6pm',
-			'location' : 'CSIC 3117',
+			'location' : 'CSIC 3120',
 			'fa_icon' : 'fa-graduation-cap',
 		},
 		{
 			'name' : 'Open Lab Night',
 			'date' : 'Friday, October 4th',
-			'time' : '6pm - 7pm',
+			'time' : '6pm - 7:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
 		},
 		{
 			'name' : 'Game Night #2',
 			'date' : 'Friday, October 11th',
-			'time' : '6pm - 8pm',
+			'time' : '6pm - 7:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
-		/* These are only tentative
 		{
 			'name' : 'AR Tutorial',
 			'date' : 'Friday, October 18th',
@@ -152,6 +151,7 @@ module.exports = Object.freeze({
 			'location' : 'Location TBD',
 			'fa_icon' : 'fa-graduation-cap',
 		},
+		/* These are only tentative
 		{
 			'name' : 'Open Lab Night',
 			'date' : 'Friday, October 25th',
