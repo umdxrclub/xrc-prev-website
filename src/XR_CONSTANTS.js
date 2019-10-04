@@ -120,8 +120,9 @@ module.exports = Object.freeze({
 			'name' : 'Unity Tutorial #3',
 			'date' : 'Friday, October 4th',
 			'time' : '5pm - 6pm',
-			'location' : 'CSIC 3120',
+			'location' : 'CSIC 3117',
 			'fa_icon' : 'fa-graduation-cap',
+			'terplink' : 'https://terplink.umd.edu/event/4998328',
 		},
 		{
 			'name' : 'Open Lab Night',
@@ -129,6 +130,7 @@ module.exports = Object.freeze({
 			'time' : '6pm - 7:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
+			'terplink' : 'https://terplink.umd.edu/event/4998328',
 		},
 		{
 			'name' : 'Game Night #2',
