@@ -135,7 +135,7 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Game Night #2',
 			'date' : 'Friday, October 11th',
-			'time' : '6pm - 7:30pm',
+			'time' : '5pm - 6:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
