@@ -140,17 +140,10 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-chess-rook',
 		},
 		{
-			'name' : 'AR Tutorial',
+			'name' : 'Reality Workshop',
 			'date' : 'Friday, October 18th',
-			'time' : 'Time TBD',
-			'location' : 'Location TBD',
-			'fa_icon' : 'fa-graduation-cap',
-		},
-		{
-			'name' : 'VR Tutorial',
-			'date' : 'Friday, October 18th',
-			'time' : 'Time TBD',
-			'location' : 'Location TBD',
+			'time' : '5pm - 6:30pm',
+			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-graduation-cap',
 		},
 		/* These are only tentative
