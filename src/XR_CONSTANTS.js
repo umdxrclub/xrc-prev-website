@@ -125,7 +125,7 @@ module.exports = Object.freeze({
 			'terplink' : 'https://terplink.umd.edu/event/4998328',
 		},
 		{
-			'name' : 'Open Lab Night',
+			'name' : 'Open Lab Night #1',
 			'date' : 'Friday, October 4th',
 			'time' : '6pm - 7:30pm',
 			'location' : 'A.V. Williams 4176',
@@ -146,14 +146,14 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-graduation-cap',
 		},
-		/* These are only tentative
 		{
-			'name' : 'Open Lab Night',
+			'name' : 'Open Lab Night #2',
 			'date' : 'Friday, October 25th',
-			'time' : 'Time TBD',
+			'time' : '5pm - 6:30pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
 		},
+		/* These are only tentative
 		{
 			'name' : 'Game Night #3',
 			'date' : 'Friday, November 1st',
