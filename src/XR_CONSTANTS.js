@@ -153,14 +153,14 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
 		},
-		/* These are only tentative
 		{
 			'name' : 'Game Night #3',
 			'date' : 'Friday, November 1st',
-			'time' : 'Time TBD',
+			'time' : '5pm - 6pm',
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
+		/* These are only tentative
 		{
 			'name' : 'Blender Tutorial',
 			'date' : 'Friday, November 8th',
