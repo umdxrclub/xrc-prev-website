@@ -160,21 +160,13 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-chess-rook',
 		},
-		/* These are only tentative
 		{
-			'name' : 'Blender Tutorial',
-			'date' : 'Friday, November 8th',
-			'time' : 'Time TBD',
-			'location' : 'Location TBD',
+			'name' : 'Blender Workshop',
+			'date' : 'Friday, November 15th',
+			'time' : '5pm - 6pm',
+			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-graduation-cap',
 		},
-		{
-			'name' : 'Open Lab Night',
-			'date' : 'Friday, November 15th',
-			'time' : 'Time TBD',
-			'location' : 'A.V. Williams 4176',
-			'fa_icon' : 'fa-flask',
-		},*/
 	],
 
 	FALL_19_SEMESTER_FRIDAY_WEEK_NUMS : {
