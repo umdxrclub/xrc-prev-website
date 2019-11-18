@@ -167,6 +167,13 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-graduation-cap',
 		},
+		{
+			'name' : 'Open Lab Night #3',
+			'date' : 'Friday, November 22nd',
+			'time' : '5pm - 6:30pm',
+			'location' : 'A.V. Williams 4176',
+			'fa_icon' : 'fa-flask',
+		},
 	],
 
 	FALL_19_SEMESTER_FRIDAY_WEEK_NUMS : {
