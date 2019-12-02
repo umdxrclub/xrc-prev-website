@@ -174,6 +174,20 @@ module.exports = Object.freeze({
 			'location' : 'A.V. Williams 4176',
 			'fa_icon' : 'fa-flask',
 		},
+		{
+			'name' : 'CMSC388M Final Presentations',
+			'date' : 'Friday, December 6th',
+			'time' : '2pm - 2:50pm',
+			'location' : 'CSIC 2118',
+			'fa_icon' : 'fa-graduation-cap',
+		},
+		{
+			'name' : 'Open Lab Night #4',
+			'date' : 'Friday, December 6th',
+			'time' : '5pm - 6pm',
+			'location' : 'A.V. Williams 4176',
+			'fa_icon' : 'fa-flask',
+		},
 	],
 
 	FALL_19_SEMESTER_FRIDAY_WEEK_NUMS : {
