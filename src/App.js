@@ -7,6 +7,7 @@ import PersonCard from './PersonCard';
 import ProjectCard from './ProjectCard';
 import ContactRow from './ContactRow';
 import DateEventList from './DateEventList';
+import FlashItem from './FlashItem';
 import XR_CONSTANTS from './XR_CONSTANTS'
 
 function App() {
@@ -55,6 +56,18 @@ function App() {
 				<li class="collection-item">
 					<div id="about" class="section scrollspy grey-text text-darken-3 container">
 						<div class="container">
+					
+							{/* Flash Items */}
+							<div class="row">
+								<div class="col s12">
+									{
+										XR_CONSTANTS.FLASH_ITEMS.map(flash_item => {
+											return <FlashItem {...flash_item}></FlashItem>
+										})
+									}
+								</div>
+							</div>
+
 							<h4>About</h4>
 							<p>{XR_CONSTANTS.ABOUT_US_STR}</p>
 						</div>

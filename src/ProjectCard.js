@@ -5,7 +5,6 @@
 import React from 'react';
 
 function ProjectCard(props) {
-	console.log(props.image_is_vertical);
 	return (
 		<div class={"card z-depth-3" + (props.image_is_vertical ? ' horizontal' : '')}>
 			<div class="card-image">
