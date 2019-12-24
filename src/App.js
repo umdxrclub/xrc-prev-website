@@ -68,6 +68,7 @@ function App() {
 								</div>
 							</div>
 
+							{/* Blurb */}
 							<h4>About</h4>
 							<p>{XR_CONSTANTS.ABOUT_US_STR}</p>
 						</div>
