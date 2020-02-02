@@ -6,11 +6,6 @@
 module.exports = Object.freeze({
 	
 	FLASH_ITEMS : [
-		{
-			'message' : 'The XR Club is in the process of recruiting new mentors for the upcoming semester! ' + 
-			'If you are interested, please fill out this form.',
-			'url' : 'https://forms.gle/FYY1rL23bHnmkVb26',
-		},
 	],
 
 	SLACK_STR : 'https://join.slack.com/t/xr-club/shared_invite/enQtNDQ0NTMyODAwMDUyLWUyYmUzNWU3OGNjNDY2ZWNlMTlhYW' + 
