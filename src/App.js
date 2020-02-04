@@ -12,13 +12,35 @@ import XR_CONSTANTS from './XR_CONSTANTS'
 
 function App() {
 
+	// Function for getting the suffix of a date's day
+	var getDateSuffix = function(num) {
+		if (num > 3 && num < 21) {
+			return 'th';
+		} else if (num % 10 == 1) {
+			return 'st';
+		} else if (num % 10 == 2) {
+			return 'nd';
+		} else if (num % 10 == 3) {
+			return 'rd';
+		} else {
+			return 'th';
+		}
+	}
+
+	// Function for getting a day string the way I previously hardcoded it
+	var getNiceDayDateString = function(date) {
+		var str = date.toLocaleDateString('en-US', {weekday : 'long', month : 'long', day : 'numeric'});
+		str += getDateSuffix(parseInt(str.match(/\d+$/[0], 10)));
+		return str;
+	}
+
 	// Group events by date
 	var events_by_date = {};
 	XR_CONSTANTS.EVENTS_INFORMATION.forEach(event => {
-		if (events_by_date[event.date] == null) {
-			events_by_date[event.date] = [];
+		if (events_by_date[event.date.getDate()] == null) {
+			events_by_date[event.date.getDate()] = [];
 		}
-		events_by_date[event.date].push(event);
+		events_by_date[event.date.getDate()].push(event);
 	});
 
 	return (
@@ -97,8 +119,7 @@ function App() {
 									return (
 										<div class="row valign-wrapper" style={{'padding' : '0em', 'margin' : '0em'}}>
 											<div class="col s4">
-												<b>{XR_CONSTANTS.FALL_19_SEMESTER_FRIDAY_WEEK_NUMS[events[0].date]}</b><br/>
-												{events[0].date}
+												<b>{getNiceDayDateString(events[0].date)}</b><br/>
 											</div>
 											<div class="col s8">
 												<DateEventList events={events}/>
