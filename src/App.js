@@ -30,7 +30,7 @@ function App() {
 	// Function for getting a day string the way I previously hardcoded it
 	var getNiceDayDateString = function(date) {
 		var str = date.toLocaleDateString('en-US', {weekday : 'long', month : 'long', day : 'numeric'});
-		str += getDateSuffix(parseInt(str.match(/\d+$/[0], 10)));
+		str += getDateSuffix(parseInt(str.match(/\d+$/[0], 10))) + ', ' + (date.getYear() + 1900);
 		return str;
 	}
 
