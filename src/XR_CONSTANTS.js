@@ -105,5 +105,12 @@ module.exports = Object.freeze({
 			'location' : 'AVW 4176',
 			'fa_icon' : 'fa-flask',
 		},
+		{
+			'name' : 'Intro to VR Workshop',
+			'date' : new Date(2020, 1, 12),
+			'time' : '5:00pm - 6:00pm',
+			'location' : 'AVW 4176',
+			'fa_icon' : 'fa-flask',
+		},
 	],
 });
