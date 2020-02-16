@@ -54,6 +54,12 @@ module.exports = Object.freeze({
 			'linkedin' : 'https://www.linkedin.com/in/sahil-mayenkar/',
 		},
 		{
+			'name' : 'Jesse Parreira',
+			'title' : '3D Design Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/jesse-parreira-48aa44163/',
+			'twitter' : 'https://twitter.com/VeryNiceJokes',
+		},
+		{
 			'name' : 'Paul Armstrong',
 			'title' : 'Web Developer, XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/paul-armstrong-650979159/',
@@ -72,10 +78,13 @@ module.exports = Object.freeze({
 			'web' : 'https://mechanicallinguistics.wordpress.com',
 		},
 		{
-			'name' : 'Jesse Parreira',
-			'title' : '3D Design Mentor',
-			'linkedin' : 'https://www.linkedin.com/in/jesse-parreira-48aa44163/',
-			'twitter' : 'https://twitter.com/VeryNiceJokes',
+			'name' : 'Irene Li',
+			'title' : 'XR Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/irene-li-5a33a4147/',
+		},
+		{
+			'name' : 'Sharon Zheng',
+			'title' : 'XR Mentor',
 		},
 	],
 	
