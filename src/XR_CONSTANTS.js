@@ -122,8 +122,15 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-flask',
 		},
 		{
-			'name' : 'Budget Beat Saber Workshop',
+			'name' : 'Budget Beat Saber Workshop I',
 			'date' : new Date(2020, 1, 20),
+			'time' : '5:00pm - 6:00pm',
+			'location' : 'AVW 4176',
+			'fa_icon' : 'fa-flask',
+		},
+		{
+			'name' : 'Budget Beat Saber Workshop I or II',
+			'date' : new Date(2020, 1, 28),
 			'time' : '5:00pm - 6:00pm',
 			'location' : 'AVW 4176',
 			'fa_icon' : 'fa-flask',
