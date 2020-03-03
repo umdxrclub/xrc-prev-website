@@ -5,7 +5,7 @@
 import React from 'react';
 
 function FlashItem(props) {
-	return props.url ? <a href={props.url} target="_blank">{makeCard(props)}</a> : makeCard(props);
+	return props.url ? <a href={props.url} target="_blank" rel="noopener noreferrer">{makeCard(props)}</a> : makeCard(props);
 }
 
 function makeCard(props) {

@@ -16,11 +16,11 @@ function App() {
 	var getDateSuffix = function(num) {
 		if (num > 3 && num < 21) {
 			return 'th';
-		} else if (num % 10 == 1) {
+		} else if (num % 10 === 1) {
 			return 'st';
-		} else if (num % 10 == 2) {
+		} else if (num % 10 === 2) {
 			return 'nd';
-		} else if (num % 10 == 3) {
+		} else if (num % 10 === 3) {
 			return 'rd';
 		} else {
 			return 'th';
@@ -37,10 +37,10 @@ function App() {
 	// Group events by date
 	var events_by_date = {};
 	XR_CONSTANTS.EVENTS_INFORMATION.forEach(event => {
-		if (events_by_date[event.date.getDate()] == null) {
-			events_by_date[event.date.getDate()] = [];
+		if (events_by_date[event.date.valueOf()] == null) {
+			events_by_date[event.date.valueOf()] = [];
 		}
-		events_by_date[event.date.getDate()].push(event);
+		events_by_date[event.date.valueOf()].push(event);
 	});
 
 	return (
