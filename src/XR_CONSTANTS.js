@@ -86,6 +86,11 @@ module.exports = Object.freeze({
 			'name' : 'Sharon Zheng',
 			'title' : 'XR Mentor',
 		},
+		{
+			'name' : 'Arun Kumar',
+			'title' : 'XR Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/arun-kumar-209a02125/',
+		},
 	],
 	
 	// Information about the xr club's projects. Horizontal images with a 2/1 aspect ratio are the best.
