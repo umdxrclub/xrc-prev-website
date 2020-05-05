@@ -153,6 +153,7 @@ module.exports = Object.freeze({
 			'time' : '5:00pm - 6:00pm',
 			'location' : 'Zoom Meeting',
 			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/4363863079?pwd=SElaSnMyTWo4RE9TUitPRS9NalM2dz09',
 		},
 		{
 			'name' : 'CMSC388M Final Presentations',
