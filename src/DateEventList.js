@@ -3,22 +3,22 @@
  */
 
 import React from 'react';
+import DateEventContent from "./DateEventContent";
 
 function DateEventList(props) {
 	return (
-
 		<ul class="collection">
 			{
 				props.events.map(event => {
-					return (
-						<li class="collection-item">
-							<b>
-								{event.fa_icon ? <i class={"fas fa-fw " + event.fa_icon} style={{'padding-right' : '2em'}}></i> : null}
-								{event.name}
-							</b><br/>
-							{event.time}, {event.location}
+					if (event.url != null) {
+						return <a href={event.url} class="collection-item blue-text">
+							<DateEventContent {...event}/>
+						</a>
+					} else {
+						return <li class="collection-item">
+							<DateEventContent {...event}/>
 						</li>
-					)
+					}
 				})
 			}
 		</ul>

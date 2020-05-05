@@ -147,5 +147,20 @@ module.exports = Object.freeze({
 			'location' : 'AVW 4176',
 			'fa_icon' : 'fa-flask',
 		},
+		{
+			'name' : 'Mobile XR Workshop',
+			'date' : new Date(2020, 4, 4),
+			'time' : '5:00pm - 6:00pm',
+			'location' : 'Zoom Meeting',
+			'fa_icon' : 'fa-flask',
+		},
+		{
+			'name' : 'CMSC388M Final Presentations',
+			'date' : new Date(2020, 4, 8),
+			'time' : '1:00pm - 2:00pm',
+			'location' : 'WebEx Meeting',
+			'fa_icon' : 'fa-graduation-cap',
+			'url' : 'https://umd.webex.com/umd/onstage/g.php?MTID=e0bcbe2c3825d78ef8ebd32ea56ebfbd5',
+		},
 	],
 });
