@@ -60,12 +60,6 @@ module.exports = Object.freeze({
 			'twitter' : 'https://twitter.com/VeryNiceJokes',
 		},
 		{
-			'name' : 'Paul Armstrong',
-			'title' : 'Web Developer, XR Mentor',
-			'linkedin' : 'https://www.linkedin.com/in/paul-armstrong-650979159/',
-			'github' : 'https://github.com/paulbarmstrong',
-		},
-		{
 			'name' : 'James Biggins',
 			'title' : 'XR Mentor',
 			'web' : 'https://jabiggins.wixsite.com/website',
