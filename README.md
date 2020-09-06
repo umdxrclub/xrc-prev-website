@@ -10,6 +10,7 @@ The website is served using AWS Amplify, so it gets continuous deployment. Any c
 
 ## Building Locally
 
+I would recommend that you make sure things build and look fine locally before committing a significant change. Here is how you might want to establish an environment for doing that:
 * Clone repo on computer
 * Ensure that npm is installed on the computer
 * npm i
