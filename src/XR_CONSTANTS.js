@@ -93,13 +93,13 @@ module.exports = Object.freeze({
 			'name' : 'Virtual Reality Real Time Strategy Game',
 			'description' : 'With this project we are creating a real time strategy (RTS) game which will be played in virtual reality (VR). We hope to take advantage of the great immersion and unique control scheme of VR to create a unique RTS experience.',
 			'github' : 'https://github.com/umdxrclub/vr-rts-project',
-			'image' : 'rts-project-card-image.png'
+			'image' : 'rts-project-card-image.jpg'
 		},
 		{
 			'name' : 'Augmented Reality Storybook',
 			'description' : 'Turns regular storybooks/comic strip panels into AR/VR products. Goal of this project is to help encourage reading while also making it interactable, especially for young children.',
 			'github' : 'https://github.com/ogennaumeozulu/ARStorybook',
-			'image' : 'storybook-project-card-image.png',
+			'image' : 'storybook-project-card-image.jpg',
 		},
 	],
 
