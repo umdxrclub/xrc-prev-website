@@ -1,7 +1,5 @@
 # UMD XR Club Website
 
-## Usage
-
 https://www.umdxrclub.com/
 
 ## About
@@ -10,3 +8,9 @@ This is the repo for the UMD XR Club's website. This project was created using t
 
 The website is served using AWS Amplify, so it gets continuous deployment. Any changes made to this repo will be reflected on the website within a few minutes.
 
+## Building Locally
+
+* Clone repo on computer
+* Ensure that npm is installed on the computer
+* npm i
+* npm start
