@@ -23,6 +23,28 @@ module.exports = Object.freeze({
 	// Information about members of the xr club leadership.
 	LEADERSHIP_INFORMATION : [
 		{
+			'name' : 'Sahil Mayenkar',
+			'title' : 'President',
+			'github' : 'https://github.com/SahilMayenkar',
+			'linkedin' : 'https://www.linkedin.com/in/sahil-mayenkar/',
+		},
+		{
+			'name' : 'Irene Li',
+			'title' : 'XR Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/irene-li-5a33a4147/',
+		},
+		{
+			'name' : 'Anders Julin',
+			'title' : 'Treasurer',
+			'linkedin' : 'https://www.linkedin.com/in/andersjulin',
+		},
+		{
+			'name' : 'Jordan Woo',
+			'title' : 'Lead Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/minersail/',
+			'github' : 'https://github.com/minersail',
+		},
+		{
 			'name' : 'Matt Graber',
 			'title' : 'President',
 			'github' : 'https://github.com/grabermtw',
@@ -35,23 +57,6 @@ module.exports = Object.freeze({
 			'linkedin' : 'https://www.linkedin.com/in/john-ball-337231186/',
 			'web' : 'https://devpost.com/jlball',
 			'web2' : 'https://jlballportfolio.wordpress.com/',
-		},
-		{
-			'name' : 'Jordan Woo',
-			'title' : 'Lead Mentor',
-			'linkedin' : 'https://www.linkedin.com/in/minersail/',
-			'github' : 'https://github.com/minersail',
-		},
-		{
-			'name' : 'Anders Julin',
-			'title' : 'Treasurer',
-			'linkedin' : 'https://www.linkedin.com/in/andersjulin',
-		},
-		{
-			'name' : 'Sahil Mayenkar',
-			'title' : 'Lead Organizer of RealityHacks, XR Mentor',
-			'github' : 'https://github.com/SahilMayenkar',
-			'linkedin' : 'https://www.linkedin.com/in/sahil-mayenkar/',
 		},
 		{
 			'name' : 'Jesse Parreira',
@@ -70,11 +75,6 @@ module.exports = Object.freeze({
 			'title' : 'XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/omer-bowman/',
 			'web' : 'https://mechanicallinguistics.wordpress.com',
-		},
-		{
-			'name' : 'Irene Li',
-			'title' : 'XR Mentor',
-			'linkedin' : 'https://www.linkedin.com/in/irene-li-5a33a4147/',
 		},
 		{
 			'name' : 'Sharon Zheng',
