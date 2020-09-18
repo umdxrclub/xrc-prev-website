@@ -30,7 +30,7 @@ module.exports = Object.freeze({
 		},
 		{
 			'name' : 'Irene Li',
-			'title' : 'XR Mentor',
+			'title' : 'Vice President',
 			'linkedin' : 'https://www.linkedin.com/in/irene-li-5a33a4147/',
 		},
 		{
@@ -46,21 +46,21 @@ module.exports = Object.freeze({
 		},
 		{
 			'name' : 'Matt Graber',
-			'title' : 'President',
+			'title' : 'XR Mentor',
 			'github' : 'https://github.com/grabermtw',
 			'linkedin' : 'https://www.linkedin.com/in/matthew-william-graber-umd/',
 			'web' : 'https://devpost.com/mgraber1',
 		},
 		{
 			'name' : 'John Ball',
-			'title' : 'Vice President',
+			'title' : 'XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/john-ball-337231186/',
 			'web' : 'https://devpost.com/jlball',
 			'web2' : 'https://jlballportfolio.wordpress.com/',
 		},
 		{
 			'name' : 'Jesse Parreira',
-			'title' : '3D Design Mentor',
+			'title' : '3D Design Mentor, Snapchat Lens Studio Expert',
 			'linkedin' : 'https://www.linkedin.com/in/jesse-parreira-48aa44163/',
 			'twitter' : 'https://twitter.com/VeryNiceJokes',
 		},
