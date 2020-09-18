@@ -107,55 +107,12 @@ module.exports = Object.freeze({
 	// fa_icon should be a valid font-awesome icon name, don't include an fa_icon entry if you don't want an icon
 	EVENTS_INFORMATION : [
 		{
-			'name' : 'Spring Kickoff Meeting (with Pizza!)',
-			'date' : new Date(2020, 1, 7),
-			'time' : '5:00pm - 6:30pm',
-			'location' : 'AVW 4176',
-			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Intro to VR Workshop',
-			'date' : new Date(2020, 1, 12),
-			'time' : '5:00pm - 6:00pm',
-			'location' : 'AVW 4176',
-			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Budget Beat Saber Workshop I',
-			'date' : new Date(2020, 1, 20),
-			'time' : '5:00pm - 6:00pm',
-			'location' : 'AVW 4176',
-			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Budget Beat Saber Workshop I and II',
-			'date' : new Date(2020, 1, 28),
-			'time' : '5:00pm - 6:00pm',
-			'location' : 'AVW 4176',
-			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Snapchat Lens Studio Workshop',
-			'date' : new Date(2020, 2, 5),
-			'time' : '5:00pm - 6:00pm',
-			'location' : 'AVW 4176',
-			'fa_icon' : 'fa-flask',
-		},
-		{
-			'name' : 'Mobile XR Workshop',
-			'date' : new Date(2020, 4, 4),
+			'name' : 'Fall 2020 XR Club Kickoff Meeting',
+			'date' : new Date(2020, 8, 18),
 			'time' : '5:00pm - 6:00pm',
 			'location' : 'Zoom Meeting',
 			'fa_icon' : 'fa-flask',
-			'url' : 'https://umd.zoom.us/j/4363863079?pwd=SElaSnMyTWo4RE9TUitPRS9NalM2dz09',
-		},
-		{
-			'name' : 'CMSC388M Final Presentations',
-			'date' : new Date(2020, 4, 8),
-			'time' : '1:00pm - 2:00pm',
-			'location' : 'WebEx Meeting',
-			'fa_icon' : 'fa-graduation-cap',
-			'url' : 'https://umd.webex.com/umd/onstage/g.php?MTID=e0bcbe2c3825d78ef8ebd32ea56ebfbd5',
-		},
+			'url' : 'https://umd.zoom.us/j/92120507560',
+		}
 	],
 });
