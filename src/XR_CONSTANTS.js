@@ -77,14 +77,14 @@ module.exports = Object.freeze({
 			'web' : 'https://mechanicallinguistics.wordpress.com',
 		},
 		{
-			'name' : 'Sharon Zheng',
-			'title' : 'XR Mentor',
-		},
-		{
 			'name' : 'Arun Kumar',
 			'title' : 'XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/arun-kumar-209a02125/',
 		},
+		{
+			'name' : 'Sharon Zheng',
+			'title' : 'XR Mentor',
+		}
 	],
 	
 	// Information about the xr club's projects. Horizontal images with a 2/1 aspect ratio are the best.
