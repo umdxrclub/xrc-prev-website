@@ -8,8 +8,7 @@ module.exports = Object.freeze({
 	FLASH_ITEMS : [
 	],
 
-	SLACK_STR : 'https://join.slack.com/t/xr-club/shared_invite/enQtNDQ0NTMyODAwMDUyLWUyYmUzNWU3OGNjNDY2ZWNlMTlhYW' + 
-	'QwZDRiYTAzZjdhNzQ4NjI0YzczZmM1NWRhZjU2MzEyOGQ3NzQ2NGRjNDg',
+	SLACK_STR : 'https://ter.ps/xrdiscord',
 	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
 	TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club',
 	EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
