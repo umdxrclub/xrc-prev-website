@@ -8,10 +8,11 @@ module.exports = Object.freeze({
 	FLASH_ITEMS : [
 	],
 
-	SLACK_STR : 'https://ter.ps/xrdiscord',
-	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
 	TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club',
 	EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
+	DISCORD_STR : 'https://discord.com/invite/KBx8mF6/',
+	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
+	TWITTER_STR : 'https://twitter.com/umdxrclub',
 
 	ABOUT_US_STR : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
 	' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
@@ -106,12 +107,20 @@ module.exports = Object.freeze({
 	// fa_icon should be a valid font-awesome icon name, don't include an fa_icon entry if you don't want an icon
 	EVENTS_INFORMATION : [
 		{
-			'name' : 'Fall 2020 XR Club Kickoff Meeting',
+			'name' : 'Fall 2020 Virtual Kickoff Event',
 			'date' : new Date(2020, 8, 18),
+			'time' : '5:00pm - 6:15pm',
+			'location' : 'Zoom Meeting',
+			'fa_icon' : 'fa-bullhorn',
+			'url' : 'https://umd.zoom.us/j/92120507560',
+		},
+		{
+			'name' : 'Setting Up Your XR Development Environment Workshop',
+			'date' : new Date(2020, 8, 24),
 			'time' : '5:00pm - 6:00pm',
 			'location' : 'Zoom Meeting',
 			'fa_icon' : 'fa-flask',
-			'url' : 'https://umd.zoom.us/j/92120507560',
+			'url' : 'https://umd.zoom.us/j/92618293585',
 		}
 	],
 });
