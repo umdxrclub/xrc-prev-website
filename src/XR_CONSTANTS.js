@@ -135,7 +135,7 @@ module.exports = Object.freeze({
 			'date' : new Date(2020, 9, 2),
 			'time' : '5:00pm - 6:00pm',
 			'location' : 'Online via AltspaceVR',
-			'fa_icon' : 'fa-group',
+			'fa_icon' : 'fa-users',
 			'url' : 'https://altvr.com/',
 		}
 	],
