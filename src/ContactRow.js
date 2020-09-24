@@ -14,8 +14,13 @@ function ContactRow() {
 				</a>
 			</div>
 			<div class="col s2 l1">
-				<a href={XR_CONSTANTS.SLACK_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Join our Slack">
-					<i class="white-text small fab fa-slack"></i>
+				<a href={XR_CONSTANTS.EMAIL_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Send us an email">
+					<i class="white-text small material-icons">mail</i>
+				</a>
+			</div>
+			<div class="col s2 l1">
+				<a href={XR_CONSTANTS.DISCORD_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Join our Discord server">
+					<i class="white-text small fab fa-discord"></i>
 				</a>
 			</div>
 			<div class="col s2 l1">
@@ -24,8 +29,8 @@ function ContactRow() {
 				</a>
 			</div>
 			<div class="col s2 l1">
-				<a href={XR_CONSTANTS.EMAIL_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Send us an email">
-					<i class="white-text small material-icons">mail</i>
+				<a href={XR_CONSTANTS.TWITTER_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Follow us on Twitter">
+					<i class="white-text small fab fa-twitter"></i>
 				</a>
 			</div>
 		</div>
