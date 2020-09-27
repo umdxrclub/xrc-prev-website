@@ -132,12 +132,12 @@ module.exports = Object.freeze({
 			'url' : 'https://umd.zoom.us/j/98291412469',
 		},
 		{
-			'name' : 'Rooftop Games',
+			'name' : 'Social VR Chill Session',
 			'date' : new Date(2020, 9, 2),
-			'time' : '5:00pm - 6:00pm',
+			'time' : '7:00pm - 7:30pm',
 			'location' : 'Online via AltspaceVR',
 			'fa_icon' : 'fa-users',
-			'url' : 'https://altvr.com/',
+			'url' : 'https://account.altvr.com/events/1571220281840632151',
 		}
 	],
 });
