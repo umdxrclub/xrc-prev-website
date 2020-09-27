@@ -8,7 +8,7 @@ import XR_CONSTANTS from './XR_CONSTANTS'
 function ContactRow() {
 	return (
 		<div class="row center">
-			<div class="col offset-s2 s2 offset-l4 l1">
+			<div class="col offset-s2 s2 offset-l3 l1">
 				<a href={XR_CONSTANTS.TERPLINK_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Join our Terplink Org">
 					<i class="white-text small material-icons">web</i>
 				</a>
@@ -21,6 +21,11 @@ function ContactRow() {
 			<div class="col s2 l1">
 				<a href={XR_CONSTANTS.DISCORD_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Join our Discord server">
 					<i class="white-text small fab fa-discord"></i>
+				</a>
+			</div>
+			<div class="col s2 l1">
+				<a href={XR_CONSTANTS.LINKEDIN_STR} target="_blank" rel="noopener noreferrer" class="tooltipped" data-position="top" data-tooltip="Join our LinkedIn group">
+					<i class="white-text small fab fa-linkedin"></i>
 				</a>
 			</div>
 			<div class="col s2 l1">
