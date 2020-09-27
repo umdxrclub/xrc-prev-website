@@ -8,11 +8,12 @@ module.exports = Object.freeze({
 	FLASH_ITEMS : [
 	],
 
-	TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club',
+	TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club/',
 	EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
 	DISCORD_STR : 'https://discord.com/invite/KBx8mF6/',
+	LINKEDIN_STR: 'https://www.linkedin.com/groups/8981512/',
 	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
-	TWITTER_STR : 'https://twitter.com/umdxrclub',
+	TWITTER_STR : 'https://twitter.com/umdxrclub/',
 
 	ABOUT_US_STR : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
 	' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
