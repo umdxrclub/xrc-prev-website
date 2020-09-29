@@ -138,6 +138,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via AltspaceVR',
 			'fa_icon' : 'fa-users',
 			'url' : 'https://account.altvr.com/events/1571220281840632151',
+		},
+		{
+			'name' : 'echoAR: How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less',
+			'date' : new Date(2020, 9, 15),
+			'time' : '5:00pm - 5:45pm',
+			'location' : 'Online via Google Meet',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://meet.google.com/wjf-dmpt-ueo',
 		}
 	],
 });
