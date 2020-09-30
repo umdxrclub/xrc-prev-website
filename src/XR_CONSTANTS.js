@@ -134,7 +134,7 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Social VR Chill Session',
 			'date' : new Date(2020, 9, 2),
-			'time' : '7:00pm - 7:30pm',
+			'time' : '6:00pm - 6:30pm',
 			'location' : 'Online via AltspaceVR',
 			'fa_icon' : 'fa-users',
 			'url' : 'https://account.altvr.com/events/1571220281840632151',
