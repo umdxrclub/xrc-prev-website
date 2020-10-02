@@ -140,6 +140,22 @@ module.exports = Object.freeze({
 			'url' : 'https://account.altvr.com/events/1571220281840632151',
 		},
 		{
+			'name' : 'Intro to Virtual Reality Development',
+			'date' : new Date(2020, 9, 7),
+			'time' : '6:00pm - 7:15pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : '',
+		},
+		{
+			'name' : 'A Talk with an XR Professional (ft. Brian McDevitt)',
+			'date' : new Date(2020, 9, 9),
+			'time' : '5:00pm - 6:00pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-comment',
+			'url' : '',
+		},
+		{
 			'name' : 'echoAR: How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less',
 			'date' : new Date(2020, 9, 15),
 			'time' : '5:00pm - 5:45pm',
