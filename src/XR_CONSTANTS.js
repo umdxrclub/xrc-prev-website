@@ -85,6 +85,11 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Sharon Zheng',
 			'title' : 'XR Mentor',
+		},
+		{
+			'name' : 'Shubham Mittal',
+			'title' : 'XR Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/smittal3',
 		}
 	],
 	
