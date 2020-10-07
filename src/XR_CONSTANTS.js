@@ -161,6 +161,14 @@ module.exports = Object.freeze({
 			'url' : 'https://umd.zoom.us/j/96768585556',
 		},
 		{
+			'name' : 'Intro to Augmented Reality Development',
+			'date' : new Date(2020, 9, 12),
+			'time' : '5:00pm - 6:15pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/94792433767',
+		},
+		{
 			'name' : 'echoAR: How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less',
 			'date' : new Date(2020, 9, 15),
 			'time' : '5:00pm - 5:45pm',
