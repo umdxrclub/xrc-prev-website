@@ -199,7 +199,7 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Intro to Augmented Reality Development',
 			'date' : new Date(2020, 10, 12),
-			'time' : '5:00pm - 6:15pm',
+			'time' : '7:00pm - 8:15pm',
 			'location' : 'Online via Zoom',
 			'fa_icon' : 'fa-flask',
 			'url' : 'https://umd.zoom.us/j/99740746245',
