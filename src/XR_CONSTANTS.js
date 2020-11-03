@@ -90,6 +90,10 @@ module.exports = Object.freeze({
 			'name' : 'Shubham Mittal',
 			'title' : 'XR Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/smittal3',
+		},
+		{
+			'name' : 'Kyle Gerry',
+			'title' : 'XR Mentor',
 		}
 	],
 	
@@ -175,6 +179,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via Google Meet',
 			'fa_icon' : 'fa-flask',
 			'url' : 'https://meet.google.com/wjf-dmpt-ueo',
+		},
+		{
+			'name' : 'Creating Custom 3D Models for XR Applications',
+			'date' : new Date(2020, 10, 5),
+			'time' : '7:00pm - 8:15pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/96044873160',
 		}
 	],
 });
