@@ -187,6 +187,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via Zoom',
 			'fa_icon' : 'fa-flask',
 			'url' : 'https://umd.zoom.us/j/96044873160',
+		},
+		{
+			'name' : 'Among Us...XR Will Prevail!',
+			'date' : new Date(2020, 10, 10),
+			'time' : '7:00pm - 7:45pm',
+			'location' : 'Online via Discord',
+			'fa_icon' : 'fa-users',
+			'url' : 'https://discord.com/invite/KBx8mF6/',
 		}
 	],
 });
