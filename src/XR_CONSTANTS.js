@@ -195,6 +195,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via Discord',
 			'fa_icon' : 'fa-users',
 			'url' : 'https://discord.com/invite/KBx8mF6/',
+		},
+		{
+			'name' : 'Intro to Augmented Reality Development',
+			'date' : new Date(2020, 10, 12),
+			'time' : '5:00pm - 6:15pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/99740746245',
 		}
 	],
 });
