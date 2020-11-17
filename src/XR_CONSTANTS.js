@@ -203,6 +203,30 @@ module.exports = Object.freeze({
 			'location' : 'Online via Zoom',
 			'fa_icon' : 'fa-flask',
 			'url' : 'https://umd.zoom.us/j/99740746245',
+		},
+		{
+			'name' : 'Testudo Challenge Brainstorm Session',
+			'date' : new Date(2020, 10, 17),
+			'time' : '7:00pm - 7:45pm',
+			'location' : 'Online via Discord',
+			'fa_icon' : 'fa-users',
+			'url' : 'https://discord.com/invite/KBx8mF6/',
+		},
+		{
+			'name' : 'How to Create Your Own Snapchat Filters & Lenses',
+			'date' : new Date(2020, 10, 19),
+			'time' : '7:00pm - 8:00pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/99411237213',
+		},
+		{
+			'name' : 'Pre-Thanksgiving Gather & Chill',
+			'date' : new Date(2020, 10, 24),
+			'time' : '7:00pm - 7:30pm',
+			'location' : 'Online via Discord',
+			'fa_icon' : 'fa-users',
+			'url' : 'https://discord.com/invite/KBx8mF6/',
 		}
 	],
 });
