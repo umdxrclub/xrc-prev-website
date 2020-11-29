@@ -227,6 +227,22 @@ module.exports = Object.freeze({
 			'location' : 'Online via Discord',
 			'fa_icon' : 'fa-users',
 			'url' : 'https://discord.com/invite/KBx8mF6/',
+		},
+		{
+			'name' : 'Professional XR Development: Microsoft and More',
+			'date' : new Date(2020, 11, 1),
+			'time' : '7:00pm - 7:45pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-comment',
+			'url' : 'https://umd.zoom.us/j/95582469262',
+		},
+		{
+			'name' : 'What Makes a VR Headset Work?',
+			'date' : new Date(2020, 11, 3),
+			'time' : '7:00pm - 7:45pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/93176151809',
 		}
 	],
 });
