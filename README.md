@@ -15,3 +15,4 @@ I would recommend that you make sure things build and look fine locally before c
 * Ensure that npm is installed on the computer
 * npm i
 * npm start
+
