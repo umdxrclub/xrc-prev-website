@@ -243,6 +243,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via Zoom',
 			'fa_icon' : 'fa-flask',
 			'url' : 'https://umd.zoom.us/j/93176151809',
+		},
+		{
+			'name' : 'Reality Night',
+			'date' : new Date(2020, 11, 10),
+			'time' : '7:00pm - 7:45pm',
+			'location' : 'Online via Mozilla Hubs',
+			'fa_icon' : 'fa-certificate',
+			'url' : 'https://hubs.mozilla.com/2Gcj5BR/',
 		}
 	],
 });
