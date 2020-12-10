@@ -246,8 +246,8 @@ module.exports = Object.freeze({
 		},
 		{
 			'name' : 'Reality Night',
-			'date' : new Date(2020, 11, 10),
-			'time' : '7:00pm - 7:45pm',
+			'date' : new Date(2020, 11, 11),
+			'time' : '6:00pm - 6:45pm',
 			'location' : 'Online via Mozilla Hubs',
 			'fa_icon' : 'fa-certificate',
 			'url' : 'https://hubs.mozilla.com/2Gcj5BR/',
