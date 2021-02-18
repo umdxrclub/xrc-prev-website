@@ -123,6 +123,14 @@ module.exports = Object.freeze({
 			'location' : 'Online via Zoom',
 			'fa_icon' : 'fa-bullhorn',
 			'url' : 'https://umd.zoom.us/j/99187307055',
+		},
+		{
+			'name' : 'Intro to Unity with the LEGO® Microgame',
+			'date' : new Date(2021, 1, 19),
+			'time' : '6:30pm - 7:45pm',
+			'location' : 'Online via Zoom',
+			'fa_icon' : 'fa-flask',
+			'url' : 'https://umd.zoom.us/j/98320595395',
 		}
 	],
 });
