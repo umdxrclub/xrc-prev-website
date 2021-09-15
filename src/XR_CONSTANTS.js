@@ -94,8 +94,9 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Fall 2021 Kickoff Event',
 			'date' : new Date(2021, 8, 24),
-			'time' : 'Time: TBD',
-			'location' : 'Location: TBD',
+			'time' : '5:00 PM',
+			'location' : 'ASY 2309',
+			'url' : 'https://terplink.umd.edu/event/7378882',
 			'fa_icon' : 'fa-bullhorn'
 		}
 	],
