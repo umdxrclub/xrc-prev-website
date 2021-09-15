@@ -59,6 +59,16 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Kyuyoung Kim',
 			'title' : 'Mentor'
+		},
+		{
+			'name' : 'Damian Figueroa',
+			'title' : 'Mentor',
+			'github' : 'https://github.com/djfigs1'
+		},
+		{
+			'name' : 'Luke Vernon',
+			'title' : 'Mentor',
+			'github' : 'https://github.com/lverno321'
 		}
 	],
 	
