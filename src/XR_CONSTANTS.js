@@ -53,10 +53,6 @@ module.exports = Object.freeze({
 			'title' : 'Lab Manager'
 		},
 		{
-			'name' : 'Kyle Gerry',
-			'title' : 'Mentor'
-		},
-		{
 			'name' : 'Kyuyoung Kim',
 			'title' : 'Mentor'
 		},
@@ -90,6 +86,7 @@ module.exports = Object.freeze({
 
 	// Information about XR Club events throughout the semester
 	// fa_icon should be a valid font-awesome icon name, don't include an fa_icon entry if you don't want an icon
+	// fa_icon is flask for workshops, bullhorn for kickoffs, certificate for reality night, and users for social events
 	EVENTS_INFORMATION : [
 		{
 			'name' : 'Fall 2021 Kickoff Event',
@@ -98,6 +95,14 @@ module.exports = Object.freeze({
 			'location' : 'ASY 2309',
 			'url' : 'https://terplink.umd.edu/event/7378882',
 			'fa_icon' : 'fa-bullhorn'
+		},
+		{
+			'name' : 'Setting Up Your XR Development Environment',
+			'date' : new Date(2021, 8, 28),
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'url' : 'https://terplink.umd.edu/event/7394361',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
