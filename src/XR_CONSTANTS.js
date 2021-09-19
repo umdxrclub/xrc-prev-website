@@ -103,6 +103,14 @@ module.exports = Object.freeze({
 			'location' : 'JMZ 0220',
 			'url' : 'https://terplink.umd.edu/event/7394361',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'RealityHacks Organizers Interest Meeting',
+			'date' : new Date(2021, 8, 29),
+			'time' : '6:30 PM',
+			'location' : 'MTH B0421',
+			'url' : 'https://terplink.umd.edu/event/7400679',
+			'fa_icon' : 'fa-info'
 		}
 	],
 });
