@@ -113,7 +113,7 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-info'
 		},
 		{
-			'name' : 'NASA Suits Interest Meeting',
+			'name' : 'NASA SUITS Interest Meeting',
 			'date' : new Date(2021, 8, 30),
 			'time' : '6:30 PM',
 			'location' : 'MTH B0421',
