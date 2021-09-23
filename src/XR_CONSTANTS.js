@@ -113,6 +113,14 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-info'
 		},
 		{
+			'name' : 'NASA Suits Interest Meeting',
+			'date' : new Date(2021, 8, 30),
+			'time' : '6:30 PM',
+			'location' : 'MTH B0421',
+			'url' : 'https://terplink.umd.edu/event/7429767',
+			'fa_icon' : 'fa-info'
+		},
+		{
 			'name' : 'XR Lab Open House',
 			'date' : new Date(2021, 9, 1),
 			'time' : '5:00 PM',
