@@ -108,7 +108,7 @@ module.exports = Object.freeze({
 			'name' : 'RealityHacks Organizers Interest Meeting',
 			'date' : new Date(2021, 8, 29),
 			'time' : '6:30 PM',
-			'location' : 'MTH B0421',
+			'location' : 'SQH 1117',
 			'url' : 'https://terplink.umd.edu/event/7400679',
 			'fa_icon' : 'fa-info'
 		},
