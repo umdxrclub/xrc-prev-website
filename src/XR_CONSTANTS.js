@@ -127,6 +127,14 @@ module.exports = Object.freeze({
 			'location' : 'AVW 4176',
 			'url' : 'https://terplink.umd.edu/event/7412922',
 			'fa_icon' : 'fa-users'
+		}, 
+		{
+			'name' : 'XR Lab Open House',
+			'date' : new Date(2021, 9, 5),
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'url' : 'https://terplink.umd.edu/event/7466340',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
