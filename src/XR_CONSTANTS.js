@@ -129,7 +129,7 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-users'
 		}, 
 		{
-			'name' : 'XR Lab Open House',
+			'name' : 'Workshop: Introduction to Unity (Part I)',
 			'date' : new Date(2021, 9, 5),
 			'time' : '6:30 PM',
 			'location' : 'JMZ 0220',
