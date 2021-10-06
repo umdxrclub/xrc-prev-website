@@ -135,6 +135,14 @@ module.exports = Object.freeze({
 			'location' : 'JMZ 0220',
 			'url' : 'https://terplink.umd.edu/event/7466340',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Core Disruption Mini-Tournament',
+			'date' : new Date(2021, 9, 8),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7482718',
+			'fa_icon' : 'fa-users'
 		}
 	],
 });
