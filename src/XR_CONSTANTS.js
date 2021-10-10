@@ -143,6 +143,14 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/7482718',
 			'fa_icon' : 'fa-users'
+		}, 
+		{
+			'name' : 'XR Club Workshop: Introduction to Unity (Part II)',
+			'date' : new Date(2021, 9, 12),
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'url' : 'https://terplink.umd.edu/event/7493914',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
