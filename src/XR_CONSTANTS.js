@@ -159,6 +159,14 @@ module.exports = Object.freeze({
 			'location' : 'ASY 3207',
 			'url' : 'https://terplink.umd.edu/event/7525971',
 			'fa_icon' : 'fa-flask'
+		}, 
+		{
+			'name' : 'Intro to VR Development (Part II)',
+			'date' : new Date(2021, 9, 26),
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'url' : 'https://terplink.umd.edu/event/7530118',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
