@@ -167,6 +167,14 @@ module.exports = Object.freeze({
 			'location' : 'JMZ 0220',
 			'url' : 'https://terplink.umd.edu/event/7530118',
 			'fa_icon' : 'fa-flask'
+		}, 
+		{
+			'name' : 'Life of a Neuron Immersive Exhibition',
+			'date' : new Date(2021, 10, 19),
+			'time' : '5:00 PM',
+			'location' : 'ARTECHOUSE DC',
+			'url' : 'https://terplink.umd.edu/event/7578885',
+			'fa_icon' : 'fa-users'
 		}
 	],
 });
