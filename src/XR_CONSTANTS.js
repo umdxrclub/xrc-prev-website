@@ -49,6 +49,11 @@ module.exports = Object.freeze({
 			'github' : 'https://github.com/rohannbajpai'
 		},
 		{
+			'name' : 'Justin Pratama',
+			'title' : 'Engagement Director, Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/justin-pratama/'
+		},
+		{
 			'name' : 'Mrugesh Shah',
 			'title' : 'Lab Manager'
 		},
@@ -65,6 +70,22 @@ module.exports = Object.freeze({
 			'name' : 'Luke Vernon',
 			'title' : 'Mentor',
 			'github' : 'https://github.com/lverno321'
+		},
+		{
+			'name' : 'Ian Morrill',
+			'title' : 'Mentor',
+			'web' : 'https://ianmorrill.com/'
+		},
+		{
+			'name' : 'Tejas Chandakkar',
+			'title' : 'Mentor',
+			'linkedin' : 'https://www.linkedin.com/in/tejas-chandakkar-88498a215/'
+		},
+		{
+			'name' : 'Marilyn Ortega',
+			'title' : 'Graphic Designer',
+			'web' : 'https://mariortegajx.wixsite.com/marior',
+			'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
 		}
 	],
 	
