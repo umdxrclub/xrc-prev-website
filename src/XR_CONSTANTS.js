@@ -177,6 +177,15 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-flask'
 		},
 		{
+			'name' : 'Gaming Night',
+			'date' : new Date(2021, 10, 11),
+			'time' : '5:00 PM',
+			'location' : 'DICE Lounge',
+			'url' : '',
+			'fa_icon' : 'fa-users'
+		},
+		
+		{
 			'name' : 'Life of a Neuron Immersive Exhibition',
 			'date' : new Date(2021, 10, 19),
 			'time' : '5:00 PM',
@@ -184,6 +193,7 @@ module.exports = Object.freeze({
 			'url' : 'https://terplink.umd.edu/event/7578885',
 			'fa_icon' : 'fa-users'
 		},
+		
 		
 	],
 });
