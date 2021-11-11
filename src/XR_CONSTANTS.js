@@ -129,7 +129,7 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-users'
 		}, 
 		{
-			'name' : 'Workshop: Introduction to Unity (Part I)',
+			'name' : 'Introduction to Unity (Part I)',
 			'date' : new Date(2021, 9, 5),
 			'time' : '6:30 PM',
 			'location' : 'JMZ 0220',
@@ -145,7 +145,7 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-users'
 		}, 
 		{
-			'name' : 'XR Club Workshop: Introduction to Unity (Part II)',
+			'name' : 'Introduction to Unity (Part II)',
 			'date' : new Date(2021, 9, 12),
 			'time' : '6:30 PM',
 			'location' : 'JMZ 0220',
@@ -181,7 +181,7 @@ module.exports = Object.freeze({
 			'date' : new Date(2021, 10, 11),
 			'time' : '5:00 PM',
 			'location' : 'IRB 1104 (DICE Lounge)',
-			'url' : 'https://terplink.umd.edu/event/7604034/',
+			'url' : 'https://terplink.umd.edu/event/7604034',
 			'fa_icon' : 'fa-users'
 		},
 		{
