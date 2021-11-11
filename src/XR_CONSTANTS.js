@@ -171,20 +171,26 @@ module.exports = Object.freeze({
 		{
 			'name' : 'Intro to AR Development (Part I - Sensing the Environment)',
 			'date' : new Date(2021, 10, 9),
-			'time' : '5:00 PM',
-			'location' : 'ARTECHOUSE DC',
-			'url' : 'https://terplink.umd.edu/event/7578885',
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'url' : 'https://terplink.umd.edu/event/7595955',
 			'fa_icon' : 'fa-flask'
 		},
 		{
-			'name' : 'Gaming Night',
+			'name' : 'Gaming Night w/ I4C',
 			'date' : new Date(2021, 10, 11),
 			'time' : '5:00 PM',
-			'location' : 'DICE Lounge',
-			'url' : '',
+			'location' : 'IRB 1104 (DICE Lounge)',
+			'url' : 'https://terplink.umd.edu/event/7604034/',
 			'fa_icon' : 'fa-users'
 		},
-		
+		{
+			'name' : 'Intro to AR Development (Part II - Interactions and Realism)',
+			'date' : new Date(2021, 10, 16),
+			'time' : '6:30 PM',
+			'location' : 'JMZ 0220',
+			'fa_icon' : 'fa-flask'
+		},
 		{
 			'name' : 'Life of a Neuron Immersive Exhibition',
 			'date' : new Date(2021, 10, 19),
