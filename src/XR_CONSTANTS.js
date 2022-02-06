@@ -23,18 +23,21 @@ module.exports = Object.freeze({
 
 	// Information about members of the xr club leadership.
 	LEADERSHIP_INFORMATION : [
+		
+		{
+			'name' : 'Jason Fotso-Puepi',
+			'title' : 'President',
+			'linkedin' : 'https://www.linkedin.com/in/jason-fotso/',
+			'github' : 'https://github.com/DuragJay'
+		},
 		{
 			'name' : 'Sahil Mayenkar',
-			'title' : 'President, Lead Organizer of RealityHacks',
+			'title' : 'Vice President, Lead Organizer of RealityHacks',
 			'web' : 'https://www.sahilmayenkar.com/',
 			'linkedin' : 'https://www.linkedin.com/in/sahil-mayenkar/',
 			'github' : 'https://github.com/SahilMayenkar'
 		},
-		{
-			'name' : 'Jason Fotso',
-			'title' : 'Vice President',
-			'linkedin' : 'https://www.linkedin.com/in/jason-fotso/'
-		},
+		
 		{
 			'name' : 'Andrew Yuan',
 			'title' : 'Treasurer, Mentor',
