@@ -25,7 +25,7 @@ module.exports = Object.freeze({
 	LEADERSHIP_INFORMATION : [
 		
 		{
-			'name' : 'Jason Fotso-Puepi',
+			'name' : 'Jason<br>Fotso-Puepi',
 			'title' : 'President',
 			'linkedin' : 'https://www.linkedin.com/in/jason-fotso/',
 			'github' : 'https://github.com/DuragJay'
