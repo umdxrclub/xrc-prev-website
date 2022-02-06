@@ -113,117 +113,18 @@ module.exports = Object.freeze({
 	// fa_icon is flask for workshops, bullhorn for kickoffs, certificate for reality night, and users for social events
 	EVENTS_INFORMATION : [
 		{
-			'name' : 'Fall 2021 Kickoff Event',
-			'date' : new Date(2021, 8, 24),
+			'name' : 'Spring 2022 Kickoff Event + Lab Open House',
+			'date' : new Date(2022, 1, 11),
 			'time' : '5:00 PM',
-			'location' : 'ASY 2309',
-			'url' : 'https://terplink.umd.edu/event/7378882',
+			'location' : 'AVW 2460',
 			'fa_icon' : 'fa-bullhorn'
 		},
 		{
-			'name' : 'Setting Up Your XR Development Environment',
-			'date' : new Date(2021, 8, 28),
-			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'url' : 'https://terplink.umd.edu/event/7394361',
-			'fa_icon' : 'fa-flask'
-		},
-		{
-			'name' : 'RealityHacks Organizers Interest Meeting',
-			'date' : new Date(2021, 8, 29),
-			'time' : '6:30 PM',
-			'location' : 'SQH 1117',
-			'url' : 'https://terplink.umd.edu/event/7400679',
-			'fa_icon' : 'fa-info'
-		},
-		{
-			'name' : 'NASA SUITS Interest Meeting',
-			'date' : new Date(2021, 8, 30),
-			'time' : '6:30 PM',
-			'location' : 'MTH B0421',
-			'url' : 'https://terplink.umd.edu/event/7429767',
-			'fa_icon' : 'fa-info'
-		},
-		{
-			'name' : 'XR Lab Open House',
-			'date' : new Date(2021, 9, 1),
-			'time' : '5:00 PM',
-			'location' : 'AVW 4176',
-			'url' : 'https://terplink.umd.edu/event/7412922',
-			'fa_icon' : 'fa-users'
-		}, 
-		{
 			'name' : 'Introduction to Unity (Part I)',
-			'date' : new Date(2021, 9, 5),
+			'date' : new Date(2022, 1, 15),
 			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'url' : 'https://terplink.umd.edu/event/7466340',
+			'location' : 'Location TBD',
 			'fa_icon' : 'fa-flask'
-		},
-		{
-			'name' : 'Core Disruption Mini-Tournament',
-			'date' : new Date(2021, 9, 8),
-			'time' : '5:00 PM',
-			'location' : 'IRB 0110',
-			'url' : 'https://terplink.umd.edu/event/7482718',
-			'fa_icon' : 'fa-users'
-		}, 
-		{
-			'name' : 'Introduction to Unity (Part II)',
-			'date' : new Date(2021, 9, 12),
-			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'url' : 'https://terplink.umd.edu/event/7493914',
-			'fa_icon' : 'fa-flask'
-		},
-		{
-			'name' : 'Intro to VR Development (Part I)',
-			'date' : new Date(2021, 9, 19),
-			'time' : '6:30 PM',
-			'location' : 'ASY 3207',
-			'url' : 'https://terplink.umd.edu/event/7525971',
-			'fa_icon' : 'fa-flask'
-		}, 
-		{
-			'name' : 'Intro to VR Development (Part II)',
-			'date' : new Date(2021, 9, 26),
-			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'url' : 'https://terplink.umd.edu/event/7530118',
-			'fa_icon' : 'fa-flask'
-		}, 
-		{
-			'name' : 'Intro to AR Development (Part I - Sensing the Environment)',
-			'date' : new Date(2021, 10, 9),
-			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'url' : 'https://terplink.umd.edu/event/7595955',
-			'fa_icon' : 'fa-flask'
-		},
-		{
-			'name' : 'Gaming Night w/ I4C',
-			'date' : new Date(2021, 10, 11),
-			'time' : '5:00 PM',
-			'location' : 'IRB 1104 (DICE Lounge)',
-			'url' : 'https://terplink.umd.edu/event/7604034',
-			'fa_icon' : 'fa-users'
-		},
-		{
-			'name' : 'Intro to AR Development (Part II - Interactions and Realism)',
-			'date' : new Date(2021, 10, 16),
-			'time' : '6:30 PM',
-			'location' : 'JMZ 0220',
-			'fa_icon' : 'fa-flask'
-		},
-		{
-			'name' : 'Life of a Neuron Immersive Exhibition',
-			'date' : new Date(2021, 10, 19),
-			'time' : '5:00 PM',
-			'location' : 'ARTECHOUSE DC',
-			'url' : 'https://terplink.umd.edu/event/7578885',
-			'fa_icon' : 'fa-users'
-		},
-		
-		
+		}
 	],
 });
