@@ -63,7 +63,7 @@ function App() {
 			<div class="section white-text" style={{'background-image' : 'linear-gradient(#2d2d2d, #3d3d3d)'}}>
 				<div class="container">
 					<div class="container center">
-						<img src="xr_logo_white_small.png" style={{height : 135}}></img>
+						<img src="XR_Club_Logo_with_Outer_Circle.png" style={{height : 135}}></img>
 						<h4>Augmented and Virtual Reality Club</h4>
 						<h6>University of Maryland, College Park</h6>
 						<br/>
