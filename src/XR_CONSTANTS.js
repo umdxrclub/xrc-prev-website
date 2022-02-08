@@ -117,6 +117,7 @@ module.exports = Object.freeze({
 			'date' : new Date(2022, 1, 11),
 			'time' : '5:00 PM',
 			'location' : 'AVW 2460',
+			'url' : 'https://terplink.umd.edu/event/7868701',
 			'fa_icon' : 'fa-bullhorn'
 		},
 		{
