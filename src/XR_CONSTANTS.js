@@ -124,7 +124,7 @@ module.exports = Object.freeze({
 			'name' : 'Introduction to Unity (Part I)',
 			'date' : new Date(2022, 1, 15),
 			'time' : '6:30 PM',
-			'location' : 'Location TBD',
+			'location' : 'CSI 2117',
 			'fa_icon' : 'fa-flask'
 		}
 	],
