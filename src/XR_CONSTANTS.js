@@ -46,12 +46,6 @@ module.exports = Object.freeze({
 			'github' : 'https://github.com/andrewyuantw'
 		},
 		{
-			'name' : 'Rohan Bajpai',
-			'title' : 'Event Coordinator, Web Developer',
-			'linkedin' : 'https://www.linkedin.com/in/rohan-bajpai-20/',
-			'github' : 'https://github.com/rohannbajpai'
-		},
-		{
 			'name' : 'Justin Pratama',
 			'title' : 'Engagement Director, Mentor',
 			'linkedin' : 'https://www.linkedin.com/in/justin-pratama/'
@@ -89,6 +83,12 @@ module.exports = Object.freeze({
 			'title' : 'Graphic Designer',
 			'web' : 'https://mariortegajx.wixsite.com/marior',
 			'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
+		},
+		{
+			'name' : 'Rohan Bajpai',
+			'title' : 'Web Developer',
+			'linkedin' : 'https://www.linkedin.com/in/rohan-bajpai-20/',
+			'github' : 'https://github.com/rohannbajpai'
 		}
 	],
 	
