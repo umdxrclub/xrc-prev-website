@@ -125,7 +125,7 @@ module.exports = Object.freeze({
 			'date' : new Date(2022, 1, 15),
 			'time' : '6:30 PM',
 			'location' : 'CSI 2117',
-			'url' : 'https://terplink.umd.edu/event/7868701',
+			'url' : 'https://terplink.umd.edu/event/7877571',
 			'fa_icon' : 'fa-flask'
 		}
 	],
