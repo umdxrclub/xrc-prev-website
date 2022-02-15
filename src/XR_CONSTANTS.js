@@ -113,6 +113,14 @@ module.exports = Object.freeze({
 	// fa_icon is flask for workshops, bullhorn for kickoffs, certificate for reality night, and users for social events
 	EVENTS_INFORMATION : [
 		{
+			'name' : 'Spring 2022 Kickoff + Lab Open House',
+			'date' : new Date(2022, 1, 11),
+			'time' : '5:00 PM',
+			'location' : 'AVW 2460',
+			'url' : 'https://terplink.umd.edu/event/7868701',
+			'fa_icon' : 'fa-bullhorn'
+		},
+		{
 			'name' : 'Introduction to Unity (Part I)',
 			'date' : new Date(2022, 1, 15),
 			'time' : '6:30 PM',
@@ -126,7 +134,7 @@ module.exports = Object.freeze({
 			'time' : '5:00 PM',
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/7899939',
-			'fa_icon' : 'fa-bullhorn'
+			'fa_icon' : 'fa-users'
 		},
 		{
 			'name' : 'Introduction to Unity (Part II)',
@@ -142,9 +150,8 @@ module.exports = Object.freeze({
 			'time' : '5:00 PM',
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/7901068',
-			'fa_icon' : 'fa-bullhorn'
+			'fa_icon' : 'fa-gamepad'
 		}
-		
 		
 	],
 });
