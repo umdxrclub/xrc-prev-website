@@ -113,20 +113,38 @@ module.exports = Object.freeze({
 	// fa_icon is flask for workshops, bullhorn for kickoffs, certificate for reality night, and users for social events
 	EVENTS_INFORMATION : [
 		{
-			'name' : 'Spring 2022 Kickoff Event + Lab Open House',
-			'date' : new Date(2022, 1, 11),
-			'time' : '5:00 PM',
-			'location' : 'AVW 2460',
-			'url' : 'https://terplink.umd.edu/event/7868701',
-			'fa_icon' : 'fa-bullhorn'
-		},
-		{
 			'name' : 'Introduction to Unity (Part I)',
 			'date' : new Date(2022, 1, 15),
 			'time' : '6:30 PM',
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/7877571',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Brainstorm Night',
+			'date' : new Date(2022, 1, 18),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7899939',
+			'fa_icon' : 'fa-bullhorn'
+		},
+		{
+			'name' : 'Introduction to Unity (Part II)',
+			'date' : new Date(2022, 1, 22),
+			'time' : '6:30 PM',
+			'location' : 'CSI 2117',
+			'url' : 'https://terplink.umd.edu/event/7900002',
+			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Beat Saber Tournament',
+			'date' : new Date(2022, 1, 25),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7901068',
+			'fa_icon' : 'fa-bullhorn'
 		}
+		
+		
 	],
 });
