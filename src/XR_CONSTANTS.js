@@ -151,6 +151,14 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/7901068',
 			'fa_icon' : 'fa-gamepad'
+		},
+		{
+			'name' : 'Introduction to VR Development (Part I)',
+			'date' : new Date(2022, 2, 01),
+			'time' : '6:30 PM',
+			'location' : 'CSI 2117',
+			'url' : 'https://terplink.umd.edu/event/7949013',
+			'fa_icon' : 'fa-flask'
 		}
 		
 	],
