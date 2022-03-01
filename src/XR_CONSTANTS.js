@@ -83,12 +83,6 @@ module.exports = Object.freeze({
 			'title' : 'Graphic Designer',
 			'web' : 'https://mariortegajx.wixsite.com/marior',
 			'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
-		},
-		{
-			'name' : 'Rohan Bajpai',
-			'title' : 'Web Developer',
-			'linkedin' : 'https://www.linkedin.com/in/rohan-bajpai-20/',
-			'github' : 'https://github.com/rohannbajpai'
 		}
 	],
 	
@@ -160,6 +154,5 @@ module.exports = Object.freeze({
 			'url' : 'https://terplink.umd.edu/event/7949013',
 			'fa_icon' : 'fa-flask'
 		}
-		
 	],
 });
