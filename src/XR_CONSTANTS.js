@@ -153,6 +153,14 @@ module.exports = Object.freeze({
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/7949013',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Projects Kickoff Night',
+			'date' : new Date(2022, 2, 4),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7951664',
+			'fa_icon' : 'fa-users'
 		}
 	],
 });
