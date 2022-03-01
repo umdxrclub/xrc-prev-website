@@ -148,7 +148,7 @@ module.exports = Object.freeze({
 		},
 		{
 			'name' : 'Introduction to VR Development (Part I)',
-			'date' : new Date(2022, 2, 01),
+			'date' : new Date(2022, 2, 1),
 			'time' : '6:30 PM',
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/7949013',
