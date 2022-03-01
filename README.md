@@ -1,6 +1,6 @@
 # UMD XR Club Website
 
-https://www.umdxrclub.com/
+https://xr.umd.edu
 
 ## About
 
