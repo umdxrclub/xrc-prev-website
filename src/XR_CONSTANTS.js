@@ -169,6 +169,14 @@ module.exports = Object.freeze({
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/7970818',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Gaming Night',
+			'date' : new Date(2022, 2, 10),
+			'time' : '5:30 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7971682',
+			'fa_icon' : 'fa-gamepad'
 		}
 	],
 });
