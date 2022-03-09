@@ -182,7 +182,7 @@ module.exports = Object.freeze({
 			'name' : 'What CS Electives Should I Take? (An XR Students Perspective)',
 			'date' : new Date(2022, 2, 11),
 			'time' : '5:00 PM',
-			'location' : 'IRB 0110',
+			'location' : 'CSI 1121',
 			'url' : 'https://terplink.umd.edu/event/7974580',
 			'fa_icon' : 'fa-microphone'
 		}
