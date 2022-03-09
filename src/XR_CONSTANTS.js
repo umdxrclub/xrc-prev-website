@@ -177,6 +177,14 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/7971682',
 			'fa_icon' : 'fa-gamepad'
+		},
+		{
+			'name' : 'What CS Electives Should I Take? (An XR Students Perspective)',
+			'date' : new Date(2022, 2, 11),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/7974580',
+			'fa_icon' : 'fa-microphone'
 		}
 	],
 });
