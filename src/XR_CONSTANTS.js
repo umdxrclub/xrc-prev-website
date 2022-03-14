@@ -185,6 +185,14 @@ module.exports = Object.freeze({
 			'location' : 'CSI 1121',
 			'url' : 'https://terplink.umd.edu/event/7974580',
 			'fa_icon' : 'fa-microphone'
+		},
+		{
+			'name' : 'Intro to 3D Modeling with Blender',
+			'date' : new Date(2022, 2, 15),
+			'time' : '6:30 PM',
+			'location' : 'CSI 2117',
+			'url' : 'https://terplink.umd.edu/event/7985795',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
