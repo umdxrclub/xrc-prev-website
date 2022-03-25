@@ -193,6 +193,14 @@ module.exports = Object.freeze({
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/7985795',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Intro to AR Development (Part I - Sensing the Environment)',
+			'date' : new Date(2022, 2, 29),
+			'time' : '6:30 PM',
+			'location' : 'CSI 2117',
+			'url' : 'https://terplink.umd.edu/event/8010609',
+			'fa_icon' : 'fa-flask'
 		}
 	],
 });
