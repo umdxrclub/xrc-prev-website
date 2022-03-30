@@ -201,6 +201,15 @@ module.exports = Object.freeze({
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/8010609',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Experience Your World...with Holograms (ft. Microsoft HoloLens 2)',
+			'date' : new Date(2022, 3, 1),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/8026268',
+			'fa_icon' : 'fa-gamepad'
 		}
+		
 	],
 });
