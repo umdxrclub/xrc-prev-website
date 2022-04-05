@@ -209,6 +209,14 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/8026268',
 			'fa_icon' : 'fa-gamepad'
+		},
+		{
+			'name' : 'Intro to AR Development (Part II - Interactions and Realism)',
+			'date' : new Date(2022, 3, 5),
+			'time' : '6:30 PM',
+			'location' : 'CSI 2117',
+			'url' : 'https://terplink.umd.edu/event/8043933',
+			'fa_icon' : 'fa-flask'
 		}
 		
 	],
