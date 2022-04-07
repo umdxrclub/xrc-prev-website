@@ -217,6 +217,14 @@ module.exports = Object.freeze({
 			'location' : 'CSI 2117',
 			'url' : 'https://terplink.umd.edu/event/8043933',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Build Your Own XR Tracking System from Scratch',
+			'date' : new Date(2022, 3, 12),
+			'time' : '6:30 PM',
+			'location' : 'The Sandbox (IRB 1231)',
+			'url' : 'https://terplink.umd.edu/event/8049140',
+			'fa_icon' : 'fa-flask'
 		}
 		
 	],
