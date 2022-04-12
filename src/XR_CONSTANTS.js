@@ -55,10 +55,6 @@ module.exports = Object.freeze({
 			'title' : 'Lab Manager'
 		},
 		{
-			'name' : 'Kyuyoung Kim',
-			'title' : 'Mentor'
-		},
-		{
 			'name' : 'Damian Figueroa',
 			'title' : 'Mentor',
 			'github' : 'https://github.com/djfigs1'
