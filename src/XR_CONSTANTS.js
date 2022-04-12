@@ -225,6 +225,14 @@ module.exports = Object.freeze({
 			'location' : 'The Sandbox (IRB 1231)',
 			'url' : 'https://terplink.umd.edu/event/8049140',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Mario Kart AR Tournamen',
+			'date' : new Date(2022, 3, 15),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/8059509',
+			'fa_icon' : 'fa-gamepad'
 		}
 		
 	],
