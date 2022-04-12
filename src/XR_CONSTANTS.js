@@ -83,6 +83,11 @@ module.exports = Object.freeze({
 			'title' : 'Graphic Designer',
 			'web' : 'https://mariortegajx.wixsite.com/marior',
 			'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
+		},
+		{
+			'name' : 'Samson Mulugeta',
+			'title' : 'Event Coordinator',
+			'linkedin' : 'https://www.linkedin.com/in/samson02/'
 		}
 	],
 	
@@ -227,7 +232,7 @@ module.exports = Object.freeze({
 			'fa_icon' : 'fa-flask'
 		},
 		{
-			'name' : 'Mario Kart AR Tournamen',
+			'name' : 'Mario Kart AR Tournament',
 			'date' : new Date(2022, 3, 15),
 			'time' : '5:00 PM',
 			'location' : 'IRB 0110',
