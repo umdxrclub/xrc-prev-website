@@ -234,6 +234,22 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/8059509',
 			'fa_icon' : 'fa-gamepad'
+		},
+		{
+			'name' : 'Exploring the Oculus Presence Platform (The Building Block of the Metaverse)',
+			'date' : new Date(2022, 3, 19),
+			'time' : '6:30 PM',
+			'location' : 'AVW 3258',
+			'url' : 'https://terplink.umd.edu/event/8066865',
+			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Core Disruption Mini-Tournament',
+			'date' : new Date(2022, 3, 22),
+			'time' : '5:00 PM',
+			'location' : 'IRB 0110',
+			'url' : 'https://terplink.umd.edu/event/8074228',
+			'fa_icon' : 'fa-gamepad'
 		}
 		
 	],
