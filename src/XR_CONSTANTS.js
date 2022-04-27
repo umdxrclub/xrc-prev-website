@@ -250,7 +250,7 @@ module.exports = Object.freeze({
 			'location' : 'IRB 0110',
 			'url' : 'https://terplink.umd.edu/event/8074228',
 			'fa_icon' : 'fa-gamepad'
-		}
+		},
 		{
 			'name' : 'Introduction to the AR Cloud (Persistent and Multi-User AR)',
 			'date' : new Date(2022, 3, 26),
