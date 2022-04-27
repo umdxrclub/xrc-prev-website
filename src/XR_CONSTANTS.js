@@ -251,6 +251,14 @@ module.exports = Object.freeze({
 			'url' : 'https://terplink.umd.edu/event/8074228',
 			'fa_icon' : 'fa-gamepad'
 		}
+		{
+			'name' : 'Introduction to the AR Cloud (Persistent and Multi-User AR)',
+			'date' : new Date(2022, 3, 26),
+			'time' : '6:30 PM',
+			'location' : 'AVW 3258',
+			'url' : 'https://terplink.umd.edu/event/8080380',
+			'fa_icon' : 'fa-flask'
+		}
 		
 	],
 });
