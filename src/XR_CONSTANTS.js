@@ -258,7 +258,24 @@ module.exports = Object.freeze({
 			'location' : 'AVW 3258',
 			'url' : 'https://terplink.umd.edu/event/8080380',
 			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Where to Go From Here (Continue Exploring XR)',
+			'date' : new Date(2022, 4, 3),
+			'time' : '6:30 PM',
+			'location' : 'AVW 3258',
+			'url' : 'https://terplink.umd.edu/event/8089732',
+			'fa_icon' : 'fa-flask'
+		},
+		{
+			'name' : 'Reality Night (Spring 2022)',
+			'date' : new Date(2022, 4, 6),
+			'time' : '5:00 PM',
+			'location' : 'IRB Lobby',
+			'url' : 'https://terplink.umd.edu/event/8089730',
+			'fa_icon' : 'fa-gamepad'
 		}
+		
 		
 	],
 });
