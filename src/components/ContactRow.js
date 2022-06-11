@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import XR_CONSTANTS from './XR_CONSTANTS'
+import XR_CONSTANTS from '../XR_CONSTANTS'
 
 function ContactRow() {
 	return (

@@ -21,6 +21,9 @@ module.exports = Object.freeze({
 	' club is providing the campus community with educational resources in augmented and virtual reality development through' + 
 	' club events and hackathons.',
 
+	GET_INVOLVED_STR : 'Events are open to all UMD students. If you want to stay updated on our latest upcoming events, ' +
+	'make sure to join our Discord server and register as a club member on TerpLink for access to our weekly emails.',
+
 	// Information about members of the xr club leadership.
 	LEADERSHIP_INFORMATION : [
 		
