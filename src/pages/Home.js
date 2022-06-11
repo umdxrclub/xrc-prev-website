@@ -3,9 +3,11 @@
  */
 
 import '../App.css';
-import Navbar from '../components/Navbar.js';
+import Navbar from '../components/Navbar';
+import HomeActionCard from '../components/HomeActionCard';
 import React from 'react';
-import XR_CONSTANTS from '../XR_CONSTANTS';
+import {Link} from 'react-router-dom';
+import XR_CONSTANTS, { HOME_ACTION_CARDS } from '../XR_CONSTANTS';
 
 function Home() {
 
@@ -21,7 +23,7 @@ function Home() {
 
                 {/* Title */}
                 <div class="horizontal-flex-container">
-                    <img id="header-logo" src="images/XR_Club_Logo_with_Outer_Circle.png"/>
+                    <img id="header-logo" src="images/XR_Club_Logo_with_Outer_Circle.png" alt="XR Club Logo"/>
                     <div>
                         <img id="header-text" src="svg/header.svg" alt="EXTENDED REALITY CLUB"/>
                         <h3>UNIVERSITY OF MARYLAND,<br></br>COLLEGE PARK</h3>
@@ -34,7 +36,7 @@ function Home() {
             <div id="home-about" class="section">
 
                 <div class="background-image-relative">
-                    <img id="home-headset-img" src="images/headset.png"/>
+                    <img id="home-headset-img" src="images/headset.png" alt="Virtual reality headset" title="Photo by Remy Gieling on Unsplash"/>
                 </div>
                 <div class="vertical-flexbox-container">
                     <h2>ABOUT</h2>
@@ -57,26 +59,14 @@ function Home() {
                     <h2 className="text-align-right">EVENTS</h2>
                 </div>
                 <div className="padding-small horizontal-flex-container flex-even">
-                    <div class="card pink-glass">
-                        <img className="card-icon" src="svg/lab-icon.svg"/>
-                        <p className="card-header">WORKSHOPS</p>
-                        <p className="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div className="button card-action-button white bg-cool-red">EXPLORE</div>
-                    </div>
-                    <div class="card purple-glass">
-                        <img className="card-icon" src="svg/game-icon.svg"/>
-                        <p className="card-header">GAME NIGHTS</p>
-                        <p className="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div className="button card-action-button white bg-purple">PLAY</div>
-                    </div>
-                    <div class="card pink-glass">
-                        <img className="card-icon" src="svg/build-icon.svg"/>
-                        <p className="card-header">PROJECTS</p>
-                        <p className="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div className="button card-action-button white bg-cool-red">CONTRIBUTE</div>
-                    </div>
+                    {
+                        XR_CONSTANTS.HOME_ACTION_CARDS.map(action_card => {
+                            return <HomeActionCard id={HOME_ACTION_CARDS.indexOf(action_card)}
+                                {...action_card}></HomeActionCard>
+                        })
+                    }
                 </div>
-                <div className="button big white text-outline bg-black">UPCOMING EVENTS</div>
+                <Link to="/events" className="button big white text-outline bg-black">UPCOMING EVENTS</Link>
             </div>
 
         </div>

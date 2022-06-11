@@ -55,13 +55,14 @@ h3 {
     font-family: var(--font-secondary);
     font-size: 2em;
     filter: drop-shadow(0 2px 1px var(--xr-red));
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h4 {
     font-family: var(--font-primary);
     font-size: 2em;
     font-weight: bold;
-    margin-bottom: 0;
     line-height: 0.25em;
 }
 
@@ -105,6 +106,21 @@ a {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.halfpage-banner {
+    height: 60vh;
+    background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;
+}
+
+.subpage-header {
+    height: 12vh;
+    margin: 5vh auto;
+    display: block;
+}
+
+.halfpage-banner p {
+    text-align: center;
 }
 
 
@@ -173,6 +189,7 @@ a {
     float: center;
     margin: 8vh auto;
     padding: 4vh 4vh;
+    display: block;
 }
 
 .button.transparent {
@@ -199,7 +216,7 @@ a {
     background-color: var(--text-color);
 }
 
-.button.bg-cool-red:hover {
+.button.bg-red:hover {
     color: var(--xr-cool-red);
 }
 
@@ -268,14 +285,14 @@ nav {
     border-radius: 40px;
     align-content: center;
     align-items: center;
-    flex: 1;
     margin-left: 2vw;
     margin-right: 2vw;
-    position: relative;
     hyphens: auto;
+    display: flexbox;
+    flex-direction: column;
 }
 
-.pink-glass {
+.red-glass {
     border: 3px solid var(--xr-cool-red);
     background: transparent radial-gradient(farthest-corner at 19% 26%, var(--background-color) 0%, var(--xr-purple) 50%, var(--xr-red) 100%);
 }
@@ -309,9 +326,17 @@ nav {
     margin-right: 4vw;
 }
 
+.card-button-container {
+    margin-top: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: vertical;
+    justify-content: flex-end;
+}
+
 .card-action-button {
     float: center;
-    margin: 2vh auto;
+    margin: 0 auto;
     color: var(--text-color);
     border: 3px solid var(--text-color);
     border-radius: 30px;
@@ -338,6 +363,7 @@ nav {
 
 #header-text {
     width: 50vw;
+    margin-bottom: 4vh;
 }
 
 #home-about {

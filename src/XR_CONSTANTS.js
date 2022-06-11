@@ -14,15 +14,58 @@ module.exports = Object.freeze({
 	LINKEDIN_STR: 'https://www.linkedin.com/groups/8981512/',
 	FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
 	TWITTER_STR : 'https://twitter.com/umdxrclub/',
+	INSTAGRAM_STR : 'https://instagram.com/umdxrclub/',
 
-	ABOUT_US_STR : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
+	LAB_ADDRESS : [
+		'4176 A.V. Williams',
+		'8223 Paint Branch Dr',
+		'College Park, MD 20740'
+	],
+
+	ABOUT_US_STR : 'XR Club is a student organization at the University of Maryland, College Park that focuses on immersive' + 
+		' technologies, like virtual reality (VR), augmented reality (AR), and mixed reality (MR). We provide students with' + 
+		' resources and opportunities to explore XR through hands-on tutorials, projects, hackathons, game nights, open lab' +
+		' hours, mentor office hours, and more!',
+
+	ABOUT_STR_OLD : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
 	' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
 	' cutting-edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the' +
 	' club is providing the campus community with educational resources in augmented and virtual reality development through' + 
 	' club events and hackathons.',
 
+	PAGE_DESCRIPTIONS : {
+		ABOUT : 'We are the University of Maryland\'s Extended Reality (XR) Club.',
+		EVENTS : 'Join us to learn about XR development and get hands-on experience with immersive technology.',
+		PROJECTS : 'Check out some projects by current and past members of the club.',
+
+	},
+
 	GET_INVOLVED_STR : 'Events are open to all UMD students. If you want to stay updated on our latest upcoming events, ' +
 	'make sure to join our Discord server and register as a club member on TerpLink for access to our weekly emails.',
+
+	HOME_ACTION_CARDS : [
+		{
+			'title' : 'WORKSHOPS',
+			'icon' : 'svg/lab-icon.svg',
+			'description': 'Learn about XR technologies and techniques such as AR/VR development, 3D modeling, Unity, and Oculus from fellow XR Club members.',
+			'action' : 'EXPLORE',
+			'link' : '/events'
+		},
+		{
+			'title' : 'GAME NIGHTS',
+			'icon' : 'svg/game-icon.svg',
+			'description': 'Gain hands-on experience with XR equipment and meet other XR Club members while trying your hand at immersive games.',
+			'action' : 'PLAY',
+			'link' : '/events',
+		},
+		{
+			'title' : 'PROJECTS',
+			'icon' : 'svg/build-icon.svg',
+			'description': 'Collaborate with peers to build personal projects, immersive exhibitions, and submissions for external XR challenges.',
+			'action' : 'CONTRIBUTE',
+			'link' : '/projects',
+		}
+	],
 
 	// Information about members of the xr club leadership.
 	LEADERSHIP_INFORMATION : [

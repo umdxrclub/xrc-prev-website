@@ -4,17 +4,18 @@
 import './App.css';
 import React from 'react';
 import Home from './pages/Home';
+import About from './pages/About';
+import Events from './pages/Events';
+import Projects from './pages/Projects';
+import Lab from './pages/Lab';
+import ScrollToTop from './ScrollToTop';
 import Footer from './components/Footer'
-import PersonCard from './components/PersonCard';
-import ProjectCard from './components/ProjectCard';
-import ContactRow from './components/ContactRow';
-import DateEventList from './components/DateEventList';
-import FlashItem from './components/FlashItem';
 import XR_CONSTANTS from './XR_CONSTANTS'
 import {
 	BrowserRouter as Router,
 	Routes,
 	Route,
+	Navigate
   } from "react-router-dom";
 
 function App() {
@@ -53,8 +54,13 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
+				<ScrollToTop/>
 				<Routes>
 					<Route path="/" element={<Home/>}/>
+					<Route path="/about" element={<About/>}/>
+					<Route path="/events" element={<Events/>}/>
+					<Route path="/lab" element={<Lab/>}/>
+					<Route path="/projects" element={<Projects/>}/>
 				</Routes>
 				<Footer/>
 			</Router>
