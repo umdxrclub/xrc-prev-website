@@ -35,26 +35,11 @@ function App() {
 		}
 	}
 
-	// Function for getting a day string the way I previously hardcoded it
-	var getNiceDayDateString = function(date) {
-		var str = date.toLocaleDateString('en-US', {weekday : 'long', month : 'long', day : 'numeric'});
-		str += getDateSuffix(parseInt(str.match(/\d+$/g).sort((a,b) => b.length-a.length)[0])) + ', ' + (date.getYear() + 1900);
-		return str;
-	}
-
-	// Group events by date
-	var events_by_date = {};
-	XR_CONSTANTS.EVENTS_INFORMATION.forEach(event => {
-		if (events_by_date[event.date.valueOf()] == null) {
-			events_by_date[event.date.valueOf()] = [];
-		}
-		events_by_date[event.date.valueOf()].push(event);
-	});
-
 	return (
 		<div className="App">
 			<Router>
 				<ScrollToTop/>
+				<a id="top"/>
 				<Routes>
 					<Route path="/" element={<Home/>}/>
 					<Route path="/about" element={<About/>}/>

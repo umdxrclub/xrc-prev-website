@@ -5,34 +5,41 @@
 import React from 'react';
 
 function PersonCard(props) {
+
+	/* Alternate card colors */
+	const color = (props.id % 2 == 0) ? "red" : "purple";
+
+	const image = (props.image != undefined && props.image != "") ? "images/members/" + props.image : "images/XR_Club_Logo_with_Outer_Circle.png";
+
 	return (
-		<div class="card z-depth-3">
-			<div class="card-content" style={{'height' : '135px'}}>
-				<span class="card-title center">{props.name}</span>
-				<p class="center">{props.title}</p>
-			</div>
-			<div class="card-action" style={{'overflow' : 'hidden', 'white-space' : 'nowrap'}}>
+		<div className={`card member-card ${color}-glass`}>
+			<img className="card-profile" src={image}/>
+			<div className="card-header">{props.name.toUpperCase()}</div>
+			<p className="person-title">{props.title}</p>
+			<div id="card-icon-links">
 				{
-					// If there are no additional items, put an invisible icon to give the right height
-					Object.keys(props).length === 2 ? <i style={{opacity : 0}} class="fab fa-linkedin small grey-text text-darken-3"></i> : null
+					props.linkedin ? <a href={props.linkedin} target="_blank" rel="noopener noreferrer"><img src="svg/linkedin.svg"/></a> : null
 				}
 				{
-					props.linkedin ? <a href={props.linkedin} target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin small grey-text text-darken-3"></i></a> : null
+					props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><img src="svg/github.svg"/></a> : null
 				}
 				{
-					props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github small grey-text text-darken-3"></i></a> : null
+					props.web ? <a href={props.web} target="_blank" rel="noopener noreferrer"><img src="svg/web.svg"/></a> : null
 				}
 				{
-					props.web ? <a href={props.web} target="_blank" rel="noopener noreferrer"><i class="far fa-window-maximize small grey-text text-darken-3"></i></a> : null
+					props.web2 ? <a href={props.web2} target="_blank" rel="noopener noreferrer"><img src="svg/web.svg"/></a> : null
 				}
 				{
-					props.web2 ? <a href={props.web2} target="_blank" rel="noopener noreferrer"><i class="far fa-window-maximize small grey-text text-darken-3"></i></a> : null
+					props.mail ? <a href={props.mail} target="_blank" rel="noopener noreferrer"><img src="svg/email.svg"/></a> : null
 				}
 				{
-					props.mail ? <a href={props.mail} target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope small grey-text text-darken-3"></i></a> : null
+					props.twitter ? <a href={props.twitter} target="_blank" rel="noopener noreferrer"><img src="svg/twitter.svg"/></a> : null
 				}
 				{
-					props.twitter ? <a href={props.twitter} target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square small grey-text text-darken-3"></i></a> : null
+					props.instagram ? <a href={props.instagram} target="_blank" rel="noopener noreferrer"><img src="svg/instagram.svg"/></a> : null
+				}
+				{
+					props.facebook ? <a href={props.facebook} target="_blank" rel="noopener noreferrer"><img src="svg/facebook.svg"/></a> : null
 				}
 			</div>
 		</div>

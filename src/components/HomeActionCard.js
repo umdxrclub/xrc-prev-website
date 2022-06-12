@@ -7,7 +7,7 @@ function HomeActionCard(props) {
   const color = (props.id % 2 == 0) ? "red" : "purple";
 
   return (
-    <div className={`card ${color}-glass`}>
+    <div className={`card action ${color}-glass`}>
         <img className="card-icon" src={props.icon}/>
         <p className="card-header">{props.title}</p>
         <p className="text-align-center">{props.description}</p>

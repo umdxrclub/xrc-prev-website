@@ -4,8 +4,9 @@
 
 import '../App.css';
 import React from 'react';
-import XR_CONSTANTS from '../XR_CONSTANTS';
+import { FOOTER } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer () {
 
@@ -27,15 +28,16 @@ function Footer () {
                         
                         {/* Discord and TerpLink */}
                         <div id="join-links">
-                            <a href={XR_CONSTANTS.TERPLINK_STR} target="_blank" className="underline">
+                            <a href={FOOTER.TERPLINK_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                 <img src="svg/link.svg"/> Join our TerpLink
                             </a>
-                            <a href={XR_CONSTANTS.DISCORD_STR} target="_blank" className="underline">
+                            <a href={FOOTER.DISCORD_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                <img src="svg/discord.svg"/> Join our Discord
                             </a>
                         </div>
                     </div>
-                    <p id="get-involved-str">{XR_CONSTANTS.GET_INVOLVED_STR}</p>
+                    <p id="get-involved-str">{FOOTER.GET_INVOLVED_STR}</p>
+                    <HashLink to="#top" id="back-to-top">↑ Back to top</HashLink>
                 </div>
 
                 {/* Website footer */}
@@ -47,19 +49,19 @@ function Footer () {
 
                         {/* Social media links */}
                         <div id="social-icons" class="horizontal-flex-container flex-even">
-                            <a href={XR_CONSTANTS.INSTAGRAM_STR} target="_blank">
+                            <a href={FOOTER.INSTAGRAM_STR} target="_blank">
                                 <img src="svg/instagram.svg"/>
                             </a>
-                            <a href={XR_CONSTANTS.TWITTER_STR} target="_blank">
+                            <a href={FOOTER.TWITTER_STR} target="_blank" rel="noopener noreferrer">
                                 <img src="svg/twitter.svg"/>
                             </a>
-                            <a href={XR_CONSTANTS.FACEBOOK_STR} target="_blank">
+                            <a href={FOOTER.FACEBOOK_STR} target="_blank" rel="noopener noreferrer">
                                 <img src="svg/facebook.svg"/>
                             </a>
-                            <a href={XR_CONSTANTS.LINKEDIN_STR} target="_blank">
+                            <a href={FOOTER.LINKEDIN_STR} target="_blank" rel="noopener noreferrer">
                                 <img src="svg/linkedin.svg"/>
                             </a>
-                            <a href={XR_CONSTANTS.EMAIL_STR} target="_blank">
+                            <a href={FOOTER.EMAIL_STR} target="_blank" rel="noopener noreferrer">
                                 <img src="svg/email.svg"/>
                             </a>
                         </div>
@@ -76,9 +78,9 @@ function Footer () {
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
                         <Link to="/events/" className="footer-link underline">Events</Link>
-                        <a href={XR_CONSTANTS.TERPLINK_STR} target="_blank" 
+                        <a href={FOOTER.TERPLINK_STR} target="_blank" 
                             className="footer-link underline">TerpLink</a>
-                        <a href={XR_CONSTANTS.DISCORD_STR} target="_blank" 
+                        <a href={FOOTER.DISCORD_STR} target="_blank" 
                             className="footer-link underline">Discord</a>
                     </div>
                 </div>

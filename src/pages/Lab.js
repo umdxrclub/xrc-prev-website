@@ -5,7 +5,7 @@
 import '../App.css';
 import React from 'react';
 import Navbar from '../components/Navbar';
-import XR_CONSTANTS from '../XR_CONSTANTS';
+import {LAB_PAGE} from '../XR_CONSTANTS';
 
 function Lab() {
 
@@ -13,7 +13,7 @@ function Lab() {
 
     return (
         
-        <div id="Page">
+        <div id="Lab">
 
             {/* Header */}
             <div id="header">
@@ -30,7 +30,7 @@ function Lab() {
                     <div>
                         <img id="header-text" src={`svg/lab-${status}.svg`} alt={`Our lab is currently ${status}`}/>
                         {
-                            XR_CONSTANTS.LAB_ADDRESS.map(line => {
+                            LAB_PAGE.LAB_ADDRESS.map(line => {
                                 return <h3>{line}</h3>
                             })
                         }
@@ -39,7 +39,16 @@ function Lab() {
 
             </div>
 
-            <div class="section"></div>
+            <div id="lab-description" class="padding-wide horizontal-flex-container">
+                <h2 id="lab-heading">THE XR LAB</h2>
+                <div id="lab-description-text">
+                    {
+                        LAB_PAGE.DESCRIPTION.map(paragraph => {
+                            return <p>{paragraph}</p>
+                        })
+                    }
+                </div>
+            </div>
 
         </div>
 
