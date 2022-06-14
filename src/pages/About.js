@@ -16,9 +16,9 @@ function About() {
             <HalfBanner pageName="About Us" headerImage="about" subheading={ABOUT_PAGE.DESCRIPTION}/>
 
             {/* Introduction + Photo */}
-            <div class="section padding-medium">
+            <div className="section padding-medium">
                 <p>{ABOUT_PAGE.INTRO_PARAGRAPH}</p>
-                <div class="spacer"></div>
+                <div className="spacer"></div>
                 <img src="images/group.png"></img>
             </div>
 
@@ -26,7 +26,7 @@ function About() {
 
             {/* Leadership Cards */}
             <h2 className="padding-wide">LEADERSHIP</h2>
-            <div class="section horizontal-flex-container">
+            <div className="section horizontal-flex-container">
                 {
                     ABOUT_PAGE.LEADERSHIP_INFORMATION.map(person => {
                         return <PersonCard id={ABOUT_PAGE.LEADERSHIP_INFORMATION.indexOf(person)}{...person}></PersonCard>

@@ -1,5 +1,5 @@
 /**
- * Template component definition for a new page.
+ * Definition of the component to render the lab page of the website.
  */
 
 import '../App.css';
@@ -17,13 +17,13 @@ function Lab() {
 
             {/* Header */}
             <div id="header">
-                <img class="background-svg" src="svg/header-background.svg"/>
+                <img className="background-svg" src="svg/header-background.svg"/>
 
                 {/* Nav bar */}
                 <Navbar />
 
                 {/* Title */}
-                <div class="horizontal-flex-container">
+                <div className="horizontal-flex-container">
 
                     {/* TODO: Replace with original image or image that we have the right to use */}
                     <img id="header-logo" src="images/av-williams.png" alt="A.V. Williams Building"/>
@@ -39,7 +39,7 @@ function Lab() {
 
             </div>
 
-            <div id="lab-description" class="padding-wide horizontal-flex-container">
+            <div id="lab-description" className="padding-wide horizontal-flex-container">
                 <h2 id="lab-heading">THE XR LAB</h2>
                 <div id="lab-description-text">
                     {

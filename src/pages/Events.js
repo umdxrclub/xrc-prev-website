@@ -47,7 +47,7 @@ function Events() {
     
             <HalfBanner pageName="Events" headerImage="events" subheading={EVENT_PAGE.DESCRIPTION}/>
 
-            <div class="section padding-small">
+            <div className="section padding-small">
 
                 <h2 className="text-align-right padding-small">UPCOMING EVENTS</h2>
                 <div className="event-container">
@@ -71,9 +71,9 @@ function Events() {
                 </a>
                 */}
 
-                <div class="spacer"></div>
+                <div className="spacer"></div>
                 <h2 className="padding-small">PAST EVENTS</h2>
-                <div class="event-container">
+                <div className="event-container">
                     {
                         (past.length == 0) ? <p className="event-caption">No events recorded this semester.</p> : past.map(ev => {
                             return <EventCard color="purple"{...ev} />

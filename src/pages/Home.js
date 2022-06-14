@@ -11,6 +11,17 @@ import { HOME_PAGE } from '../XR_CONSTANTS';
 
 function Home() {
 
+    React.useEffect(() => {
+      const anchor = window.location.hash.slice(1);
+      if (anchor) {
+          const anchorEl = document.getElementById(anchor);
+          if (anchorEl) {
+              anchorEl.scrollIntoView();
+          }
+      }
+    }, []);
+
+
     return (
         <div id="Home">
 
@@ -49,9 +60,7 @@ function Home() {
             </div>
 
             {/* Video */}
-            <div className="section">
-                <iframe title="XR Terrestrial Video" src="https://player.vimeo.com/video/379079878?title=0&portrait=0" id="video"/>
-            </div>
+            <iframe title="XR Terrestrial Video" src="https://player.vimeo.com/video/379079878?title=0&portrait=0" id="video"/>
             <script src="https://player.vimeo.com/api/player.js"></script>
 
             {/* Events */}

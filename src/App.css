@@ -46,6 +46,8 @@ body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     font-weight: normal;
+    overflow-x: hidden;
+    position: relative;
 }
 
 img {
@@ -79,7 +81,16 @@ h4 {
     font-family: var(--font-primary);
     font-size: 2em;
     font-weight: bold;
-    line-height: 0.25em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+h5 {
+    font-family: var(--font-primary);
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--xr-cool-red);
+    margin-bottom: 2vh;
 }
 
 p {
@@ -140,6 +151,7 @@ p a:hover {
     height: 60vh;
     background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;
     margin-bottom: 4vw;
+    transition: 0.3s;
 }
 
 .subpage-header {
@@ -152,6 +164,8 @@ p a:hover {
 
 .halfpage-banner p {
     text-align: center;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
 
@@ -171,6 +185,10 @@ p a:hover {
 .vertical-flex-container {
     display: flex;
     flex-direction: vertical;
+}
+
+.flex-right {
+    flex-direction: row-reverse;
 }
 
 .background-image-relative {
@@ -202,6 +220,7 @@ p a:hover {
 /* ================ Buttons ================ */
 
 .button {
+    display: table;
     border-radius: 33px;
     padding: 2vh 8vh;
     font-family: var(--font-secondary);
@@ -266,6 +285,7 @@ p a:hover {
 }
 
 /* ================ Navbar ================ */
+
 nav {
     padding-top: 8vh;
     padding-bottom: 8vh;
@@ -275,6 +295,7 @@ nav {
     color: var(--text-color);
     justify-content: flex-end;
     font-size: 1.5em;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -313,6 +334,10 @@ nav {
     background: radial-gradient(circle, rgba(255, 255, 255, 100) 12%, rgba(0,0,0,0) 100%);
     background-color: var(--text-color);
     color: var(--xr-cool-red);
+}
+
+#menu-checkbox {
+    display: none;
 }
 
 /* ================ Cards ================ */
@@ -365,6 +390,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 6vh;
+    margin-bottom: 3vh;
     align-self: center;
     display: block;
 }
@@ -537,6 +563,34 @@ nav {
     width: 60%;
 }
 
+/* ================ Projects ================ */
+
+.challenge-container {
+    margin-bottom: 8vh;
+}
+
+.project-logo {
+    margin-left: auto;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    align-self: center;
+}
+
+.project-info {
+    width: 40vw;
+    margin-left: auto;
+}
+
+.button-float-right {
+    float: right;
+    margin-left: auto;
+}
+
+.project-card {
+    width: 43% !important;
+}
+
 /* ================ Footer ================ */
 
 #Footer {
@@ -611,13 +665,23 @@ nav {
     width: 12vw;
     height: 12vw;
     margin-right: 4vw;
+    vertical-align: middle;
+    align-self: center;
 }
 
-#social-icons {
+#social-icons-1 {
+    display: flex;
+}
+
+#social-icons-2 {
+    display: none;
+}
+
+.social-icons {
     justify-content: flex-start;
 }
 
-#social-icons img {
+.social-icons img {
     width: 4vh;
     height: 4vh;
     object-fit: unset;
@@ -625,9 +689,9 @@ nav {
 }
 
 #footer-info {
-    vertical-align: top;
-    margin-bottom: auto;
+    vertical-align: text-top;
     margin-right: auto;
+    align-self: center;
 }
 
 #footer-pages {
@@ -650,4 +714,248 @@ nav {
     padding-bottom: 10vh;
     text-align: center;
     margin-bottom: 0;
+}
+
+/****************************************************** MOBILE ****************************************************************/
+
+@media (max-width:800px) { 
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    .subpage-header {
+        width: 90%;
+        object-fit: contain; 
+        transition: 0.3s;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    .button {
+        word-wrap: normal;
+        white-space: normal;
+    }
+
+    .button.big {
+        width: 70vw;
+    }
+
+    #navbar {
+        visibility: hidden;
+        opacity: 0;
+        justify-content: flex-start;
+        margin-top: -40vh;
+        margin-left: 10vw;
+        transition: 0.3s;
+    }
+
+    .nav-wrapper a {
+        display: table;
+        margin-bottom: 2vh;
+    }
+
+    /* ================ Header ================ */
+
+    #header-logo {
+        width: 30vh;
+        height: 30vh;
+        object-fit: contain;
+        margin-left: 0;
+        margin-left: 8vw;
+    }
+
+    #header .horizontal-flex-container {
+        justify-content: flex-start;
+    }
+
+    #header-text {
+        width: 80vw;
+        margin-top: 4vh;
+        margin-left: 8vw;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-left: 8vw;
+    }
+
+    /* ================ Home ================ */
+
+    #home-headset-img {
+        position: static;
+        height: 40vh;
+    }
+
+    #home-about {
+        margin-top: 40vh;
+        width: 70vw;
+    }
+
+    #home-about .background-image-relative {
+        float: right;
+        margin-left: auto;
+        margin-bottom: 10vh;
+    }
+
+    #home-events {
+        margin-top: 0;
+    }
+
+    /* ================ Lab ================ */
+
+    #lab-heading {
+        margin-top: 40vh;
+        width: 100%;
+    }
+
+    #lab-description-text {
+        width: 100%;
+    }
+
+    /* ================ Projects ================ */
+
+    .project-logo {
+        width: 100%;
+        height: 30vh;
+        object-fit: contain;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-info .button {
+        float: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ================ Footer ================ */
+
+    #get-involved-img {
+        width: 100%;
+        margin-bottom: 8vh;
+    }
+
+    #join-links {
+        margin-left: 0;
+    }
+
+    #get-involved-str {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    #footer-logo {
+        width: 35%;
+        height: 20vh;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer-pages {
+        margin-top: 4vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer-community {
+        margin-top: 4vh;
+    }
+
+    #footer-info {
+        margin-left: 5%;
+        width: 50%;
+    }
+
+    #social-icons-1 {
+        display: none;
+    }
+
+    #social-icons-2 {
+        display: flex;
+        margin-top: 8vh;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #social-icons-2 img {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    #copyright {
+        margin-top: 0;
+        padding-top: 4vh;
+    }
+
+    /* ================ Collapsing Menu ================ */
+    /* Credit: Himalaya Singh (FreeFrontend) */
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    label {
+        padding-left: 2vh;
+        padding-top: 2vh;
+        position: static;
+        display: block;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    label div {
+        position: relative;
+        top: 0;
+        height: 8px;
+        background-color: #fff;
+        margin-bottom: 8px;
+        transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+            0.3s ease right, 0.2s ease opacity;
+        border-radius: 2px;
+    }
+
+    label div:first-child {
+        transform-origin: 0;
+    }
+
+    label div:last-child {
+        margin-bottom: 0;
+        transform-origin: 0px;
+    }
+
+    label div:nth-child(2) {
+        right: 0;
+        width: 60px;
+    }
+
+    #menu-checkbox:checked + label:before {
+        background-color: #4caf50;
+    }
+
+    #menu-checkbox:checked + label div:first-child {
+        top: -4px;
+        transform: rotateZ(45deg);
+    }
+
+    #menu-checkbox:checked + label div:last-child {
+        top: 4px;
+        transform: rotateZ(-45deg);
+    }
+
+    #menu-checkbox:checked + label div:nth-child(2) {
+        width: 60px;
+        top: 0;
+        right: 10px;
+        transform: rotateZ(-45deg);
+    }
+
+
 }

@@ -6,20 +6,18 @@ import React from 'react';
 
 function ProjectCard(props) {
 	return (
-		<div class={"card z-depth-3" + (props.image_is_vertical ? ' horizontal' : '')}>
-			<div class="card-image">
-				<img src={props.image}></img>
-			</div>
-			<div class="card-stacked">
-				<div class="card-content">
-					<span class="card-title center">{props.name}</span>
-					<p class="center"><i>"{props.description}"</i></p>
-				</div>
-				<div class="card-action">
-					{
-						props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><i class="fab fa-github small grey-text text-darken-3"></i></a> : null
-					}
-				</div>
+		<div className="card project-card purple-glass">
+			<img className="card-header-image" src={`images/projects/${props.image}`}/>
+			<div className="spacer"></div>
+			<div className="card-header">{props.name.toUpperCase()}</div>
+			<p className="text-align-center">{props.description}</p>
+			<div id="card-icon-links">
+				{
+					props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><img src="svg/github.svg"/></a> : null
+				}
+				{
+					props.web ? <a href={props.web} target="_blank" rel="noopener noreferrer"><img src="svg/web.svg"/></a> : null
+				}
 			</div>
 		</div>
 	);

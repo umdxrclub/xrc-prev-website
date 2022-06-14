@@ -1,9 +1,10 @@
 /**
- * Definition of the Footer component.
+ * Definition of the Footer component, which contains contact information and a list of pages on the website.
  */
 
 import '../App.css';
 import React from 'react';
+import SocialLinks from '../components/SocialLinks';
 import { FOOTER } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -16,14 +17,14 @@ function Footer () {
 
     return (
         <div id="Footer">
-            <img class="background-svg" src="svg/footer-background.svg"/>
+            <img className="background-svg" src="svg/footer-background.svg"/>
 
-            <div class="section">
+            <div className="section">
 
                 {/* Get Involved */}
                 <a id="get-involved"/>
                 <div id="footer-section-1">
-                    <div class="horizontal-flex-container">
+                    <div className="horizontal-flex-container">
                         <img id="get-involved-img" src="svg/get-involved.svg"/>
                         
                         {/* Discord and TerpLink */}
@@ -41,30 +42,15 @@ function Footer () {
                 </div>
 
                 {/* Website footer */}
-                <div id="footer-section-2" class="horizontal-flex-container">
+                <div id="footer-section-2" className="horizontal-flex-container">
                     <img id="footer-logo" src="images/XR_Club_Logo_with_Outer_Circle.png"/>
                     <div id="footer-info">
                         <h4>XR Club</h4>
                         <p>University of Maryland, College Park</p>
 
-                        {/* Social media links */}
-                        <div id="social-icons" class="horizontal-flex-container flex-even">
-                            <a href={FOOTER.INSTAGRAM_STR} target="_blank">
-                                <img src="svg/instagram.svg"/>
-                            </a>
-                            <a href={FOOTER.TWITTER_STR} target="_blank" rel="noopener noreferrer">
-                                <img src="svg/twitter.svg"/>
-                            </a>
-                            <a href={FOOTER.FACEBOOK_STR} target="_blank" rel="noopener noreferrer">
-                                <img src="svg/facebook.svg"/>
-                            </a>
-                            <a href={FOOTER.LINKEDIN_STR} target="_blank" rel="noopener noreferrer">
-                                <img src="svg/linkedin.svg"/>
-                            </a>
-                            <a href={FOOTER.EMAIL_STR} target="_blank" rel="noopener noreferrer">
-                                <img src="svg/email.svg"/>
-                            </a>
-                        </div>
+                        {/* Hidden in mobile view */}
+                        <SocialLinks id="social-icons-1"></SocialLinks>
+
                     </div>
 
                     {/* Page List */}
@@ -85,6 +71,8 @@ function Footer () {
                     </div>
                 </div>
 
+                {/* Hidden in desktop view */}
+                <SocialLinks id="social-icons-2"></SocialLinks>
                 <p id="copyright">© {getCurrentYear()} XR Club, College Park, MD</p>
             </div>
         </div>

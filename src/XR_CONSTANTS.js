@@ -7,9 +7,6 @@
 
 module.exports = Object.freeze({
 	
-	FLASH_ITEMS : [
-	],
-
 	FOOTER : {
 
 		TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club/',
@@ -58,7 +55,6 @@ module.exports = Object.freeze({
 		],
 
 	},
-
 
 	ABOUT_PAGE : {
 
@@ -116,22 +112,6 @@ module.exports = Object.freeze({
 				'linkedin' : 'https://www.linkedin.com/in/tejas-chandakkar-88498a215/'
 			},
 			{
-				'name' : 'Marilyn Ortega',
-				'title' : 'Graphic Design Lead',
-				'web' : 'https://mariortegajx.wixsite.com/marior',
-				'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
-			},
-			{
-				'name' : 'Samson Mulugeta',
-				'title' : 'Event Coordinator',
-				'linkedin' : 'https://www.linkedin.com/in/samson02/'
-			},
-			{
-				'name' : 'Sahithi Jarugula',
-				'title' : 'Marketing Director',
-				'linkedin' : 'https://www.linkedin.com/in/sahithi-jarugula-9aa0b2222',
-			},
-			{
 				'name' : 'Abhinav Garlapati',
 				'title' : 'Mentor',
 				'linkedin' : 'https://www.linkedin.com/in/abhinav-garlapati-18yrs/',
@@ -142,9 +122,25 @@ module.exports = Object.freeze({
 				'github' : 'https://github.com/DukeOfHounds',
 			},
 			{
+				'name' : 'Marilyn Ortega',
+				'title' : 'Graphic Design Lead',
+				'web' : 'https://mariortegajx.wixsite.com/marior',
+				'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
+			},
+			{
 				'name' : 'Elaine Gao',
 				'title' : 'Graphic Designer',
 				'linkedin' : 'https://www.linkedin.com/in/elaineyien/',
+			},
+			{
+				'name' : 'Samson Mulugeta',
+				'title' : 'Event Coordinator',
+				'linkedin' : 'https://www.linkedin.com/in/samson02/'
+			},
+			{
+				'name' : 'Sahithi Jarugula',
+				'title' : 'Marketing Director',
+				'linkedin' : 'https://www.linkedin.com/in/sahithi-jarugula-9aa0b2222',
 			},
 			{
 				'name' : 'Caroline Dinh',
@@ -346,6 +342,34 @@ module.exports = Object.freeze({
 	PROJECT_PAGE : {
 
 		DESCRIPTION : 'Check out some projects by current and past members of the club.',
+
+		PARAGRAPH : 'Throughout the year, XR Club members collaborate on group projects to apply what they\'ve learned ' + 
+			'in workshops and bring their ideas to life. Join our Discord server for more information on currently active ' +
+			'projects and challenges!',
+
+		CHALLENGE_INFORMATION : [
+			{
+				'name' : 'NASA S.U.I.T.S. Challenge',
+				'description' : [
+					'NASA S.U.I.T.S (Spacesuit User Interface Technologies for Students) is an annual challenge for ' + 
+					'undergraduate students to design and build spacesuit information displays in augmented reality.',
+					'XR Club members participated in this program in 2021 and 2020. Recruitment for this challenge begins in the fall.'
+				],
+				'image' : 'NASASUITS-logo.png',
+				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
+			},
+			{
+				'name' : 'Snap AR Lens Challenge',
+				'description' : [
+					'The Snap AR Lens Challenge is a learning experience where participants learn to create augmented reality ' + 
+					'experiences with Snap\'s Lens Studio and submit their projects for showcase.',
+					'XR Club members participated in this program in 2021.',
+				],
+				'image' : 'snap_ar_lens_challenge.png',
+				'url' : 'https://www.snaparchallenge.com/',
+			},
+
+		],
 
 		// Information about the xr club's projects. Horizontal images with a 2/1 aspect ratio are the best.
 		PROJECTS_INFORMATION : [
