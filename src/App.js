@@ -20,26 +20,11 @@ import {
 
 function App() {
 
-	// Function for getting the suffix of a date's day
-	var getDateSuffix = function(num) {
-		if (num > 3 && num < 21) {
-			return 'th';
-		} else if (num % 10 === 1) {
-			return 'st';
-		} else if (num % 10 === 2) {
-			return 'nd';
-		} else if (num % 10 === 3) {
-			return 'rd';
-		} else {
-			return 'th';
-		}
-	}
-
 	return (
 		<div className="App">
 			<Router>
-				<ScrollToTop/>
 				<a id="top"/>
+				<ScrollToTop/> {/* Hook to scroll to top of page when page changes */}
 				<Routes>
 					<Route path="/" element={<Home/>}/>
 					<Route path="/about" element={<About/>}/>

@@ -11,17 +11,6 @@ import { HOME_PAGE } from '../XR_CONSTANTS';
 
 function Home() {
 
-    React.useEffect(() => {
-      const anchor = window.location.hash.slice(1);
-      if (anchor) {
-          const anchorEl = document.getElementById(anchor);
-          if (anchorEl) {
-              anchorEl.scrollIntoView();
-          }
-      }
-    }, []);
-
-
     return (
         <div id="Home">
 

@@ -172,7 +172,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'AVW 2460',
 				'url' : 'https://terplink.umd.edu/event/7868701',
-				'fa_icon' : 'fa-bullhorn'
+				'fa_icon' : 'fa-bullhorn',
 			},
 			{
 				'name' : 'Introduction to Unity (Part I)',

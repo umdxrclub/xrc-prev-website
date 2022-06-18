@@ -17,6 +17,7 @@ function Footer () {
 
     return (
         <div id="Footer">
+
             <img className="background-svg" src="svg/footer-background.svg"/>
 
             <div className="section">
