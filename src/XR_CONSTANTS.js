@@ -6,6 +6,10 @@
  */
 
 module.exports = Object.freeze({
+
+	// Supports markdown
+	ALERT : "This is an alert to highlight and [link](https://terplink.umd.edu/organization/xr-club/) " + 
+			"news, events, etc. of particular interest.",
 	
 	FOOTER : {
 
@@ -16,7 +20,9 @@ module.exports = Object.freeze({
 		FACEBOOK_STR : 'https://www.facebook.com/groups/umd.xr.club/',
 		TWITTER_STR : 'https://twitter.com/umdxrclub/',
 		INSTAGRAM_STR : 'https://instagram.com/umdxrclub/',
+		CALENDAR_STR : 'https://ter.ps/xrcalendar/',
 
+		// Supports markdown
 		GET_INVOLVED_STR : 'Events are open to all UMD students. If you want to stay updated on our latest upcoming events, ' +
 		'make sure to join our Discord server and register as a club member on TerpLink for access to our weekly emails.',
 
@@ -24,7 +30,8 @@ module.exports = Object.freeze({
 
 	HOME_PAGE : {
 
-		ABOUT_STR : 'XR Club is a student organization at the University of Maryland, College Park that focuses on immersive' + 
+		// Supports markdown
+		MISSION : 'XR Club is a student organization at the University of Maryland, College Park that focuses on immersive' + 
 			' technologies, like virtual reality (VR), augmented reality (AR), and mixed reality (MR). We provide students with' + 
 			' resources and opportunities to explore XR through hands-on tutorials, projects, hackathons, game nights, open lab' +
 			' hours, mentor office hours, and more!',
@@ -60,6 +67,7 @@ module.exports = Object.freeze({
 
 		DESCRIPTION : 'We are the University of Maryland\'s Extended Reality (XR) Club.',
 
+		// Supports markdown
 		INTRO_PARAGRAPH : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
 		' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
 		' cutting-edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the' +
@@ -343,6 +351,7 @@ module.exports = Object.freeze({
 
 		DESCRIPTION : 'Check out some projects by current and past members of the club.',
 
+		// Supports Markdown
 		PARAGRAPH : 'Throughout the year, XR Club members collaborate on group projects to apply what they\'ve learned ' + 
 			'in workshops and bring their ideas to life. Join our Discord server for more information on currently active ' +
 			'projects and challenges!',
@@ -399,12 +408,15 @@ module.exports = Object.freeze({
 			'College Park, MD 20740'
 		],
 
-		DESCRIPTION : [
-			'Need a place to chill to some cool VR games (like Beat Saber) and immersive experiences after a long day of classes?',
-			'Looking to utilize powerful computers to build out your latest AR/VR idea and get some help troubleshooting your XR project?',
-			'Want to brainstorm new ideas and chat about the future of XR with other members of the club?',
-			'If so, then stop by the XR Lab (AVW 4176) for our Open Lab Hours for all your XR needs! We’re open several times throughout the week; check out the XR Club Google Calendar (ter.ps/xrcalendar) for the latest timings.',
-		],
+		// Supports Markdown
+		DESCRIPTION : 
+			"Need a place to chill to some cool VR games (like Beat Saber) and immersive experiences after a long day of classes? \n" +
+			"Looking to utilize powerful computers to build out your latest AR/VR idea and get some help troubleshooting your XR project? \n" +
+			"Want to brainstorm new ideas and chat about the future of XR with other members of the club? \n" + 
+			"If so, then stop by the XR Lab (AVW 4176) for our Open Lab Hours for all your XR needs! We’re open several times throughout " + 
+			"the week; check out the XR Club Google Calendar (ter.ps/xrcalendar) for the latest timings."
+			
+		,
 
 	},
 

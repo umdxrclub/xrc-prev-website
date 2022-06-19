@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import ScrollToTop from '../ScrollToTop';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -97,6 +98,7 @@ class Navbar extends React.Component {
                 <Link to='/about' className="nav-link underline">about</Link>
                 <Link to='/events' className="nav-link underline">events</Link>
                 <Link to='/lab' className="nav-link underline">lab</Link>
+                <Link to='/projects' className="nav-link underline">projects</Link>
                 <HashLink to="#get-involved" className="nav-button white bg-cool-red">get involved</HashLink>
             </div>
         </nav>

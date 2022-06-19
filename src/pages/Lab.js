@@ -6,13 +6,40 @@ import '../App.css';
 import React from 'react';
 import Navbar from '../components/Navbar';
 import {LAB_PAGE} from '../XR_CONSTANTS';
+import { Canvas } from "@react-three/fiber";
+import { useLoader, useThree } from "@react-three/fiber";
+import { Environment, OrbitControls } from "@react-three/drei";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { useState, useEffect, Suspense, useRef } from "react";
+import sceneUrl from '../models/lab/lab.glb';
+import { Html, useProgress } from '@react-three/drei'
+import ReactMarkdown from 'react-markdown';
+
+
+//THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
+
+function Loader() {
+  const { progress } = useProgress();
+  return <Html center>{progress} % loaded</Html>
+}
+
+function LabScan() {
+
+    const gltf = useLoader(GLTFLoader, sceneUrl);
+    return (
+        <>
+        <primitive object={gltf.scene} position={[0, -0.5, 0.75]}></primitive>
+        </>
+    );
+}
 
 function Lab() {
 
     const status = "closed";
+    const scroll = useRef(0);
 
     return (
-        
+
         <div id="Lab">
 
             {/* Header */}
@@ -42,12 +69,24 @@ function Lab() {
             <div id="lab-description" className="padding-wide horizontal-flex-container">
                 <h2 id="lab-heading">THE XR LAB</h2>
                 <div id="lab-description-text">
-                    {
-                        LAB_PAGE.DESCRIPTION.map(paragraph => {
-                            return <p>{paragraph}</p>
-                        })
-                    }
+                    <ReactMarkdown children={LAB_PAGE.DESCRIPTION} linkTarget="_blank"></ReactMarkdown>
                 </div>
+            </div>
+
+            <h2 className='padding-wide text-align-right'>TAKE A TOUR</h2>
+            <div style={{ position: "relative", width: '100vw', height: '100vh'}}>
+            <Canvas adjustCamera camera={{ position: [0, 0, -3] }}>
+                <ambientLight />
+                <Suspense fallback={<Loader />}>
+                    <LabScan />
+                    <OrbitControls
+                        enableZoom={false}
+                        enablePan={false}
+                        minPolarAngle={Math.PI / 2} 
+                        maxPolarAngle={2 * Math.PI / 3}
+                        />
+                </Suspense>
+            </Canvas>
             </div>
 
         </div>

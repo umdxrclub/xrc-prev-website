@@ -8,6 +8,7 @@ import SocialLinks from '../components/SocialLinks';
 import { FOOTER } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import ReactMarkdown from 'react-markdown';
 
 function Footer () {
 
@@ -36,9 +37,12 @@ function Footer () {
                             <a href={FOOTER.DISCORD_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                <img src="svg/discord.svg"/> Join our Discord
                             </a>
+                            <a href={FOOTER.CALENDAR_STR} target="_blank" rel="noopener noreferrer" className="underline">
+                               <img src="svg/calendar.svg"/> Add our calendar
+                            </a>
                         </div>
                     </div>
-                    <p id="get-involved-str">{FOOTER.GET_INVOLVED_STR}</p>
+                    <div id="get-involved-str"><ReactMarkdown children={FOOTER.GET_INVOLVED_STR} linkTarget="_blank"></ReactMarkdown></div>
                     <HashLink to="#top" id="back-to-top">↑ Back to top</HashLink>
                 </div>
 
@@ -58,13 +62,13 @@ function Footer () {
                     <div id="footer-pages">
                         <p><strong>Pages</strong></p>
                         <Link to="/" className="footer-link underline">Home</Link>
-                        <Link to="/about/" className="footer-link underline">About</Link>
-                        <Link to="/lab/" className="footer-link underline">Lab</Link>
-                        <Link to="/projects/" className="footer-link underline">Projects</Link>
+                        <Link to="/about" className="footer-link underline">About</Link>
+                        <Link to="/lab" className="footer-link underline">Lab</Link>
+                        <Link to="/projects" className="footer-link underline">Projects</Link>
                     </div>
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
-                        <Link to="/events/" className="footer-link underline">Events</Link>
+                        <Link to="/events" className="footer-link underline">Events</Link>
                         <a href={FOOTER.TERPLINK_STR} target="_blank" 
                             className="footer-link underline">TerpLink</a>
                         <a href={FOOTER.DISCORD_STR} target="_blank" 

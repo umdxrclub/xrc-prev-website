@@ -7,6 +7,7 @@ import React from 'react';
 import PersonCard from '../components/PersonCard';
 import HalfBanner from '../components/HalfBanner';
 import {ABOUT_PAGE } from '../XR_CONSTANTS';
+import ReactMarkdown from 'react-markdown';
 
 function About() {
     return (
@@ -17,7 +18,7 @@ function About() {
 
             {/* Introduction + Photo */}
             <div className="section padding-medium">
-                <p>{ABOUT_PAGE.INTRO_PARAGRAPH}</p>
+                <ReactMarkdown children={ABOUT_PAGE.INTRO_PARAGRAPH} linkTarget="_blank"></ReactMarkdown>
                 <div className="spacer"></div>
                 <img src="images/group.png"></img>
             </div>

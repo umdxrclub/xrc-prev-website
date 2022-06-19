@@ -8,6 +8,7 @@ import HomeActionCard from '../components/HomeActionCard';
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { HOME_PAGE } from '../XR_CONSTANTS';
+import ReactMarkdown from 'react-markdown';
 
 function Home() {
 
@@ -40,8 +41,8 @@ function Home() {
                     <img id="home-headset-img" src="images/headset.png" alt="Virtual reality headset" title="Photo by Remy Gieling on Unsplash"/>
                 </div>
                 <div className="vertical-flexbox-container">
-                    <h2>ABOUT</h2>
-                    <p>{HOME_PAGE.ABOUT_STR}</p>
+                    <h2>MISSION</h2>
+                    <ReactMarkdown children={HOME_PAGE.MISSION} linkTarget="_blank"></ReactMarkdown>
                     <div className="spacer"></div>
                     <Link to="/about" className="button red text-outline">LEARN MORE</Link>
                 </div>
@@ -65,7 +66,6 @@ function Home() {
                         })
                     }
                 </div>
-                <Link to="/events" className="button big white text-outline bg-black">UPCOMING EVENTS</Link>
             </div>
 
         </div>

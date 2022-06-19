@@ -10,12 +10,11 @@ import Projects from './pages/Projects';
 import Lab from './pages/Lab';
 import ScrollToTop from './ScrollToTop';
 import Footer from './components/Footer'
-import XR_CONSTANTS from './XR_CONSTANTS'
+import Alert from './components/Alert';
 import {
 	BrowserRouter as Router,
 	Routes,
 	Route,
-	Navigate
   } from "react-router-dom";
 
 function App() {
@@ -25,6 +24,7 @@ function App() {
 			<Router>
 				<a id="top"/>
 				<ScrollToTop/> {/* Hook to scroll to top of page when page changes */}
+				<Alert />
 				<Routes>
 					<Route path="/" element={<Home/>}/>
 					<Route path="/about" element={<About/>}/>
