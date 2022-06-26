@@ -29,7 +29,14 @@ function EventCard(props) {
   return (
     <div className={`card event-card action ${props.color}-glass`}>
         {
-          props.image ? <img className="card-header-image" src={`images/events/${props.image}`}></img> : null
+          props.image ? <img className="card-header-image" src={`images/events/${props.image}`}></img> : 
+            ( props.youtube_id ? 
+              <div className="card-header-video">
+                  <iframe src={`https://www.youtube.com/embed/${props.youtube_id}`} title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe> 
+              </div>
+            : "")
         }
         <p className="card-header">{props.name.toUpperCase()}</p>
         <p className="event-location text-align-center">{props.location}</p>

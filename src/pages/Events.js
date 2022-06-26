@@ -1,5 +1,5 @@
 /**
- * Template component definition for a new page.
+ * Component definition to render the "events" page of the website.
  */
 
 import '../App.css';

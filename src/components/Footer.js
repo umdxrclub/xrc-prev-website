@@ -68,6 +68,7 @@ function Footer () {
                     </div>
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
+                        <Link to="/news" className="footer-link underline">News</Link>
                         <Link to="/events" className="footer-link underline">Events</Link>
                         <a href={FOOTER.TERPLINK_STR} target="_blank" 
                             className="footer-link underline">TerpLink</a>

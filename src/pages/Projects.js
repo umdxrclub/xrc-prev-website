@@ -8,6 +8,7 @@ import HalfBanner from '../components/HalfBanner';
 import Challenge from '../components/Challenge';
 import ProjectCard from '../components/ProjectCard';
 import { PROJECT_PAGE } from '../XR_CONSTANTS';
+import ReactMarkdown from 'react-markdown';
 
 function Projects() {
     return (
@@ -18,7 +19,7 @@ function Projects() {
 
             <div className="section padding-medium">
 
-                <p>{PROJECT_PAGE.PARAGRAPH}</p>
+                <ReactMarkdown children={PROJECT_PAGE.PARAGRAPH} linkTarget="_blank"></ReactMarkdown>
                 <div className="spacer"></div>
 
                 <h2 className="text-align-right">CHALLENGES</h2>

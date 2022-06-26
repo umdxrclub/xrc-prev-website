@@ -38,7 +38,6 @@ html {
     font-family: var(--font-secondary);
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -46,7 +45,6 @@ body {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     font-weight: normal;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -175,6 +173,10 @@ p a:hover {
     min-height: 100vh;
 }
 
+.page-body {
+    overflow-x: hidden;
+}
+
 .horizontal-flex-container {
     display: flex;
     flex-direction: horizontal;
@@ -224,13 +226,19 @@ canvas {
 
 #alert {
     display: flex;
+    position: sticky;
     text-align: center;
+    background-color: var(--xr-purple);
+    /* box-shadow: 0px 2px 8px var(--xr-purple); */
+    top: 0;
+    z-index: 1000;
 }
 
 #alert p {
     margin-left: 5vh;
     width: 95%;
     font-size: unset;
+    z-index: 1001;
 }
 
 #alert #close {
@@ -241,6 +249,7 @@ canvas {
     align-self: center;
     cursor: pointer;
     transition: 0.2s;
+    z-index: 1001;
 }
 
 #alert #close:hover {
@@ -436,6 +445,22 @@ nav {
     margin-top: 1%;
 }
 
+.card-header-video {
+    height: calc(16 * 98% / 9);
+    border: 1px solid var(--xr-cool-red);
+    border-radius: 40px 40px 0 0;
+    width: 98%;
+    margin-top: 1%;
+    transform: translateY(0px);
+    overflow: hidden;
+}
+
+.card-header-video iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .card-header {
     font-family: var(--font-primary);
     font-size: 2em;
@@ -601,22 +626,34 @@ nav {
 /* ================ Projects ================ */
 
 .challenge-container {
+    width: 50% !important;
     margin-bottom: 8vh;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.challenge-header {
+    justify-content: flex-start;
+}
+
+.challenge-header h5 {
+    width: 60%;
+    align-content: left;
+    align-items: left;
+}
+
+.challenge-container p {
+    text-align: left;
+    margin-left: unset;
 }
 
 .project-logo {
-    margin-left: auto;
-    width: 20vw;
-    height: 20vw;
+    margin-right: auto;
+    width: 8vw;
+    height: 8vw;
     object-fit: cover;
     align-self: center;
 }
-
-.project-info {
-    width: 40vw;
-    margin-left: auto;
-}
-
 .button-float-right {
     float: right;
     margin-left: auto;
@@ -764,6 +801,10 @@ nav {
         width: 90%;
         object-fit: contain; 
         transition: 0.3s;
+    }
+
+    .halfpage-banner {
+        height: 70vh;
     }
 
     .card {

@@ -6,21 +6,20 @@ import React from 'react';
 
 function Challenge(props) {
 
-	/* Alternate alignments */
-	const align = (props.id % 2 == 0) ? "left" : "right";
-	
 	return (
-		<div className={`challenge-container horizontal-flex-container flex-${align}`}>
-			<img className="project-logo" src={`images/challenges/${props.image}`}></img>
+		<div className="card challenge-container">
+			<div className="challenge-header horizontal-flex-container">
+				<img className="project-logo" src={`images/challenges/${props.image}`}></img>
+				<h5>{props.name.toUpperCase()}</h5>
+			</div>
 			<div className="project-info">
-				<h5 className={`text-align-${align}`}>{props.name.toUpperCase()}</h5>
 				{
 					props.description.map(paragraph => {
-						return <p className={`text-align-${align}`}>{paragraph}</p>
+						return <p>{paragraph}</p>
 					})
 				}
 				<div class="spacer"></div>
-				<a className={`button button-float-${align} red text-outline`} href={props.url} 
+				<a className={`button red text-outline`} href={props.url} 
 					target="_blank" rel="noopener noreferrer">
 					Learn more
 				</a>

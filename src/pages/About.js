@@ -1,5 +1,5 @@
 /**
- * Template component definition for a new page.
+ * Component definition to render the "about" page of the website.
  */
 
 import '../App.css';
@@ -12,7 +12,7 @@ import ReactMarkdown from 'react-markdown';
 function About() {
     return (
         
-        <div id="About">
+        <div id="About" className="page-body">
 
             <HalfBanner pageName="About Us" headerImage="about" subheading={ABOUT_PAGE.DESCRIPTION}/>
 

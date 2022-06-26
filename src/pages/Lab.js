@@ -1,5 +1,5 @@
 /**
- * Definition of the component to render the lab page of the website.
+ * Definition of the component to render the "lab" page of the website.
  */
 
 import '../App.css';
@@ -36,7 +36,6 @@ function LabScan() {
 function Lab() {
 
     const status = "closed";
-    const scroll = useRef(0);
 
     return (
 

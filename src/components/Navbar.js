@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import ScrollToTop from '../ScrollToTop';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -40,7 +39,7 @@ class Navbar extends React.Component {
         nav.style.opacity = 0;
         nav.style.marginTop = "-40vh";
         if (banner) {
-          banner.style.height = "60vh";
+          banner.style.height = "70vh";
         }
     }
     this.setState({ 
@@ -66,7 +65,7 @@ class Navbar extends React.Component {
         nav.style.opacity = 1;
         nav.style.marginTop = 0;
         if (banner) {
-          banner.style.height = "100vh";
+          banner.style.height = "110vh";
         }
 
       // If menu is currently open
@@ -75,7 +74,7 @@ class Navbar extends React.Component {
         nav.style.opacity = 0;
         nav.style.marginTop = "-40vh";
         if (banner) {
-          banner.style.height = "60vh";
+          banner.style.height = "70vh";
         }
       }
     }
@@ -96,6 +95,7 @@ class Navbar extends React.Component {
             <div className="nav-wrapper" onClick={this.toggleNav}>
                 <Link to='/' className="nav-link underline">home</Link>
                 <Link to='/about' className="nav-link underline">about</Link>
+                <Link to='/news' className="nav-link underline">news</Link>
                 <Link to='/events' className="nav-link underline">events</Link>
                 <Link to='/lab' className="nav-link underline">lab</Link>
                 <Link to='/projects' className="nav-link underline">projects</Link>

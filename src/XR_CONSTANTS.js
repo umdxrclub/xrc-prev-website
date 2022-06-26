@@ -166,12 +166,21 @@ module.exports = Object.freeze({
 		
 	},
 
+	NEWS_PAGE : {
+		DESCRIPTION : 'View the archives of our TerpLink newsletter here.',
+	},
+
 	EVENT_PAGE : {
 
-		DESCRIPTION : 'Join us to learn about XR development and get hands-on experience with immersive technology.',
+		DESCRIPTION : 'Access TerpLink invitations for upcoming events and recordings for previous events here.',
 		// Information about XR Club events throughout the semester
 		// 'image' is assumed to be in in public/images/events (write 'image.jpg',
 		//  not 'images/events/image.jpg'). If 'image' is not listed, no header image will display.
+
+		// For past events with a YouTube recording: define 'youtube_id' as the string after
+		// 'https://www.youtube.com/watch?v=' in the video URL (but before the next '&').
+		// Example: 'https://www.youtube.com/watch?v=wdm6h5g2OWg&t=5s' -> 'wdm6h5g2OWg'.
+		// In most cases you should be able to just copy the last part of the URL.
 
 		EVENTS_INFORMATION : [
 			{
@@ -181,6 +190,7 @@ module.exports = Object.freeze({
 				'location' : 'AVW 2460',
 				'url' : 'https://terplink.umd.edu/event/7868701',
 				'fa_icon' : 'fa-bullhorn',
+				'youtube_id' : 'B96kRQYGnH8',
 			},
 			{
 				'name' : 'Introduction to Unity (Part I)',
@@ -188,7 +198,8 @@ module.exports = Object.freeze({
 				'time' : '6:30 PM',
 				'location' : 'CSI 2117',
 				'url' : 'https://terplink.umd.edu/event/7877571',
-				'fa_icon' : 'fa-flask'
+				'fa_icon' : 'fa-flask',
+				'youtube_id' : 'LmsHdE15D9Y',
 			},
 			{
 				'name' : 'Brainstorm Night',
@@ -196,7 +207,8 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/7899939',
-				'fa_icon' : 'fa-users'
+				'fa_icon' : 'fa-users',
+				'image' : 'spring2022/brainstormnight.jpg',
 			},
 			{
 				'name' : 'Introduction to Unity (Part II)',
@@ -204,7 +216,8 @@ module.exports = Object.freeze({
 				'time' : '6:30 PM',
 				'location' : 'CSI 2117',
 				'url' : 'https://terplink.umd.edu/event/7900002',
-				'fa_icon' : 'fa-flask'
+				'fa_icon' : 'fa-flask',
+				'image' : 'spring2022/unity2.jpg',
 			},
 			{
 				'name' : 'Beat Saber Tournament',
@@ -212,7 +225,8 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/7901068',
-				'fa_icon' : 'fa-gamepad'
+				'fa_icon' : 'fa-gamepad',
+				'image' : 'spring2022/beatsaber.jpg',
 			},
 			{
 				'name' : 'Introduction to VR Development (Part I)',
@@ -220,7 +234,8 @@ module.exports = Object.freeze({
 				'time' : '6:30 PM',
 				'location' : 'CSI 2117',
 				'url' : 'https://terplink.umd.edu/event/7949013',
-				'fa_icon' : 'fa-flask'
+				'fa_icon' : 'fa-flask',
+				'image' : 'spring2022/vr1.jpg',
 			},
 			{
 				'name' : 'Projects Kickoff Night',
@@ -228,7 +243,8 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/7951664',
-				'fa_icon' : 'fa-users'
+				'fa_icon' : 'fa-users',
+				'image' : 'spring2022/project.jpg',
 			},
 			{
 				'name' : 'Introduction to VR Development (Part II)',
@@ -236,7 +252,8 @@ module.exports = Object.freeze({
 				'time' : '6:30 PM',
 				'location' : 'CSI 2117',
 				'url' : 'https://terplink.umd.edu/event/7970818',
-				'fa_icon' : 'fa-flask'
+				'fa_icon' : 'fa-flask',
+				'image' : 'spring2022/vr2.jpg',
 			},
 			{
 				'name' : 'Gaming Night',
@@ -244,7 +261,8 @@ module.exports = Object.freeze({
 				'time' : '5:30 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/7971682',
-				'fa_icon' : 'fa-gamepad'
+				'fa_icon' : 'fa-gamepad',
+				'image' : 'spring2022/gamingnight.jpg',
 			},
 			{
 				'name' : 'What CS Electives Should I Take? (An XR Students Perspective)',
@@ -252,7 +270,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'CSI 1121',
 				'url' : 'https://terplink.umd.edu/event/7974580',
-				'fa_icon' : 'fa-microphone'
+				'fa_icon' : 'fa-microphone',
 			},
 			{
 				'name' : 'Intro to 3D Modeling with Blender',
@@ -340,7 +358,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB Lobby',
 				'url' : 'https://terplink.umd.edu/event/8089730',
-				'fa_icon' : 'fa-gamepad'
+				'fa_icon' : 'fa-gamepad',
 			},
 			
 		],
