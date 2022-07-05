@@ -15,8 +15,7 @@ import sceneUrl from '../models/lab/lab.glb';
 import { Html, useProgress } from '@react-three/drei'
 import ReactMarkdown from 'react-markdown';
 
-
-//THREE.DefaultLoadingManager.addHandler(/\.dds$/i, new DDSLoader());
+// TODO: Live open/closed status like https://twitter.com/sandboxDoor
 
 function Loader() {
   const { progress } = useProgress();

@@ -167,7 +167,11 @@ module.exports = Object.freeze({
 	},
 
 	NEWS_PAGE : {
-		DESCRIPTION : 'View the archives of our TerpLink newsletter here.',
+		DESCRIPTION : 'View the latest mailings of our newsletter, sent via TerpLink, here.',
+		NEWSLETTER_URL : 'https://us19.campaign-archive.com/home/?u=ec383b1ee117d6a39daa338a1&id=68057666d1',
+		
+		// Supports Markdown
+		BOTTOM_NOTE : 'To receive our newsletter in your inbox, please join our organization on TerpLink.'
 	},
 
 	EVENT_PAGE : {
@@ -394,6 +398,16 @@ module.exports = Object.freeze({
 				],
 				'image' : 'snap_ar_lens_challenge.png',
 				'url' : 'https://www.snaparchallenge.com/',
+			},
+			{
+				'name' : 'NASA S.U.I.T.S. Challenge',
+				'description' : [
+					'NASA S.U.I.T.S (Spacesuit User Interface Technologies for Students) is an annual challenge for ' + 
+					'undergraduate students to design and build spacesuit information displays in augmented reality.',
+					'XR Club members participated in this program in 2021 and 2020. Recruitment for this challenge begins in the fall.'
+				],
+				'image' : 'NASASUITS-logo.png',
+				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
 			},
 
 		],

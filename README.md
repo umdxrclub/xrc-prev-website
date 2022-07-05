@@ -12,6 +12,6 @@ I would recommend that you make sure things build and look fine locally before c
 * Clone repo on computer
 * Ensure that npm is installed on the computer
 * npm i
-* node server.js
+* node server/app.js
 * npm start
 

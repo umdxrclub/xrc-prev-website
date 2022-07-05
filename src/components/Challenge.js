@@ -8,10 +8,10 @@ function Challenge(props) {
 
 	return (
 		<div className="card challenge-container">
-			<div className="challenge-header horizontal-flex-container">
+			<a className="challenge-header" href={props.url} target="_blank" rel="noopener noreferrer">
 				<img className="project-logo" src={`images/challenges/${props.image}`}></img>
 				<h5>{props.name.toUpperCase()}</h5>
-			</div>
+			</a>
 			<div className="project-info">
 				{
 					props.description.map(paragraph => {
@@ -19,10 +19,12 @@ function Challenge(props) {
 					})
 				}
 				<div class="spacer"></div>
+				{/*
 				<a className={`button red text-outline`} href={props.url} 
 					target="_blank" rel="noopener noreferrer">
 					Learn more
 				</a>
+				*/}
 			</div>
 		</div>
 	);

@@ -3,8 +3,10 @@ import React from "react";
 class RSSItem extends React.Component {
     constructor(props) {
         super(props);
+        //this.props.item.title = this.props.item.title.toUpperCase();
         this.getTextPreview = this.getTextPreview.bind(this);
         this.getImagePreview = this.getImagePreview.bind(this);
+        this.parseDate = this.parseDate.bind(this);
     }
 
 
@@ -35,16 +37,26 @@ class RSSItem extends React.Component {
         return "";
     }
 
+    parseDate(date) {
+        let words = date.split(' ');
+        //return date;
+        return ([words[1], words[2], words[3]]).join(' ').toUpperCase();
+    }
+
     render() {
         return (
-            <div className="news-item">
-                <a href={this.props.item.link} target="_blank" rel="noopener noreferrer">
-                    <img src={this.getImagePreview(this.props.item)}></img>
-                    <h4>{this.props.item.title}</h4>
-                    <p>{this.getTextPreview(this.props.item)}</p>
-                    <p>{this.props.item.pubDate[0]}</p>
-                </a>
-            </div>
+            <a className="news-item underline" href={this.props.item.link} target="_blank" rel="noopener noreferrer">
+                <img src={this.getImagePreview(this.props.item)}></img>
+                <div className="content">
+                    <h5>{this.props.item.title}</h5>
+                    <p className="news-date">{this.parseDate(this.props.item.pubDate[0])}</p>
+                    <p className="news-description">
+                        <strong>THIS WEEK'S TOPICS: </strong>
+                        {this.getTextPreview(this.props.item)}
+                    </p>
+                </div>
+                <img className="hover-arrow" src="svg/right-arrow.svg"></img>
+            </a>
         )
     }
 }

@@ -4,7 +4,7 @@ import RSSItem from "./RSSItem";
 class RSSFeed extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { feed: [] };
+        this.state = { feed: undefined };
     }
 
     async componentDidMount() {
@@ -35,7 +35,7 @@ class RSSFeed extends React.Component {
             );
         } else {
             return (
-                <p>Loading feed...</p>
+                <p className="padding-wide">Loading feed...</p>
             )
         }
     }

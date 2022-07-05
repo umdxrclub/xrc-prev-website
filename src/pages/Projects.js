@@ -23,11 +23,13 @@ function Projects() {
                 <div className="spacer"></div>
 
                 <h2 className="text-align-right">CHALLENGES</h2>
-                {
-                    PROJECT_PAGE.CHALLENGE_INFORMATION.map(challenge => {
-                         return <Challenge id={PROJECT_PAGE.CHALLENGE_INFORMATION.indexOf(challenge)} {...challenge}/>
-                    })
-                }
+                <div className="horizontal-flex-container">
+                    {
+                        PROJECT_PAGE.CHALLENGE_INFORMATION.map(challenge => {
+                            return <Challenge id={PROJECT_PAGE.CHALLENGE_INFORMATION.indexOf(challenge)} {...challenge}/>
+                        })
+                    }
+                </div>
                 <div class="spacer"></div>
 
                 <h2>PROJECT SHOWCASE</h2>
