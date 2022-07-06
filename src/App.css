@@ -656,7 +656,7 @@ nav {
 }
 
 .challenge-container a:hover{
-    filter: brightness(0.7);
+    filter: brightness(0.3);
 }
 
 .project-logo {

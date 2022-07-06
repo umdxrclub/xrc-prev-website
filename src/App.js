@@ -9,6 +9,7 @@ import News from './pages/News';
 import Events from './pages/Events';
 import Projects from './pages/Projects';
 import Lab from './pages/Lab';
+import Error from './pages/Error';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer'
 import Alert from './components/Alert';
@@ -34,6 +35,7 @@ function App() {
 						<Route path="/events" element={<Events/>}/>
 						<Route path="/lab" element={<Lab/>}/>
 						<Route path="/projects" element={<Projects/>}/>
+						<Route path="*" element={<Error/>}/>
 					</Routes>
 				</div>
 				<Footer/>

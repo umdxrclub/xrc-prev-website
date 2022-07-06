@@ -452,4 +452,10 @@ module.exports = Object.freeze({
 
 	},
 
+	ERROR_PAGE : {
+
+		DESCRIPTION: "The page you were looking for was not found."
+
+	}
+
 });
