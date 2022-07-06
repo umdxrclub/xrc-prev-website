@@ -46,7 +46,9 @@ class RSSItem extends React.Component {
     render() {
         return (
             <a className="news-item underline" href={this.props.item.link} target="_blank" rel="noopener noreferrer">
-                <img src={this.getImagePreview(this.props.item)}></img>
+                <div className="news-image">
+                    <img src={this.getImagePreview(this.props.item)}></img>
+                </div>
                 <div className="content">
                     <h5>{this.props.item.title}</h5>
                     <p className="news-date">{this.parseDate(this.props.item.pubDate[0])}</p>

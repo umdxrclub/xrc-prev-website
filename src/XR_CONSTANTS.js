@@ -390,14 +390,14 @@ module.exports = Object.freeze({
 				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
 			},
 			{
-				'name' : 'Snap AR Lens Challenge',
+				'name' : 'Snap Creative Challenge',
 				'description' : [
-					'The Snap AR Lens Challenge is a learning experience where participants learn to create augmented reality ' + 
-					'experiences with Snap\'s Lens Studio and submit their projects for showcase.',
-					'XR Club members participated in this program in 2021.',
+					'The Snap Creative Challenge is an opportunity for HCI and AR researchers to design immersive and multisensorial experiences ' + 
+					'beyond looking at images and videos through a phone. The XR Club participated in this challenge in 2021. Recruitment for this ' + 
+					'challenge begins in the summer.'
 				],
 				'image' : 'snap_ar_lens_challenge.png',
-				'url' : 'https://www.snaparchallenge.com/',
+				'url' : 'https://www.snapcreativechallenge.com/',
 			},
 			{
 				'name' : 'NASA S.U.I.T.S. Challenge',
