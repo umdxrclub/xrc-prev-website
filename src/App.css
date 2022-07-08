@@ -514,6 +514,11 @@ nav {
     object-fit: unset;
     margin-left: 1vh;
     margin-right: 1vh;
+    transition: 0.2s;
+}
+
+#card-icon-links img:hover {
+    filter: opacity(0.4);
 }
 
 /* ================ Home ================ */
@@ -869,6 +874,11 @@ nav {
     height: 4vh;
     object-fit: unset;
     margin-right: 6vh;
+    transition: 0.2s;
+}
+
+.social-icons img:hover {
+    filter: opacity(0.4);
 }
 
 #footer-info {

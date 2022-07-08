@@ -5,6 +5,7 @@
 import '../App.css';
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Loader from '../components/Loader';
 import {LAB_PAGE} from '../XR_CONSTANTS';
 import { Canvas } from "@react-three/fiber";
 import { useLoader, useThree } from "@react-three/fiber";
@@ -17,9 +18,13 @@ import ReactMarkdown from 'react-markdown';
 
 // TODO: Live open/closed status like https://twitter.com/sandboxDoor
 
-function Loader() {
-  const { progress } = useProgress();
-  return <Html center>{progress} % loaded</Html>
+function Loading() {
+  return (
+    <div>
+        <Loader />
+        <p className="text-align-center">Loading model...</p>
+    </div>
+  )
 }
 
 function LabScan() {
@@ -32,64 +37,82 @@ function LabScan() {
     );
 }
 
-function Lab() {
+class Lab extends React.Component {
 
-    const status = "closed";
+    constructor(props) {
+        super(props);
+        this.state = {
+            status: "closed"
+        }
+    }
 
-    return (
+    /*
+    componentDidMount() {
+        this.setState({
+            loaded: (useProgress() == 100)
+        })
+    }
+    */
 
-        <div id="Lab">
+    render() {
 
-            {/* Header */}
-            <div id="header">
-                <img className="background-svg" src="svg/header-background.svg"/>
+        const status = "closed";
 
-                {/* Nav bar */}
-                <Navbar />
+        return (
 
-                {/* Title */}
-                <div className="horizontal-flex-container">
+            <div id="Lab">
 
-                    {/* TODO: Replace with original image or image that we have the right to use */}
-                    <img id="header-logo" src="images/av-williams.png" alt="A.V. Williams Building"/>
-                    <div>
-                        <img id="header-text" src={`svg/lab-${status}.svg`} alt={`Our lab is currently ${status}`}/>
-                        {
-                            LAB_PAGE.LAB_ADDRESS.map(line => {
-                                return <h3>{line}</h3>
-                            })
-                        }
+                {/* Header */}
+                <div id="header">
+                    <img className="background-svg" src="svg/header-background.svg"/>
+
+                    {/* Nav bar */}
+                    <Navbar />
+
+                    {/* Title */}
+                    <div className="horizontal-flex-container">
+
+                        {/* TODO: Replace with original image or image that we have the right to use */}
+                        <img id="header-logo" src="images/av-williams.png" alt="A.V. Williams Building"/>
+                        <div>
+                            <img id="header-text" src={`svg/lab-${status}.svg`} alt={`Our lab is currently ${status}`}/>
+                            {
+                                LAB_PAGE.LAB_ADDRESS.map(line => {
+                                    return <h3>{line}</h3>
+                                })
+                            }
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="lab-description" className="padding-wide horizontal-flex-container">
+                    <h2 id="lab-heading">THE XR LAB</h2>
+                    <div id="lab-description-text">
+                        <ReactMarkdown children={LAB_PAGE.DESCRIPTION} linkTarget="_blank"></ReactMarkdown>
                     </div>
                 </div>
 
-            </div>
-
-            <div id="lab-description" className="padding-wide horizontal-flex-container">
-                <h2 id="lab-heading">THE XR LAB</h2>
-                <div id="lab-description-text">
-                    <ReactMarkdown children={LAB_PAGE.DESCRIPTION} linkTarget="_blank"></ReactMarkdown>
+                <h2 className='padding-wide text-align-right'>TAKE A TOUR</h2>
+                <div style={{ position: "relative", width: '100vw', height: '100vh'}}>
+                    <Suspense fallback={<Loading />}>
+                        <Canvas adjustCamera camera={{ position: [0, 0, -3] }}>
+                            <ambientLight />
+                                <LabScan />
+                                <OrbitControls
+                                    enableZoom={false}
+                                    enablePan={false}
+                                    minPolarAngle={Math.PI / 2} 
+                                    maxPolarAngle={2 * Math.PI / 3}
+                                    />
+                        </Canvas>
+                    </Suspense>
                 </div>
+
             </div>
 
-            <h2 className='padding-wide text-align-right'>TAKE A TOUR</h2>
-            <div style={{ position: "relative", width: '100vw', height: '100vh'}}>
-            <Canvas adjustCamera camera={{ position: [0, 0, -3] }}>
-                <ambientLight />
-                <Suspense fallback={<Loader />}>
-                    <LabScan />
-                    <OrbitControls
-                        enableZoom={false}
-                        enablePan={false}
-                        minPolarAngle={Math.PI / 2} 
-                        maxPolarAngle={2 * Math.PI / 3}
-                        />
-                </Suspense>
-            </Canvas>
-            </div>
-
-        </div>
-
-    );
+        );
+    }
 }
 
 export default Lab;

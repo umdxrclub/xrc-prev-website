@@ -1,5 +1,7 @@
 import React from "react";
 import RSSItem from "./RSSItem";
+import Loader from "./Loader";
+import { NEWS_PAGE } from '../XR_CONSTANTS';
 
 class RSSFeed extends React.Component {
     constructor(props) {
@@ -31,11 +33,16 @@ class RSSFeed extends React.Component {
                     // console.log(item);
                     return <RSSItem item={item} />
                 })}
+            <a id="news-button-big" className="button big white text-outline" href={NEWS_PAGE.NEWSLETTER_URL}
+                target="_blank" rel="noopener noreturner">VIEW FULL ARCHIVE</a>
             </div>
             );
         } else {
             return (
-                <p className="padding-wide">Loading feed...</p>
+                <div>
+                    <Loader />
+                    <p className="text-align-center">Loading feed...</p>
+                </div>
             )
         }
     }
