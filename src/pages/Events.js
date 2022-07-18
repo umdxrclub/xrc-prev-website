@@ -7,8 +7,17 @@ import React from 'react';
 import HalfBanner from '../components/HalfBanner';
 import EventCard from '../components/EventCard';
 import { FOOTER, EVENT_PAGE } from '../XR_CONSTANTS';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 function Events() {
+
+    document.title = "Events | XR Club at UMD"
+
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: 'events', 
+    });
 
     const upcoming = [];
     const past = [];

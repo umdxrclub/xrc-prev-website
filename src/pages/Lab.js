@@ -15,6 +15,8 @@ import { useState, useEffect, Suspense, useRef } from "react";
 import sceneUrl from '../models/lab/lab.glb';
 import { Html, useProgress } from '@react-three/drei'
 import ReactMarkdown from 'react-markdown';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 // TODO: Live open/closed status like https://twitter.com/sandboxDoor
 
@@ -46,13 +48,14 @@ class Lab extends React.Component {
         }
     }
 
-    /*
     componentDidMount() {
-        this.setState({
-            loaded: (useProgress() == 100)
-        })
+        document.title = "Lab | XR Club at UMD"
+
+        const analytics = getAnalytics(app);
+        logEvent(analytics, 'screen_view', {
+            firebase_screen: 'lab', 
+        });
     }
-    */
 
     render() {
 

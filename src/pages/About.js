@@ -8,8 +8,18 @@ import PersonCard from '../components/PersonCard';
 import HalfBanner from '../components/HalfBanner';
 import {ABOUT_PAGE } from '../XR_CONSTANTS';
 import ReactMarkdown from 'react-markdown';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 function About() {
+
+    document.title = "About | XR Club at UMD"
+
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: 'about', 
+    });
+
     return (
         
         <div id="About" className="page-body">

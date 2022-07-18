@@ -147,10 +147,20 @@ p a:hover {
 }
 
 .halfpage-banner {
+    display: flex;
+    flex-direction: column;
     height: 60vh;
     background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;
     margin-bottom: 4vw;
     transition: 0.3s;
+}
+
+#banner-content {
+    height: 100%;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .subpage-header {
@@ -159,6 +169,7 @@ p a:hover {
     height: 12vh;
     margin: 5vh auto;
     display: block;
+    margin-bottom: 2vh;
 }
 
 .halfpage-banner p {
@@ -921,6 +932,7 @@ nav {
         width: 90%;
         object-fit: contain; 
         transition: 0.3s;
+        margin-bottom: 0;
     }
 
     .halfpage-banner {
@@ -945,6 +957,8 @@ nav {
         opacity: 0;
         justify-content: flex-start;
         margin-top: -40vh;
+        padding-bottom: 10vh;
+        margin-bottom: -10vh;
         margin-left: 10vw;
         transition: 0.3s;
     }

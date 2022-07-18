@@ -9,8 +9,17 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { HOME_PAGE } from '../XR_CONSTANTS';
 import ReactMarkdown from 'react-markdown';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 function Home() {
+
+    document.title = "XR Club at UMD"
+
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: 'home', 
+    });
 
     return (
         <div id="Home">

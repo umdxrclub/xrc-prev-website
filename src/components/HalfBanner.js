@@ -10,8 +10,10 @@ function HalfBanner(props) {
             {/* Nav bar */}
             <Navbar />
 
-            <img className="subpage-header" src={`svg/${props.headerImage}.svg`} alt={props.pageName}/>
-            <p>{props.subheading}</p>
+            <div id="banner-content">
+                <img className="subpage-header" src={`svg/${props.headerImage}.svg`} alt={props.pageName}/>
+                <p>{props.subheading}</p>
+            </div>
 
         </div>
 

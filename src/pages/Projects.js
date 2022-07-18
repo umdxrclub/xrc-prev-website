@@ -9,8 +9,18 @@ import Challenge from '../components/Challenge';
 import ProjectCard from '../components/ProjectCard';
 import { PROJECT_PAGE } from '../XR_CONSTANTS';
 import ReactMarkdown from 'react-markdown';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 function Projects() {
+
+    document.title = "Projects | XR Club at UMD"
+
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'screen_view', {
+        firebase_screen: 'projects', 
+    });
+
     return (
         
         <div id="Projects">
