@@ -20,15 +20,6 @@ import app from '../Firebase';
 
 // TODO: Live open/closed status like https://twitter.com/sandboxDoor
 
-function Loading() {
-  return (
-    <div>
-        <Loader />
-        <p className="text-align-center">Loading model...</p>
-    </div>
-  )
-}
-
 function LabScan() {
 
     const gltf = useLoader(GLTFLoader, sceneUrl);
@@ -98,7 +89,7 @@ class Lab extends React.Component {
 
                 <h2 className='padding-wide text-align-right'>TAKE A TOUR</h2>
                 <div style={{ position: "relative", width: '100vw', height: '100vh'}}>
-                    <Suspense fallback={<Loading />}>
+                    <Suspense fallback={<Loader />}>
                         <Canvas adjustCamera camera={{ position: [0, 0, -3] }}>
                             <ambientLight />
                                 <LabScan />

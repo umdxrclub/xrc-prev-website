@@ -150,9 +150,13 @@ p a:hover {
     display: flex;
     flex-direction: column;
     height: 60vh;
-    background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;
-    margin-bottom: 4vw;
+    /*background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;*/
+    margin-bottom: 8vw; /* 8vw if curved bg */
     transition: 0.3s;
+}
+
+.halfpage-banner .background-svg {
+    height: 75vh;
 }
 
 #banner-content {

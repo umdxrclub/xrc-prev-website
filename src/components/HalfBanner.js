@@ -6,6 +6,7 @@ function HalfBanner(props) {
     return (
 
         <div id="header" className="halfpage-banner">
+            <img className="background-svg" src="svg/halfbanner-background.svg"/>
 
             {/* Nav bar */}
             <Navbar />

@@ -41,7 +41,6 @@ class RSSFeed extends React.Component {
             return (
                 <div>
                     <Loader />
-                    <p className="text-align-center">Loading feed...</p>
                 </div>
             )
         }
