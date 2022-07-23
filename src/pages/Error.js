@@ -7,7 +7,7 @@ import React from 'react';
 import HalfBanner from '../components/HalfBanner';
 import { ERROR_PAGE } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
-import Loader from '../components/Loader';
+import TorusText from '../components/TorusText';
 import { getAnalytics, logEvent } from "firebase/analytics";
 import app from '../Firebase';
 
@@ -24,7 +24,7 @@ function Error() {
         <div id="Error">
 
             <HalfBanner pageName="Error" headerImage="404" subheading={ERROR_PAGE.DESCRIPTION}/>
-            <Loader />
+            <TorusText image="not_found.png"/>
             <p className="text-align-center">Go back <Link to="/">home</Link></p>
 
         </div>

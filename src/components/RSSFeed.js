@@ -1,6 +1,6 @@
 import React from "react";
 import RSSItem from "./RSSItem";
-import Loader from "./Loader";
+import TorusText from "./TorusText";
 import { NEWS_PAGE } from '../XR_CONSTANTS';
 
 class RSSFeed extends React.Component {
@@ -40,7 +40,7 @@ class RSSFeed extends React.Component {
         } else {
             return (
                 <div>
-                    <Loader />
+                    <TorusText />
                 </div>
             )
         }
