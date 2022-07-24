@@ -6,7 +6,7 @@ import '../App.css';
 import React from 'react';
 import HalfBanner from '../components/HalfBanner';
 import EventCard from '../components/EventCard';
-import { FOOTER, EVENT_PAGE } from '../XR_CONSTANTS';
+import { LINKS, EVENT_PAGE } from '../XR_CONSTANTS';
 import { getAnalytics, logEvent } from "firebase/analytics";
 import app from '../Firebase';
 
@@ -64,7 +64,7 @@ function Events() {
                         (upcoming.length == 0) ? 
                             <div>
                                 <p className="event-caption">No upcoming events this semester.</p> 
-                                <p className="event-caption">Join our <a href={FOOTER.TERPLINK_STR} target="_blank"
+                                <p className="event-caption">Join our <a href={LINKS.TERPLINK_STR} target="_blank"
                                     rel="noopener noreferrer">TerpLink</a> for notifications for future events.</p>
                             </div> 
                             : upcoming.map(ev => {
@@ -75,7 +75,7 @@ function Events() {
 
                 {/* 
                 <a className="button big white text-outline bg-black" 
-                    href={FOOTER.TERPLINK_STR} target="_blank" rel="noopener noreferrer">
+                    href={LINKS.TERPLINK_STR} target="_blank" rel="noopener noreferrer">
                     JOIN US ON TERPLINK
                 </a>
                 */}
@@ -90,7 +90,7 @@ function Events() {
                     }
                 </div>
                 <p className="event-caption">View a full archive of our past events on <a 
-                    href={FOOTER.TERPLINK_STR} target="_blank" rel="noopener noreferrer">TerpLink</a>.</p>
+                    href={LINKS.TERPLINK_STR} target="_blank" rel="noopener noreferrer">TerpLink</a>.</p>
             </div>
 
         </div>

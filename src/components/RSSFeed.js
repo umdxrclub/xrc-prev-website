@@ -1,7 +1,9 @@
 import React from "react";
 import RSSItem from "./RSSItem";
 import TorusText from "./TorusText";
-import { NEWS_PAGE } from '../XR_CONSTANTS';
+import { NEWS_PAGE, LINKS } from '../XR_CONSTANTS';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from '../Firebase';
 
 class RSSFeed extends React.Component {
     constructor(props) {
@@ -11,7 +13,27 @@ class RSSFeed extends React.Component {
 
     async componentDidMount() {
         this.getRSSfeed()
-            .then(res => this.setState({ feed : res.rss.channel[0].item }))
+            .then(res => {
+                this.setState({ feed : res.rss.channel[0].item })
+
+                // Log newsletter link clicks with Firebase
+                const analytics = getAnalytics(app);
+                const links = document.querySelectorAll("a");
+                links.forEach(link => {
+                    let itemID = "";
+                    if (link.href.indexOf("mailchi.mp") > 0) {
+                        itemID = "Newsletter Post"
+                    }
+                    if (itemID != "") {
+                        link.addEventListener("click", function() {
+                            logEvent(analytics, 'select_content', {
+                                content_id: itemID
+                            });
+                            console.log(itemID + " selected");
+                        });
+                    }
+                });
+            })
             .catch(err => console.log(err));
     }
 
@@ -33,7 +55,7 @@ class RSSFeed extends React.Component {
                     // console.log(item);
                     return <RSSItem item={item} />
                 })}
-            <a id="news-button-big" className="button big white text-outline" href={NEWS_PAGE.NEWSLETTER_URL}
+            <a id="news-button-big" className="button big white text-outline" href={LINKS.NEWSLETTER_STR}
                 target="_blank" rel="noopener noreturner">VIEW FULL ARCHIVE</a>
             </div>
             );

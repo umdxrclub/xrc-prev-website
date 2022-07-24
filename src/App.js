@@ -18,30 +18,91 @@ import {
 	Routes,
 	Route,
   } from "react-router-dom";
+import { LINKS } from './XR_CONSTANTS';
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from './Firebase';
 
-function App() {
+class App extends React.Component {
 
-	return (
-		<div className="App">
-			<Router>
-				<a id="top"/>
-				<ScrollToTop/> {/* Hook to scroll to top of page when page changes */}
-				<Alert />
-				<div className="page-body">
-					<Routes>
-						<Route path="/" element={<Home/>}/>
-						<Route path="/about" element={<About/>}/>
-						<Route path="/news" element={<News/>}/>
-						<Route path="/events" element={<Events/>}/>
-						<Route path="/lab" element={<Lab/>}/>
-						<Route path="/projects" element={<Projects/>}/>
-						<Route path="*" element={<Error/>}/>
-					</Routes>
-				</div>
-				<Footer/>
-			</Router>
-		</div>
-	);
+	constructor(props) {
+		super(props);
+	}
+
+	componentDidMount() {
+
+		// Log notable link clicks with Firebase
+        const analytics = getAnalytics(app);
+		const links = document.querySelectorAll("a");
+		links.forEach(link => {
+			let itemID = "";
+			switch (link.href) {
+				case LINKS.CALENDAR_STR:
+					itemID = "Google Calendar";
+					break;
+				case LINKS.DISCORD_STR: 
+					itemID = "Discord";
+					break;
+				case LINKS.EMAIL_STR: 
+					itemID = "Email";
+					break;
+				case LINKS.INSTAGRAM_STR: 
+					itemID = "Instagram";
+					break;
+				case LINKS.LINKEDIN_STR: 
+					itemID = "LinkedIn";
+					break;
+				case LINKS.TERPLINK_STR: 
+					itemID = "TerpLink";
+					break;
+				case LINKS.TWITTER_STR: 
+					itemID = "Twitter";
+					break;
+				case LINKS.NEWSLETTER_STR: 
+					itemID = "Newsletter";
+					break;
+				default:
+					break;
+			}
+			if (link.href.indexOf("terplink.umd.edu/event") > 0) {
+				itemID = "TerpLink Event";
+			} if (link.href.indexOf("mailchi.mp") > 0) {
+				itemID = "Newsletter Post"
+			}
+			if (itemID != "") {
+				link.addEventListener("click", function() {
+					logEvent(analytics, 'select_content', {
+						content_id: itemID
+					});
+					console.log(itemID + " selected");
+				});
+			}
+		});
+	}
+
+	render() {
+
+		return (
+			<div className="App">
+				<Router>
+					<a id="top"/>
+					<ScrollToTop/> {/* Hook to scroll to top of page when page changes */}
+					<Alert />
+					<div className="page-body">
+						<Routes>
+							<Route path="/" element={<Home/>}/>
+							<Route path="/about" element={<About/>}/>
+							<Route path="/news" element={<News/>}/>
+							<Route path="/events" element={<Events/>}/>
+							<Route path="/lab" element={<Lab/>}/>
+							<Route path="/projects" element={<Projects/>}/>
+							<Route path="*" element={<Error/>}/>
+						</Routes>
+					</div>
+					<Footer/>
+				</Router>
+			</div>
+		);
+	}
 }
 
 export default App;

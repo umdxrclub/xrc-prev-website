@@ -11,7 +11,7 @@ module.exports = Object.freeze({
 	ALERT : "This is an alert to highlight and [link](https://terplink.umd.edu/organization/xr-club/) " + 
 			"news, events, etc. of particular interest.",
 	
-	FOOTER : {
+	LINKS : {
 
 		TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club/',
 		EMAIL_STR : 'mailto:umd.xr.club@gmail.com',
@@ -21,7 +21,11 @@ module.exports = Object.freeze({
 		TWITTER_STR : 'https://twitter.com/umdxrclub/',
 		INSTAGRAM_STR : 'https://instagram.com/umdxrclub/',
 		CALENDAR_STR : 'https://ter.ps/xrcalendar/',
+		NEWSLETTER_STR : 'https://us19.campaign-archive.com/home/?u=ec383b1ee117d6a39daa338a1&id=68057666d1',
 
+	},
+
+	FOOTER : {
 		// Supports markdown
 		GET_INVOLVED_STR : 'Events are open to all UMD students. If you want to stay updated on our latest upcoming events, ' +
 		'make sure to join our Discord server and register as a club member on TerpLink for access to our weekly emails.',
@@ -48,14 +52,14 @@ module.exports = Object.freeze({
 			{
 				'title' : 'GAME NIGHTS',
 				'icon' : 'svg/game-icon.svg',
-				'description': 'Gain hands-on experience with XR equipment and meet other XR Club members while trying your hand at immersive games.',
+				'description': 'Gain hands-on experience with XR equipment and meet other XR Club members while challenging them to immersive games.',
 				'action' : 'PLAY',
 				'link' : '/events',
 			},
 			{
 				'title' : 'PROJECTS',
 				'icon' : 'svg/build-icon.svg',
-				'description': 'Collaborate with peers to build personal projects, immersive exhibitions, and submissions for external XR challenges.',
+				'description': 'Collaborate with peers to develop personal projects, build immersive installations, and compete in external XR challenges.',
 				'action' : 'CONTRIBUTE',
 				'link' : '/projects',
 			}
@@ -168,7 +172,6 @@ module.exports = Object.freeze({
 
 	NEWS_PAGE : {
 		DESCRIPTION : 'View the latest mailings of our newsletter, sent via TerpLink, here.',
-		NEWSLETTER_URL : 'https://us19.campaign-archive.com/home/?u=ec383b1ee117d6a39daa338a1&id=68057666d1',
 		
 		// Supports Markdown
 		BOTTOM_NOTE : 'To receive our newsletter in your inbox, please join our organization on TerpLink.'

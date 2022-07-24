@@ -5,7 +5,7 @@
 import '../App.css';
 import React from 'react';
 import SocialLinks from '../components/SocialLinks';
-import { FOOTER } from '../XR_CONSTANTS';
+import { FOOTER, LINKS } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import ReactMarkdown from 'react-markdown';
@@ -31,13 +31,13 @@ function Footer () {
                         
                         {/* Discord and TerpLink */}
                         <div id="join-links">
-                            <a href={FOOTER.TERPLINK_STR} target="_blank" rel="noopener noreferrer" className="underline">
+                            <a href={LINKS.TERPLINK_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                 <img src="svg/link.svg"/> Join our TerpLink
                             </a>
-                            <a href={FOOTER.DISCORD_STR} target="_blank" rel="noopener noreferrer" className="underline">
+                            <a href={LINKS.DISCORD_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                <img src="svg/discord.svg"/> Join our Discord
                             </a>
-                            <a href={FOOTER.CALENDAR_STR} target="_blank" rel="noopener noreferrer" className="underline">
+                            <a href={LINKS.CALENDAR_STR} target="_blank" rel="noopener noreferrer" className="underline">
                                <img src="svg/calendar.svg"/> Add our calendar
                             </a>
                         </div>
@@ -70,9 +70,9 @@ function Footer () {
                         <p><strong>Community</strong></p>
                         <Link to="/news" className="footer-link underline">News</Link>
                         <Link to="/events" className="footer-link underline">Events</Link>
-                        <a href={FOOTER.TERPLINK_STR} target="_blank" 
+                        <a href={LINKS.TERPLINK_STR} target="_blank" 
                             className="footer-link underline">TerpLink</a>
-                        <a href={FOOTER.DISCORD_STR} target="_blank" 
+                        <a href={LINKS.DISCORD_STR} target="_blank" 
                             className="footer-link underline">Discord</a>
                     </div>
                 </div>
