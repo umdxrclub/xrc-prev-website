@@ -3,8 +3,10 @@ const path = require('path');
 const axios = require('axios');
 const fs = require('fs');
 const parseString = require('xml2js').parseString;
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 5000;
 
 // This displays message that the server running and listening to specified port

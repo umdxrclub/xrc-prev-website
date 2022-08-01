@@ -38,7 +38,7 @@ class RSSFeed extends React.Component {
     }
 
     getRSSfeed = async () => {
-        const response = await fetch('/xreport-rss');
+        const response = await fetch('http://localhost:5000/xreport-rss');
         const body = await response.json();
 
         if (response.status !== 200) {

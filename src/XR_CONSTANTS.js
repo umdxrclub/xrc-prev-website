@@ -386,31 +386,22 @@ module.exports = Object.freeze({
 				'name' : 'NASA S.U.I.T.S. Challenge',
 				'description' : [
 					'NASA S.U.I.T.S (Spacesuit User Interface Technologies for Students) is an annual challenge for ' + 
-					'undergraduate students to design and build spacesuit information displays in augmented reality.',
-					'XR Club members participated in this program in 2021 and 2020. Recruitment for this challenge begins in the fall.'
+					'undergraduate students to design and build spacesuit information displays in augmented reality. ' 
 				],
 				'image' : 'NASASUITS-logo.png',
 				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
+				'status' : 'Recruitment begins Fall 2022',
+				'years_participated' : '2020, 2021',
 			},
 			{
 				'name' : 'Snap Creative Challenge',
 				'description' : [
 					'The Snap Creative Challenge is an opportunity for HCI and AR researchers to design immersive and multisensorial experiences ' + 
-					'beyond looking at images and videos through a phone. The XR Club participated in this challenge in 2021. Recruitment for this ' + 
-					'challenge begins in the summer.'
-				],
+					'beyond looking at images and videos through a phone.'],
 				'image' : 'snap_ar_lens_challenge.png',
 				'url' : 'https://www.snapcreativechallenge.com/',
-			},
-			{
-				'name' : 'NASA S.U.I.T.S. Challenge',
-				'description' : [
-					'NASA S.U.I.T.S (Spacesuit User Interface Technologies for Students) is an annual challenge for ' + 
-					'undergraduate students to design and build spacesuit information displays in augmented reality.',
-					'XR Club members participated in this program in 2021 and 2020. Recruitment for this challenge begins in the fall.'
-				],
-				'image' : 'NASASUITS-logo.png',
-				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
+				'status' : 'Proposals due July 31 2022',
+				'years_participated' : '2021, 2022',
 			},
 
 		],

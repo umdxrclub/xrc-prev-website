@@ -32,17 +32,7 @@ function Projects() {
                 <ReactMarkdown children={PROJECT_PAGE.PARAGRAPH} linkTarget="_blank"></ReactMarkdown>
                 <div className="spacer"></div>
 
-                <h2 className="text-align-right">CHALLENGES</h2>
-                <div className="horizontal-flex-container">
-                    {
-                        PROJECT_PAGE.CHALLENGE_INFORMATION.map(challenge => {
-                            return <Challenge id={PROJECT_PAGE.CHALLENGE_INFORMATION.indexOf(challenge)} {...challenge}/>
-                        })
-                    }
-                </div>
-                <div class="spacer"></div>
-
-                <h2>PROJECT SHOWCASE</h2>
+                <h2 className="text">PROJECT SHOWCASE</h2>
                 <div className="horizontal-flex-container">
                     {
                         PROJECT_PAGE.PROJECTS_INFORMATION.map(project => {
@@ -50,6 +40,15 @@ function Projects() {
                         })
                     }
                 </div>
+
+                <div class="spacer"></div>
+
+                <h2 className="text-align-right">CHALLENGES</h2>
+                {
+                    PROJECT_PAGE.CHALLENGE_INFORMATION.map(challenge => {
+                        return <Challenge id={PROJECT_PAGE.CHALLENGE_INFORMATION.indexOf(challenge)} {...challenge}/>
+                    })
+                }
 
             </div>
 

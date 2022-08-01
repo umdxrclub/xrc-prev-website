@@ -152,7 +152,7 @@ p a:hover {
     height: 60vh;
     /*background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;*/
     margin-bottom: 8vw; /* 4vw if straight bg */
-    transition: 0.3s;
+    transition: 0.3s ease-in;
 }
 
 .halfpage-banner .background-svg {
@@ -284,10 +284,10 @@ canvas {
     font-family: var(--font-secondary);
     font-size: 2em;
     color: transparent;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
+    transition: all 0.3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
 }
 
 .button:hover {
@@ -646,7 +646,8 @@ nav {
 /* ================ Projects ================ */
 
 .challenge-container {
-    width: 25% !important;
+    flex-direction: row;
+    width: 100% !important;
     margin-bottom: 8vh;
     margin-left: auto;
     margin-right: auto;
@@ -659,13 +660,13 @@ nav {
     width: 100%;
     align-content: left;
     align-items: left;
-    align-self: center;
-    text-align: center;
+    align-self: left;
+    text-align: left;
     margin-top: 2vh;
+    margin-bottom: 0;
 }
 
 .challenge-container p {
-    text-align: justify;
     margin: unset;
 }
 
@@ -679,14 +680,43 @@ nav {
     filter: brightness(0.3);
 }
 
-.project-logo {
+.challenge-logo {
     float: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 8vw;
-    height: 8vw;
+    margin-right: 4vw;
+    margin-left: 2vw;
+    width: 12vw;
+    height: 12vw;
     align-self: center;
     display: block;
+    transition: 0.3s ease-in;
+    border-radius: 50%;
+}
+
+.challenge-container:hover .challenge-logo {
+    border-radius: 0%;
+    width: 0vw;
+}
+
+.challenge-arrow {
+    fill: var(--xr-cool-red) !important;
+    width: 0 !important;
+    display: inline-block;
+    object-fit: contain !important;
+    transition: 0.3s ease-in;
+    margin: 0 !important;
+}
+
+.challenge-container:hover .challenge-arrow {
+    width: 3vw !important;
+    margin-left: 9vw !important;
+}
+
+.challenge-status {
+    margin-top: 0;
+    color: var(--xr-purple);
+    font-size: 1.25em;
+    font-weight: bolder;
+    margin-bottom: 2vh !important;
 }
 
 .challenge-container .button {
@@ -694,6 +724,12 @@ nav {
     float: center;
     margin-right: auto;
     margin-left: auto;
+}
+
+.years-participated {
+    font-weight: lighter;
+    font-size: 1.25em;
+    margin-top: 2vh !important;
 }
 
 .project-card {
@@ -713,7 +749,7 @@ nav {
     justify-content: flex-start;
     justify-items: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
 }
 
 .news-item h5 {
@@ -734,7 +770,7 @@ nav {
     display: inline-flex;
     margin-right: 5vw;
     object-fit: cover;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
 }
 
 .news-image img {
@@ -772,7 +808,7 @@ nav {
     width: 0 !important;
     display: inline-block;
     object-fit: contain !important;
-    transition: 0.3s;
+    transition: 0.3s ease-in;
     margin: 0 !important;
 }
 
@@ -968,7 +1004,7 @@ nav {
         padding-bottom: 10vh;
         margin-bottom: -10vh;
         margin-left: 10vw;
-        transition: 0.3s;
+        transition: 0.3s ease-in;
     }
 
     .nav-wrapper a {

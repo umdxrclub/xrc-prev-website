@@ -6,6 +6,7 @@
     "@react-three/drei": "^9.13.2",
     "@react-three/fiber": "^8.0.26",
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "firebase": "^9.9.0",
     "fs": "^0.0.1-security",
@@ -44,6 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
