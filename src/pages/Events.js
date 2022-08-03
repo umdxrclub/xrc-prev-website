@@ -14,10 +14,12 @@ function Events() {
 
     document.title = "Events | XR Club at UMD"
 
-    const analytics = getAnalytics(app);
-    logEvent(analytics, 'screen_view', {
-        firebase_screen: 'events', 
-    });
+    if (window.location.href.indexOf("localhost") == -1) {
+        const analytics = getAnalytics(app);
+        logEvent(analytics, 'screen_view', {
+            firebase_screen: 'events', 
+        });
+    }
 
     const upcoming = [];
     const past = [];

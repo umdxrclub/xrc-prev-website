@@ -16,10 +16,12 @@ function Home() {
 
     document.title = "XR Club at UMD"
 
-    const analytics = getAnalytics(app);
-    logEvent(analytics, 'screen_view', {
-        firebase_screen: 'home', 
-    });
+    if (window.location.href.indexOf("localhost") == -1) {
+        const analytics = getAnalytics(app);
+        logEvent(analytics, 'screen_view', {
+            firebase_screen: 'home', 
+        });
+    }
 
     return (
         <div id="Home">

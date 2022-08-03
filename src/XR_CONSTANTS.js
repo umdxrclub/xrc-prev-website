@@ -8,8 +8,8 @@
 module.exports = Object.freeze({
 
 	// Supports markdown
-	ALERT : "This is an alert to highlight and [link](https://terplink.umd.edu/organization/xr-club/) " + 
-			"news, events, etc. of particular interest.",
+	ALERT : "The school year starts on August 29th–join us on [TerpLink](https://terplink.umd.edu/organization/xr-club/) " + 
+			"to see how you can get involved!",
 	
 	LINKS : {
 
@@ -217,6 +217,7 @@ module.exports = Object.freeze({
 				'fa_icon' : 'fa-users',
 				'image' : 'spring2022/brainstormnight.jpg',
 			},
+			/*
 			{
 				'name' : 'Introduction to Unity (Part II)',
 				'date' : new Date(2022, 1, 22),
@@ -367,6 +368,7 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8089730',
 				'fa_icon' : 'fa-gamepad',
 			},
+			*/
 			
 		],
 

@@ -15,10 +15,12 @@ function About() {
 
     document.title = "About | XR Club at UMD"
 
-    const analytics = getAnalytics(app);
-    logEvent(analytics, 'screen_view', {
-        firebase_screen: 'about', 
-    });
+    if (window.location.href.indexOf("localhost") == -1) {
+        const analytics = getAnalytics(app);
+        logEvent(analytics, 'screen_view', {
+            firebase_screen: 'about', 
+        });
+    }
 
     return (
         

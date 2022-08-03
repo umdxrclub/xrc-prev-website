@@ -151,7 +151,7 @@ p a:hover {
     flex-direction: column;
     height: 60vh;
     /*background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;*/
-    margin-bottom: 8vw; /* 4vw if straight bg */
+    margin-bottom: 20vh; /* 4vw if straight bg */
     transition: 0.3s ease-in;
 }
 

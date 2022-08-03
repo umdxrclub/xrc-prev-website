@@ -30,53 +30,55 @@ class App extends React.Component {
 
 	componentDidMount() {
 
-		// Log notable link clicks with Firebase
-        const analytics = getAnalytics(app);
-		const links = document.querySelectorAll("a");
-		links.forEach(link => {
-			let itemID = "";
-			switch (link.href) {
-				case LINKS.CALENDAR_STR:
-					itemID = "Google Calendar";
-					break;
-				case LINKS.DISCORD_STR: 
-					itemID = "Discord";
-					break;
-				case LINKS.EMAIL_STR: 
-					itemID = "Email";
-					break;
-				case LINKS.INSTAGRAM_STR: 
-					itemID = "Instagram";
-					break;
-				case LINKS.LINKEDIN_STR: 
-					itemID = "LinkedIn";
-					break;
-				case LINKS.TERPLINK_STR: 
-					itemID = "TerpLink";
-					break;
-				case LINKS.TWITTER_STR: 
-					itemID = "Twitter";
-					break;
-				case LINKS.NEWSLETTER_STR: 
-					itemID = "Newsletter";
-					break;
-				default:
-					break;
-			}
-			if (link.href.indexOf("terplink.umd.edu/event") > 0) {
-				itemID = "TerpLink Event";
-			} if (link.href.indexOf("mailchi.mp") > 0) {
-				itemID = "Newsletter Post"
-			}
-			if (itemID != "") {
-				link.addEventListener("click", function() {
-					logEvent(analytics, 'select_content', {
-						content_id: itemID
+		if (window.location.href.indexOf("localhost") == -1) {
+			// Log notable link clicks with Firebase
+			const analytics = getAnalytics(app);
+			const links = document.querySelectorAll("a");
+			links.forEach(link => {
+				let itemID = "";
+				switch (link.href) {
+					case LINKS.CALENDAR_STR:
+						itemID = "Google Calendar";
+						break;
+					case LINKS.DISCORD_STR: 
+						itemID = "Discord";
+						break;
+					case LINKS.EMAIL_STR: 
+						itemID = "Email";
+						break;
+					case LINKS.INSTAGRAM_STR: 
+						itemID = "Instagram";
+						break;
+					case LINKS.LINKEDIN_STR: 
+						itemID = "LinkedIn";
+						break;
+					case LINKS.TERPLINK_STR: 
+						itemID = "TerpLink";
+						break;
+					case LINKS.TWITTER_STR: 
+						itemID = "Twitter";
+						break;
+					case LINKS.NEWSLETTER_STR: 
+						itemID = "Newsletter";
+						break;
+					default:
+						break;
+				}
+				if (link.href.indexOf("terplink.umd.edu/event") > 0) {
+					itemID = "TerpLink Event";
+				} if (link.href.indexOf("mailchi.mp") > 0) {
+					itemID = "Newsletter Post"
+				}
+				if (itemID != "") {
+					link.addEventListener("click", function() {
+						logEvent(analytics, 'select_content', {
+							content_id: itemID
+						});
+						console.log(itemID + " selected");
 					});
-					console.log(itemID + " selected");
-				});
-			}
-		});
+				}
+			});
+		}	
 	}
 
 	render() {

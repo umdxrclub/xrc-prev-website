@@ -14,10 +14,13 @@ import app from '../Firebase';
 function Error() {
 
     document.title = "404 | XR Club at UMD"
-    const analytics = getAnalytics(app);
-    logEvent(analytics, 'screen_view', {
-        firebase_screen: '404', 
-    });
+
+    if (window.location.href.indexOf("localhost") == -1) {
+        const analytics = getAnalytics(app);
+        logEvent(analytics, 'screen_view', {
+            firebase_screen: '404', 
+        });
+    }
 
     return (
         

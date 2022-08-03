@@ -42,10 +42,12 @@ class Lab extends React.Component {
     componentDidMount() {
         document.title = "Lab | XR Club at UMD"
 
-        const analytics = getAnalytics(app);
-        logEvent(analytics, 'screen_view', {
-            firebase_screen: 'lab', 
-        });
+        if (window.location.href.indexOf("localhost") == -1) {
+            const analytics = getAnalytics(app);
+            logEvent(analytics, 'screen_view', {
+                firebase_screen: 'lab', 
+            });
+        }
     }
 
     render() {
