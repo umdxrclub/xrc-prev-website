@@ -8,9 +8,8 @@
 module.exports = Object.freeze({
 
 	// Supports markdown
-	ALERT : "The school year starts on August 29th–join us on [TerpLink](https://terplink.umd.edu/organization/xr-club/) " + 
-			"to see how you can get involved!",
-	
+	ALERT : "Come join us at the [First Look Fair](https://stamp.umd.edu/activities/student_org_resource_center_sorc/get_involved/first_look_fair)" + 
+			" on September 8th from 10AM to 3PM to learn more about the club.",
 	LINKS : {
 
 		TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club/',
@@ -72,11 +71,10 @@ module.exports = Object.freeze({
 		DESCRIPTION : 'We are the University of Maryland\'s Extended Reality (XR) Club.',
 
 		// Supports markdown
-		INTRO_PARAGRAPH : 'The XR Club was established to create an environment in which UMD students interested in augmented' + 
-		' and virtual reality application development can collaborate with like-minded individuals and gain access to' + 
-		' cutting-edge hardware and software tools. In addition to providing access to physical resources, a primary mission of the' +
-		' club is providing the campus community with educational resources in augmented and virtual reality development through' + 
-		' club events and hackathons.',
+		INTRO_PARAGRAPH : "The XR Club is a student organization here at the University of Maryland (UMD) for students interested " + 
+			"in virtual, augmented and mixed reality technologies. We hope to create a immersive ecosystem here on campus by " + 
+			"providing students with access to cutting edge hardware and software tools as well as educational resources through " +
+			"workshops and hackathons.",
 
 		// Information about members of the xr club leadership.
 		LEADERSHIP_INFORMATION : [
@@ -85,26 +83,30 @@ module.exports = Object.freeze({
 				'name' : 'Jason Fotso-Puepi',
 				'title' : 'President',
 				'linkedin' : 'https://www.linkedin.com/in/jason-fotso/',
+				'image' : 'jason.JPG',
 			},
 			{
 				'name' : 'Damian Figueroa',
 				'title' : 'Vice President, Web Developer',
-				'github' : 'https://github.com/djfigs1'
+				'github' : 'https://github.com/djfigs1',
+				'image' : 'dj.png',
 			},
 			{
 				'name' : 'Andrew Yuan',
 				'title' : 'Treasurer',
 				'web' : 'http://andrewyuantw.com/',
 				'linkedin' : 'https://www.linkedin.com/in/andrewyuantw/',
-				'github' : 'https://github.com/andrewyuantw'
+				'github' : 'https://github.com/andrewyuantw',
+				'image' : 'andrew.jpg',
 			},
 			{
 				'name' : 'Justin Pratama',
 				'title' : 'Engagement Director',
-				'linkedin' : 'https://www.linkedin.com/in/justin-pratama/'
+				'linkedin' : 'https://www.linkedin.com/in/justin-pratama/',
+				'image' : 'justin.jpg'
 			},
 			{
-				'name' : 'Mrugesh Shah',
+				'name' : 'Nicholas Nguyen',
 				'title' : 'Lab Manager'
 			},
 			{
@@ -116,7 +118,9 @@ module.exports = Object.freeze({
 				'name' : 'Ian Morrill',
 				'title' : 'Mentor',
 				'web' : 'https://ianmorrill.com/',
-				'github' : 'https://github.com/iwotastic/'
+				'github' : 'https://github.com/iwotastic/',
+				'linkedin' : 'https://www.linkedin.com/mwlite/in/imorrill',
+				'image' : 'ian.jpg',
 			},
 			{
 				'name' : 'Tejas Chandakkar',
@@ -127,38 +131,45 @@ module.exports = Object.freeze({
 				'name' : 'Abhinav Garlapati',
 				'title' : 'Mentor',
 				'linkedin' : 'https://www.linkedin.com/in/abhinav-garlapati-18yrs/',
+				'image' : 'abhinav.jpg',
 			},
 			{
 				'name' : 'Connor Hartzog',
 				'title' : 'Mentor',
 				'github' : 'https://github.com/DukeOfHounds',
+				'image' : 'connor.jpg'
 			},
 			{
 				'name' : 'Marilyn Ortega',
 				'title' : 'Graphic Design Lead',
 				'web' : 'https://mariortegajx.wixsite.com/marior',
-				'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/'
+				'linkedin' : 'https://www.linkedin.com/in/marilyn-ortega-926b8420b/',
+				'image' : 'mari.jpg'
 			},
 			{
 				'name' : 'Elaine Gao',
 				'title' : 'Graphic Designer',
 				'linkedin' : 'https://www.linkedin.com/in/elaineyien/',
+				'image' : 'elaine.jpg',
 			},
 			{
 				'name' : 'Samson Mulugeta',
 				'title' : 'Event Coordinator',
-				'linkedin' : 'https://www.linkedin.com/in/samson02/'
+				'linkedin' : 'https://www.linkedin.com/in/samson02/',
+				'image' : 'samson.jpg'
 			},
 			{
 				'name' : 'Sahithi Jarugula',
 				'title' : 'Marketing Director',
 				'linkedin' : 'https://www.linkedin.com/in/sahithi-jarugula-9aa0b2222',
+				'image' : 'sahithi.png'
 			},
 			{
 				'name' : 'Caroline Dinh',
 				'title' : 'Web Developer',
 				'github' : 'https://github.com/cyborg48/',
 				'linkedin' : 'http://linkedin.com/in/ctdinh/',
+				'image' : 'caroline.jpg',
 			},
 			{
 				'name' : 'Ajitesh Kaladi',
@@ -217,7 +228,6 @@ module.exports = Object.freeze({
 				'fa_icon' : 'fa-users',
 				'image' : 'spring2022/brainstormnight.jpg',
 			},
-			/*
 			{
 				'name' : 'Introduction to Unity (Part II)',
 				'date' : new Date(2022, 1, 22),
@@ -272,6 +282,7 @@ module.exports = Object.freeze({
 				'fa_icon' : 'fa-gamepad',
 				'image' : 'spring2022/gamingnight.jpg',
 			},
+			/*	
 			{
 				'name' : 'What CS Electives Should I Take? (An XR Students Perspective)',
 				'date' : new Date(2022, 2, 11),
@@ -442,7 +453,7 @@ module.exports = Object.freeze({
 			"Looking to utilize powerful computers to build out your latest AR/VR idea and get some help troubleshooting your XR project? \n" +
 			"Want to brainstorm new ideas and chat about the future of XR with other members of the club? \n" + 
 			"If so, then stop by the XR Lab (AVW 4176) for our Open Lab Hours for all your XR needs! We’re open several times throughout " + 
-			"the week; check out the XR Club Google Calendar (ter.ps/xrcalendar) for the latest timings."
+			"the week; check out the [XR Club Google Calendar](https://ter.ps/xrcalendar) for the latest timings."
 			
 		,
 
