@@ -404,6 +404,7 @@ module.exports = Object.freeze({
 				'image' : 'NASASUITS-logo.png',
 				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
 				'status' : 'Recruitment begins Fall 2022',
+				'action' : 'SUBMITTED PROPOSAL',
 				'years_participated' : '2020, 2021',
 			},
 			{
@@ -414,6 +415,7 @@ module.exports = Object.freeze({
 				'image' : 'snap_ar_lens_challenge.png',
 				'url' : 'https://www.snapcreativechallenge.com/',
 				'status' : 'Proposals due July 31 2022',
+				'action' : 'SUBMITTED PROPOSAL',
 				'years_participated' : '2021, 2022',
 			},
 
