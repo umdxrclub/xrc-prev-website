@@ -19,7 +19,7 @@ function Challenge(props) {
 						return <p>{paragraph}</p>
 					})
 				}
-				<p className="years-participated">YEARS PARTICIPATED: {props.years_participated}</p>
+				<p className="years-participated">YEARS {props.action}: {props.years_participated}</p>
 			</div>
 			<img className="challenge-arrow" src="svg/right-arrow.svg"></img>
 		</a>
