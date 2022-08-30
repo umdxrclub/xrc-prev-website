@@ -47,7 +47,7 @@ class RSSItem extends React.Component {
         return (
             <a className="news-item underline" href={this.props.item.link} target="_blank" rel="noopener noreferrer">
                 <div className="news-image">
-                    <img src={this.getImagePreview(this.props.item)}></img>
+                    <img src={this.getImagePreview(this.props.item)} alt=""></img>
                 </div>
                 <div className="content">
                     <h5>{this.props.item.title}</h5>
@@ -57,7 +57,7 @@ class RSSItem extends React.Component {
                         {this.getTextPreview(this.props.item)}
                     </p>
                 </div>
-                <img className="hover-arrow" src="svg/right-arrow.svg"></img>
+                <img className="hover-arrow" src="svg/right-arrow.svg" alt=""></img>
             </a>
         )
     }

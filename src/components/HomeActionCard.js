@@ -8,7 +8,7 @@ function HomeActionCard(props) {
 
   return (
     <div className={`card action ${color}-glass`}>
-        <img className="card-icon" src={props.icon}/>
+        <img className="card-icon" src={props.icon} alt=""/>
         <p className="card-header">{props.title}</p>
         <p className="text-align-center">{props.description}</p>
         <div className="card-button-container">

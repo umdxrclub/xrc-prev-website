@@ -9,7 +9,8 @@ function Challenge(props) {
 	return (
 		<a className="challenge-container" href={props.url} target="_blank" rel="noopener noreferrer">
 			<div className="challenge-header">
-				<img className="challenge-logo" src={`images/challenges/${props.image}`}></img>
+				<img className="challenge-logo" src={`images/challenges/${props.image}`}
+					alt={`${props.name} logo`}></img>
 			</div>
 			<div className="project-info">
 				<h5>{props.name.toUpperCase()}</h5>
@@ -21,7 +22,7 @@ function Challenge(props) {
 				}
 				<p className="years-participated">YEARS {props.action}: {props.years_participated}</p>
 			</div>
-			<img className="challenge-arrow" src="svg/right-arrow.svg"></img>
+			<img className="challenge-arrow" src="svg/right-arrow.svg" alt=""></img>
 		</a>
 	);
 }

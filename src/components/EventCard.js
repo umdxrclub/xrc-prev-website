@@ -29,7 +29,7 @@ function EventCard(props) {
   return (
     <div className={`card event-card action ${props.color}-glass`}>
         {
-          props.image ? <img className="card-header-image" src={`images/events/${props.image}`}></img> : 
+          props.image ? <img className="card-header-image" src={`images/events/${props.image}`} alt=""></img> : 
             ( props.youtube_id ? 
               <div className="card-header-video">
                   <iframe src={`https://www.youtube.com/embed/${props.youtube_id}`} title="YouTube video player" frameborder="0" 

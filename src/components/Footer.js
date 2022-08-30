@@ -19,7 +19,7 @@ function Footer () {
     return (
         <div id="Footer">
 
-            <img className="background-svg" src="svg/footer-background.svg"/>
+            <img className="background-svg" src="svg/footer-background.svg" alt=""/>
 
             <div className="section">
 
@@ -27,18 +27,18 @@ function Footer () {
                 <a id="get-involved"/>
                 <div id="footer-section-1">
                     <div className="horizontal-flex-container">
-                        <img id="get-involved-img" src="svg/get-involved.svg"/>
+                        <img id="get-involved-img" src="svg/get-involved.svg" alt="Get Involved"/>
                         
                         {/* Discord and TerpLink */}
                         <div id="join-links">
                             <a href={LINKS.TERPLINK_STR} target="_blank" rel="noopener noreferrer" className="underline">
-                                <img src="svg/link.svg"/> Join our TerpLink
+                                <img src="svg/link.svg" alt=""/> Join our TerpLink
                             </a>
                             <a href={LINKS.DISCORD_STR} target="_blank" rel="noopener noreferrer" className="underline">
-                               <img src="svg/discord.svg"/> Join our Discord
+                               <img src="svg/discord.svg" alt=""/> Join our Discord
                             </a>
                             <a href={LINKS.CALENDAR_STR} target="_blank" rel="noopener noreferrer" className="underline">
-                               <img src="svg/calendar.svg"/> Add our calendar
+                               <img src="svg/calendar.svg" alt=""/> Add our Google calendar
                             </a>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ function Footer () {
 
                 {/* Website footer */}
                 <div id="footer-section-2" className="horizontal-flex-container">
-                    <img id="footer-logo" src="images/XR_Club_Logo_with_Outer_Circle.png"/>
+                    <img id="footer-logo" src="images/XR_Club_Logo_with_Outer_Circle.png" alt="XR Club logo"/>
                     <div id="footer-info">
                         <h4>XR Club</h4>
                         <p>University of Maryland, College Park</p>

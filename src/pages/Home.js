@@ -28,7 +28,7 @@ function Home() {
 
             {/* Header */}
             <div id="header">
-                <img className="background-svg" src="svg/header-background.svg"/>
+                <img className="background-svg" src="svg/header-background.svg" alt=""/>
 
                 {/* Nav bar */}
                 <Navbar />

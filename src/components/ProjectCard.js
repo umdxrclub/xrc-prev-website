@@ -13,10 +13,10 @@ function ProjectCard(props) {
 			<p className="text-align-center">{props.description}</p>
 			<div id="card-icon-links">
 				{
-					props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><img src="svg/github.svg"/></a> : null
+					props.github ? <a href={props.github} target="_blank" rel="noopener noreferrer"><img src="svg/github.svg" alt="GitHub"/></a> : null
 				}
 				{
-					props.web ? <a href={props.web} target="_blank" rel="noopener noreferrer"><img src="svg/web.svg"/></a> : null
+					props.web ? <a href={props.web} target="_blank" rel="noopener noreferrer"><img src="svg/web.svg" alt="GitHub"/></a> : null
 				}
 			</div>
 		</div>

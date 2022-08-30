@@ -27,7 +27,7 @@ class Alert extends React.Component {
     return (
       <div id="alert" className={ this.state.open ? "" : "closed" }>
         <ReactMarkdown children={XR_CONSTANTS.ALERT} linkTarget="_blank"></ReactMarkdown>
-        <img id="close" src="svg/close.svg" onClick={this.close}></img>
+        <img id="close" src="svg/close.svg" alt="Close banner" onClick={this.close}></img>
       </div>
     );
   }

@@ -32,7 +32,7 @@ function About() {
             <div className="section padding-medium">
                 <ReactMarkdown children={ABOUT_PAGE.INTRO_PARAGRAPH} linkTarget="_blank"></ReactMarkdown>
                 <div className="spacer"></div>
-                <img src="images/group.png"></img>
+                <img src="images/group.png" alt="Group photo of the XR Club in the Iribe Center"></img>
             </div>
 
             {/* TODO: Immersive timeline of XR club */}
