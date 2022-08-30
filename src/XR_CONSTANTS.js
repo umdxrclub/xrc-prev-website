@@ -175,7 +175,7 @@ module.exports = Object.freeze({
 				'name' : 'Ajitesh Kaladi',
 				'title' : 'Video Producer',
 				'linkedin' : 'https://www.linkedin.com/in/ajkaladi/',
-				'image' : 'aj.jpg',
+				'image' : 'aj.JPG',
 			}
 		],
 	
