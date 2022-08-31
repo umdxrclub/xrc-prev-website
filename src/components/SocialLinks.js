@@ -21,6 +21,9 @@ function SocialLinks(props) {
             <a href={LINKS.EMAIL_STR} target="_blank" rel="noopener noreferrer">
                 <img src="svg/email.svg" alt="Email"/>
             </a>
+            <a href={LINKS.YOUTUBE_STR} target="_blank" rel="noopener noreferrer">
+                <img src="svg/youtube.svg" alt="YouTube"/>
+            </a>
         </div>
 
     );

@@ -21,6 +21,7 @@ module.exports = Object.freeze({
 		INSTAGRAM_STR : 'https://instagram.com/umdxrclub/',
 		CALENDAR_STR : 'https://ter.ps/xrcalendar/',
 		NEWSLETTER_STR : 'https://us19.campaign-archive.com/home/?u=ec383b1ee117d6a39daa338a1&id=68057666d1',
+		YOUTUBE_STR : 'https://www.youtube.com/channel/UCbZ2BZ_fuBjoEp8ilTSrRww',
 
 	},
 
