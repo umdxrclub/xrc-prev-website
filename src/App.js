@@ -61,6 +61,10 @@ class App extends React.Component {
 					case LINKS.NEWSLETTER_STR: 
 						itemID = "Newsletter";
 						break;
+					case LINKS.YOUTUBE_STR: 
+						itemID = "YouTube";
+						break;
+
 					default:
 						break;
 				}
