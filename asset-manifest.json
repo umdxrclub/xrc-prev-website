@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/xr-club-website/static/css/main.8aa64b06.css",
+    "main.js": "/xr-club-website/static/js/main.e0bef637.js",
+    "static/media/lab.glb": "/xr-club-website/static/media/lab.77b89eaa5cc46d66001d.glb",
+    "static/media/Lato-Regular.ttf": "/xr-club-website/static/media/Lato-Regular.80c07943565d91b976e1.ttf",
+    "static/media/Lato-Thin.ttf": "/xr-club-website/static/media/Lato-Thin.6734a19bb785bf18bc64.ttf",
+    "static/media/bahnschrift.ttf": "/xr-club-website/static/media/bahnschrift.b00e12e37c52124aa504.ttf",
+    "index.html": "/xr-club-website/index.html",
+    "main.8aa64b06.css.map": "/xr-club-website/static/css/main.8aa64b06.css.map",
+    "main.e0bef637.js.map": "/xr-club-website/static/js/main.e0bef637.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa64b06.css",
+    "static/js/main.e0bef637.js"
+  ]
+}
