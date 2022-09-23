@@ -68,8 +68,7 @@ class Lab extends React.Component {
                     {/* Title */}
                     <div className="horizontal-flex-container">
 
-                        {/* TODO: Replace with original image or image that we have the right to use */}
-                        <img id="header-logo" src="images/av-williams.png" alt="Exterior of the A.V. Williams Building"/>
+                        <img id="header-logo" src="images/av-williams.jpg" alt="Exterior of the A.V. Williams Building"/>
                         <div>
                             <img id="header-text" src={`svg/lab-${status}.svg`} alt={`Our lab is currently ${status}`}/>
                             {

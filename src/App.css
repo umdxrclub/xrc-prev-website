@@ -546,6 +546,7 @@ nav {
     width: 30vw;
     height: 30vw;
     margin-right: 5vw;
+    border-radius: 50%;
 }
 
 #header-text {

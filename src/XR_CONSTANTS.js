@@ -405,7 +405,7 @@ module.exports = Object.freeze({
 				],
 				'image' : 'NASASUITS-logo.png',
 				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
-				'status' : 'Recruitment begins Fall 2022',
+				'status' : 'PROPOSALS DUE NOVEMBER 1, 2022',
 				'action' : 'SUBMITTED PROPOSAL',
 				'years_participated' : '2020, 2021',
 			},
