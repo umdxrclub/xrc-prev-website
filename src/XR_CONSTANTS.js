@@ -8,8 +8,7 @@
 module.exports = Object.freeze({
 
 	// Supports markdown
-	ALERT : "Come join us at the [First Look Fair](https://stamp.umd.edu/activities/student_org_resource_center_sorc/get_involved/first_look_fair)" + 
-			" on September 8th from 10AM to 3PM to learn more about the club.",
+	ALERT : 'Check out our upcoming workshops and Fun Friday events on [TerpLink](https://terplink.umd.edu/organization/xr-club)!',
 	LINKS : {
 
 		TERPLINK_STR : 'https://terplink.umd.edu/organization/xr-club/',
