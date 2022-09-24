@@ -174,7 +174,7 @@ module.exports = Object.freeze({
 			},
 			{
 				'name' : 'Ajitesh Kaladi',
-				'title' : 'Video Producer',
+				'title' : 'Media Producer',
 				'linkedin' : 'https://www.linkedin.com/in/ajkaladi/',
 				'image' : 'aj.JPG',
 			}
@@ -405,13 +405,9 @@ module.exports = Object.freeze({
 				],
 				'image' : 'NASASUITS-logo.png',
 				'url' : 'https://microgravityuniversity.jsc.nasa.gov/nasasuits',
-<<<<<<< HEAD
 				'status' : 'PROPOSALS DUE NOVEMBER 1 2022',
-=======
-				'status' : 'PROPOSALS DUE NOVEMBER 1, 2022',
->>>>>>> c6c87392e275e0c02da29bb4bfa8dfe0633a6bed
 				'action' : 'SUBMITTED PROPOSAL',
-				'years_participated' : '2020, 2021',
+				'years_participated' : '2021, 2022',
 			},
 			{
 				'name' : 'Snap Creative Challenge',
