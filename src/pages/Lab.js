@@ -6,6 +6,7 @@ import '../App.css';
 import React from 'react';
 import Navbar from '../components/Navbar';
 import TorusText from '../components/TorusText';
+import LabHours from '../components/LabHours';
 import {LAB_PAGE} from '../XR_CONSTANTS';
 import { Canvas } from "@react-three/fiber";
 import { useLoader, useThree } from "@react-three/fiber";
@@ -88,7 +89,12 @@ class Lab extends React.Component {
                     </div>
                 </div>
 
-                <h2 className='padding-wide text-align-right'>TAKE A TOUR</h2>
+                <div id="lab-hours" className="padding-wide horizontal-flex-container">
+                    <LabHours />
+                    <h2 id="lab-heading" className="text-align-left">OPEN HOURS</h2>
+                </div>
+
+                <h2 className='padding-wide text-align-left'>TAKE A TOUR</h2>
                 <div style={{ position: "relative", width: '100vw', height: '100vh'}}>
                     <Suspense fallback={<TorusText />}>
                         <Canvas adjustCamera camera={{ position: [0, 0, -3] }}>

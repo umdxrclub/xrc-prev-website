@@ -644,6 +644,12 @@ nav {
     width: 60%;
 }
 
+#lab-hours-table {
+    border: 1px solid var(--xr-cool-red);
+    color: var(--xr-cool-red);
+    text-align: center;
+}
+
 /* ================ Projects ================ */
 
 .challenge-container {
