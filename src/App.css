@@ -610,6 +610,11 @@ nav {
     justify-content: center;
 }
 
+.event-container.upcoming {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .event-location {
     margin: unset;
     margin-top: 0 !important;
@@ -642,6 +647,12 @@ nav {
 
 #lab-description-text {
     width: 60%;
+}
+
+#lab-hours-table {
+    border: 1px solid var(--xr-cool-red);
+    color: var(--xr-cool-red);
+    text-align: center;
 }
 
 /* ================ Projects ================ */

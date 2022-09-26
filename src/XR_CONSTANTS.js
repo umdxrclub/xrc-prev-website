@@ -242,6 +242,22 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8382289',
 				'image' : 'fall2022/joseph_cathey.jpg',
 			},
+			{
+				'name' : 'Project Kickoff Night',
+				'date' : new Date(2022, 8, 30),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8396260',
+				'image' : 'fall2022/project_kickoff.jpg',
+			},
+			{
+				'name' : 'Introduction to Unity (Part 2)',
+				'date' : new Date(2022, 9, 4),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8424600',
+				'image' : 'fall2022/unity_p1.jpg',
+			},
 			
 		],
 

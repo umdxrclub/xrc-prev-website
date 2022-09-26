@@ -61,7 +61,7 @@ function Events() {
             <div className="section padding-small">
 
                 <h2 className="text-align-right padding-small">UPCOMING EVENTS</h2>
-                <div className="event-container">
+                <div className="event-container upcoming">
                     {
                         (upcoming.length == 0) ? 
                             <div>
