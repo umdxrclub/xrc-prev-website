@@ -256,7 +256,7 @@ module.exports = Object.freeze({
 				'time' : '6:00 PM',
 				'location' : 'AVW 3258',
 				'url' : 'https://terplink.umd.edu/event/8424600',
-				'image' : 'fall2022/unity_p1.jpg',
+				'image' : 'fall2022/unity_p2.jpg',
 			},
 			
 		],
