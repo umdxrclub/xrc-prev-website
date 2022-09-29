@@ -10,7 +10,6 @@ import Events from './pages/Events';
 import Projects from './pages/Projects';
 import Lab from './pages/Lab';
 import Error from './pages/Error';
-import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer'
 import Alert from './components/Alert';
 import {
@@ -91,7 +90,6 @@ class App extends React.Component {
 			<div className="App">
 				<Router>
 					<a id="top"/>
-					<ScrollToTop/> {/* Hook to scroll to top of page when page changes */}
 					<Alert />
 					<div className="page-body">
 						<Routes>
@@ -104,7 +102,7 @@ class App extends React.Component {
 							<Route path="*" element={<Error/>}/>
 						</Routes>
 					</div>
-					<Footer/>
+				<Footer/>
 				</Router>
 			</div>
 		);

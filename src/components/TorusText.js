@@ -75,6 +75,7 @@ function TorusText(props) {
         
         <div style={{height: '80vh'}}>
 
+          <Suspense fallback={<br></br>}>
             <Canvas>
                 <ambientLight />
                 <Torus position={[0, 0, 0]} 
@@ -83,6 +84,7 @@ function TorusText(props) {
                   yRepeat = { props.yRepeat ? props.yRepeat : 4.0 }
                 />
             </Canvas>
+          </Suspense>
 
         </div>
 

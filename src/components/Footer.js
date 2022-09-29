@@ -16,6 +16,10 @@ function Footer () {
         return new Date().getFullYear(); 
     };
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)    
+    }
+
     return (
         <div id="Footer">
 
@@ -61,15 +65,15 @@ function Footer () {
                     {/* Page List */}
                     <div id="footer-pages">
                         <p><strong>Pages</strong></p>
-                        <Link to="/" className="footer-link underline">Home</Link>
-                        <Link to="/about" className="footer-link underline">About</Link>
-                        <Link to="/lab" className="footer-link underline">Lab</Link>
-                        <Link to="/projects" className="footer-link underline">Projects</Link>
+                        <Link to="/" className="footer-link underline" onClick={scrollToTop}>Home</Link>
+                        <Link to="/about" className="footer-link underline" onClick={scrollToTop}>About</Link>
+                        <Link to="/lab" className="footer-link underline" onClick={scrollToTop}>Lab</Link>
+                        <Link to="/projects" className="footer-link underline" onClick={scrollToTop}>Projects</Link>
                     </div>
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
-                        <Link to="/news" className="footer-link underline">News</Link>
-                        <Link to="/events" className="footer-link underline">Events</Link>
+                        <Link to="/news" className="footer-link underline" onClick={scrollToTop}>News</Link>
+                        <Link to="/events" className="footer-link underline" onClick={scrollToTop}>Events</Link>
                         <a href={LINKS.TERPLINK_STR} target="_blank" 
                             className="footer-link underline">TerpLink</a>
                         <a href={LINKS.DISCORD_STR} target="_blank" 
