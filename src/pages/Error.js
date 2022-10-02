@@ -3,7 +3,7 @@
  */
 
 import '../App.css';
-import React from 'react';
+import React, { startTransition } from 'react';
 import HalfBanner from '../components/HalfBanner';
 import { ERROR_PAGE } from '../XR_CONSTANTS';
 import {Link} from 'react-router-dom';
@@ -13,14 +13,17 @@ import app from '../Firebase';
 
 function Error() {
 
-    document.title = "404 | XR Club at UMD"
+    startTransition(() => {
+        document.title = "404 | XR Club at UMD";
 
-    if (window.location.href.indexOf("localhost") == -1) {
-        const analytics = getAnalytics(app);
-        logEvent(analytics, 'screen_view', {
-            firebase_screen: '404', 
-        });
-    }
+        if (window.location.href.indexOf("localhost") == -1) {
+            const analytics = getAnalytics(app);
+            logEvent(analytics, 'screen_view', {
+                firebase_screen: '404', 
+            });
+        };
+
+    });
 
     return (
         

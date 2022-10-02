@@ -224,7 +224,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/8382275',
-				'image' : 'fall2022/brainstorm_night.jpg',
+				'youtube_id' : 'hsCSGd0eunU'
 			},
 			{
 				'name' : 'Introduction to Unity (Part 1)',
@@ -251,12 +251,36 @@ module.exports = Object.freeze({
 				'image' : 'fall2022/project_kickoff.jpg',
 			},
 			{
+				'name' : '2023 NASA SUITS Challenge Interest Meeting',
+				'date' : new Date(2022, 9, 2),
+				'time' : '8:00 PM',
+				'location' : 'XR CLUB DISCORD: VOICE CHAT 1',
+				'url' : 'https://terplink.umd.edu/event/8449873',
+				'image' : 'fall2022/nasa_suits.jpg',
+			},
+			{
 				'name' : 'Introduction to Unity (Part 2)',
 				'date' : new Date(2022, 9, 4),
 				'time' : '6:00 PM',
 				'location' : 'AVW 3258',
 				'url' : 'https://terplink.umd.edu/event/8424600',
 				'image' : 'fall2022/unity_p2.jpg',
+			},
+			{
+				'name' : 'Beat Saber Tournament',
+				'date' : new Date(2022, 9, 7),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8434940',
+				'image' : 'fall2022/beat_saber.jpg',
+			},
+			{
+				'name' : 'Van Gogh Exhibit: The Immersive Experience',
+				'date' : new Date(2022, 9, 28),
+				'time' : '5:00 PM',
+				'location' : 'AVW 4176 (CHECK-IN)',
+				'url' : 'https://terplink.umd.edu/event/8434940',
+				'image' : 'fall2022/van_gogh.jpg',
 			},
 			
 		],
@@ -336,6 +360,22 @@ module.exports = Object.freeze({
 			"the week; check out the [XR Club Google Calendar](https://ter.ps/xrcalendar) for the latest timings."
 			
 		,
+
+	},
+
+	DONATION_PAGE : {
+
+		DESCRIPTION: "Here at XR Club we strive to make expensive immersive hardware and software more accessible to the general student body. Unfortunately, this is not always feasible through the conventional UMD student organization processes; thus, we have decided to raise funds through donations. If you are interested in donating you can do so through the Venmo link below. All funding obtained through donations will be displayed on this page and anyone who donates will be highlighted below if they wish.",
+
+		DONATION_GOAL: 5000,
+
+		DONATION_PROGRESS: 0,
+
+		NUM_DONORS: 0,
+
+		VENMO: '@XR-CLUB',
+
+		VENMO_LINK: 'https://account.venmo.com/u/xr-club',
 
 	},
 

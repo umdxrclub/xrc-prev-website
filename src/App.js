@@ -9,6 +9,7 @@ import News from './pages/News';
 import Events from './pages/Events';
 import Projects from './pages/Projects';
 import Lab from './pages/Lab';
+import Donate from './pages/Donate';
 import Error from './pages/Error';
 import Footer from './components/Footer'
 import Alert from './components/Alert';
@@ -99,6 +100,7 @@ class App extends React.Component {
 							<Route path="/events" element={<Events/>}/>
 							<Route path="/lab" element={<Lab/>}/>
 							<Route path="/projects" element={<Projects/>}/>
+							<Route path="/donate" element={<Donate/>}/>
 							<Route path="*" element={<Error/>}/>
 						</Routes>
 					</div>

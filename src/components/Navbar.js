@@ -99,6 +99,7 @@ class Navbar extends React.Component {
                 <Link to='/events' className="nav-link underline">events</Link>
                 <Link to='/lab' className="nav-link underline">lab</Link>
                 <Link to='/projects' className="nav-link underline">projects</Link>
+                <Link to='/donate' className="nav-link underline">donate</Link>
                 <HashLink to="#get-involved" className="nav-button white bg-cool-red">get involved</HashLink>
             </div>
         </nav>

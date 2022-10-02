@@ -151,7 +151,7 @@ p a:hover {
     flex-direction: column;
     height: 60vh;
     /*background: transparent linear-gradient(163deg, var(--xr-red) 0%, var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;*/
-    margin-bottom: 20vh; /* 4vw if straight bg */
+    margin-bottom: 20vh !important; /* 4vw if straight bg */
     transition: 0.3s ease-in;
 }
 
@@ -540,6 +540,7 @@ nav {
 
 #header {
     position: relative;
+    margin-bottom: 45vh;
 }
 
 #header-logo {
@@ -555,7 +556,6 @@ nav {
 }
 
 #home-about {
-    margin-top: 30vw;
     margin-left: 15vw;
     width: 35vw;
 }
@@ -606,7 +606,7 @@ nav {
 .event-container {
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
 }
 
@@ -840,6 +840,83 @@ nav {
 .news-item.underline {
     background-image: linear-gradient(var(--xr-cool-red), var(--xr-cool-red));
 }
+
+/* ================ Donate ================ */
+
+#donate-header {
+    margin-left: 15vw;
+    margin-bottom: 4vh;
+}
+
+.donate-header #header-text {
+    width: 45vw;
+    margin-right: 5vw;
+}
+
+#donate-info {
+    margin-left: 15vw;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#venmo-qr {
+    margin-left: 5vw;
+    width: 25vw;
+    border-radius: 50%;
+}
+
+#donate-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#donation-progbar {
+    display: flex;
+    margin: auto;
+    height: 12vh;
+    width: 75vw;
+    background-color: none;
+    border: 3px solid white;
+    border-radius: 8vh;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    padding-right: 4vh;
+    padding-left: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    transition: 0.2s;    
+}
+
+#progress{
+    display: flex;
+    background: transparent linear-gradient(266deg, var(--xr-red) 0%, 
+        var(--xr-cool-red) 50%, var(--xr-purple) 100%) 0% 0% no-repeat padding-box;
+    border-radius: 6vh;
+    width: 0.01%;
+    height: 100%;
+    border: 2px solid white;
+    outline: none !important;
+    transition: 0.3s;
+}
+
+#progress-percent{
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
+#progbar-caption {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
 
 /* ================ Footer ================ */
 

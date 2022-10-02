@@ -53,19 +53,19 @@ function Torus(props) {
   })
 
   return (
-    <mesh
-      {...props}
-      ref={mesh}>
-      {/*<torusKnotGeometry args={[1.15, 0.35, 50, 50]} />*/}
-      <torusGeometry args={[2, 1, 20, 20]} />
-      <shaderMaterial 
-        color={0x000000}
-        vertexShader={vertexShader}
-        fragmentShader={fragmentShader}
-        uniforms={uniforms}
-        transparent={true}
-      />
-    </mesh>
+      <mesh
+        {...props}
+        ref={mesh}>
+        {/*<torusKnotGeometry args={[1.15, 0.35, 50, 50]} />*/}
+        <torusGeometry args={[2, 1, 20, 20]} />
+        <shaderMaterial 
+          color={0x000000}
+          vertexShader={vertexShader}
+          fragmentShader={fragmentShader}
+          uniforms={uniforms}
+          transparent={true}
+        />
+      </mesh>
   )
 }
 
@@ -75,7 +75,7 @@ function TorusText(props) {
         
         <div style={{height: '80vh'}}>
 
-          <Suspense fallback={<br></br>}>
+          <Suspense fallback={<br/>}>
             <Canvas>
                 <ambientLight />
                 <Torus position={[0, 0, 0]} 
