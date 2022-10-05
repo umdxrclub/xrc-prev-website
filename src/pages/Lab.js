@@ -17,9 +17,24 @@ class Lab extends React.Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             status: "closed"
-        }
+        };
+
+        this.getLabStatus().then(res => {
+            if (res.open) {
+                this.setState({
+                    status: "open"
+                });
+            }
+            console.log("STATUS: " + this.state.status);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+
+
     }
 
     componentDidMount() {
@@ -35,9 +50,22 @@ class Lab extends React.Component {
 
     }
 
+    getLabStatus = async () => {
+        const response = await fetch('https://umdxrc.figsware.net/api/v1/lab');
+        const body = await response.json();
+
+        if (body.success !== true) {
+            throw Error(body.message);
+        }
+
+        return body.data;
+
+    };
+
+
     render() {
 
-        const status = "closed";
+        //const status = "closed";
 
         return (
 
@@ -53,9 +81,9 @@ class Lab extends React.Component {
                     {/* Title */}
                     <div className="horizontal-flex-container">
 
-                        <img id="header-logo" src="images/av-williams.jpg" alt="Exterior of the A.V. Williams Building"/>
+                        <img id="header-logo" src={`images/av-williams-${this.state.status}.jpg`} alt="Exterior of the A.V. Williams Building"/>
                         <div>
-                            <img id="header-text" src={`svg/lab-${status}.svg`} alt={`Our lab is currently ${status}`}/>
+                            <img id="header-text" src={`svg/lab-${this.state.status}.svg`} alt={`Our lab is currently ${this.state.status}`}/>
                             {
                                 LAB_PAGE.LAB_ADDRESS.map(line => {
                                     return <h3>{line}</h3>

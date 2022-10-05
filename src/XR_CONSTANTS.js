@@ -365,9 +365,9 @@ module.exports = Object.freeze({
 
 	DONATION_PAGE : {
 
-		DESCRIPTION: "Here at XR Club we strive to make expensive immersive hardware and software more accessible to the general student body. Unfortunately, this is not always feasible through the conventional UMD student organization processes; thus, we have decided to raise funds through donations. If you are interested in donating you can do so through the Venmo link below. All funding obtained through donations will be displayed on this page and anyone who donates will be highlighted below if they wish.",
+		DESCRIPTION: "Here at XR Club we strive to make expensive immersive hardware and software more accessible to the general student body. If you are interested in donating you can do so through the Venmo link below. Any amount helps, from one dollar to one game! All funding obtained through donations will be displayed here and anyone who donates will be highlighted on this page if they wish.",
 
-		DONATION_GOAL: 5000,
+		DONATION_GOAL: 200,
 
 		DONATION_PROGRESS: 0,
 
@@ -376,6 +376,71 @@ module.exports = Object.freeze({
 		VENMO: '@XR-CLUB',
 
 		VENMO_LINK: 'https://account.venmo.com/u/xr-club',
+
+		WISH_LIST_SMALL: [
+			{
+				'title' : 'Tilt Brush',
+				'subtitle' : '$19.99 via Oculus store',
+				'image' : 'tilt_brush.jpg'
+			},
+			{
+				'title' : 'Suberhot VR',
+				'subtitle' : '$24.99 via Oculus store',
+				'image' : 'superhot.jpg',
+			},
+			{
+				'title' : 'Beat Saber',
+				'subtitle' : '$29.99 via Steam',
+				'image' : 'beat_saber.jpg'
+			},
+
+		],
+
+		WISH_LIST: [
+			/*{
+			{
+				'title' : 'Drawing tablets',
+				'subtitle' : 'Wacom Intuos Pro S: $250',
+				'image' : 'tablet.jpg'
+			},
+			*/
+			{
+				'title' : 'Haptic Gloves & Suits',
+				'subtitle' : 'bHaptics TactGlove: $299',
+				'image' : 'gloves.jpg'
+			},
+			/*
+			{
+				'title' : 'Olfactory Technology',
+				'subtitle' : 'Cilia Developer Kit: $450',
+				'image' : 'cilia.png'
+			},
+			*/
+			{
+				'title' : 'VR Treadmills',
+				'subtitle' : 'KAT Walk C: $1,299',
+				'image' : 'kat_walk.jpg'
+			},
+			/*{
+				'title' : 'High-end workstations',
+				'subtitle' : 'RTX 4090 GPU: $1,599',
+				'image' : 'gpu.jpg'
+			},
+			{
+				'title' : 'Head Mounted Displays',
+				'subtitle' : 'Varjo Aero: $1,990',
+				'image' : 'varjo_aero.jpg'
+			},
+			*/
+			{
+				'title' : 'Lightweight AR Headsets',
+				'subtitle' : 'Magic Leap 2: $3,299',
+				'image' : 'magicleap2.jpg'
+			},
+		],
+
+		DONORS: [
+		],
 
 	},
 

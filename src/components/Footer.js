@@ -69,6 +69,7 @@ function Footer () {
                         <Link to="/about" className="footer-link underline" onClick={scrollToTop}>About</Link>
                         <Link to="/lab" className="footer-link underline" onClick={scrollToTop}>Lab</Link>
                         <Link to="/projects" className="footer-link underline" onClick={scrollToTop}>Projects</Link>
+                        <Link to="/donate" className="footer-link underline" onClick={scrollToTop}>Donate</Link>
                     </div>
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
