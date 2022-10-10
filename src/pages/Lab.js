@@ -23,7 +23,7 @@ class Lab extends React.Component {
         };
 
         this.getLabStatus().then(res => {
-            if (res.open) {
+            if (res.open || res.totalCheckedIn > 0) {
                 this.setState({
                     status: "open"
                 });

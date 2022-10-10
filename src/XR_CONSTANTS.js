@@ -275,6 +275,31 @@ module.exports = Object.freeze({
 				'image' : 'fall2022/beat_saber.jpg',
 			},
 			{
+				'name' : 'Introduction to VR Development (Part 1)',
+				'date' : new Date(2022, 9, 11),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8454919',
+				'image' : 'fall2022/vr_p1.jpg',
+			},
+			{
+				'name' : 'Introduction to VR Development (Part 2)',
+				'date' : new Date(2022, 9, 18),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8475809',
+				'image' : 'fall2022/vr_p2.jpg',
+			},
+			{
+				'name' : 'Introduction to AR Development (Part 1)',
+				'date' : new Date(2022, 9, 25),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8454921',
+				'image' : 'fall2022/ar_p1.jpg',
+			},
+			/*
+			{
 				'name' : 'Van Gogh Exhibit: The Immersive Experience',
 				'date' : new Date(2022, 9, 28),
 				'time' : '5:00 PM',
@@ -282,6 +307,7 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8434940',
 				'image' : 'fall2022/van_gogh.jpg',
 			},
+			*/
 			
 		],
 
@@ -384,7 +410,7 @@ module.exports = Object.freeze({
 				'image' : 'tilt_brush.jpg'
 			},
 			{
-				'title' : 'Suberhot VR',
+				'title' : 'Superhot VR',
 				'subtitle' : '$24.99 via Oculus store',
 				'image' : 'superhot.jpg',
 			},
