@@ -232,7 +232,7 @@ module.exports = Object.freeze({
 				'time' : '6:00 PM',
 				'location' : 'AVW 3258',
 				'url' : 'https://terplink.umd.edu/event/8382269',
-				'image' : 'fall2022/unity_p1.jpg',
+				'youtube_id' : 'qS_28gOfRg4',
 			},
 			{
 				'name' : 'XR Club Speaker Series: Joseph Cathey - Capitol Interactive',
@@ -240,7 +240,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0318',
 				'url' : 'https://terplink.umd.edu/event/8382289',
-				'image' : 'fall2022/joseph_cathey.jpg',
+				'youtube_id' : 'OzAPyuUzMSM',
 			},
 			{
 				'name' : 'Project Kickoff Night',
@@ -248,7 +248,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/8396260',
-				'image' : 'fall2022/project_kickoff.jpg',
+				'youtube_id' : 'hsCSGd0eunU',
 			},
 			{
 				'name' : '2023 NASA SUITS Challenge Interest Meeting',
@@ -297,6 +297,14 @@ module.exports = Object.freeze({
 				'location' : 'AVW 3258',
 				'url' : 'https://terplink.umd.edu/event/8454921',
 				'image' : 'fall2022/ar_p1.jpg',
+			},
+			{
+				'name' : 'XR Club & Startup Shell Speaker Event: Fireside Chat with Meta VR SWE and Terp Alumnus Joshua Berenhaus',
+				'date' : new Date(2022, 9, 21),
+				'time' : '5:00 PM',
+				'location' : 'IDEA 1101',
+				'url' : 'https://terplink.umd.edu/event/8506410',
+				'image' : 'fall2022/joshua_berenhause.jpg',
 			},
 			/*
 			{
