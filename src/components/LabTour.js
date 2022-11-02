@@ -10,7 +10,8 @@ import { Html, useProgress } from '@react-three/drei'
 
 function LabScan() {
 
-    const gltf = useLoader(GLTFLoader, sceneUrl);
+    const gltf = useLoader(GLTFLoader, sceneUrl, loader => {
+    });
     return (
         <Suspense fallback={<br></br>}>
             <primitive object={gltf.scene} position={[0, -0.5, 0.75]}></primitive>
@@ -22,7 +23,9 @@ function LabScan() {
 
 class LabTour extends React.Component {
   constructor(props) {
+
     super(props);
+
   }
 
   render() {

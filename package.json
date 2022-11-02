@@ -1,11 +1,13 @@
 {
   "name": "xr-club-website",
+  "homepage": "https://xr.umd.edu/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.13.2",
     "@react-three/fiber": "^8.0.26",
     "firebase": "^9.9.0",
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.18",
     "npm": "^8.19.2",
     "react": "^18.2.0",

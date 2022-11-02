@@ -2,7 +2,7 @@ import React from 'react';
 //import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 
 /*
 createRoot(
@@ -19,9 +19,23 @@ import { hydrate, render } from "react-dom";
  
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+  hydrateRoot(
+    document.getElementById("root"),
+  )
+  .render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  );
 } else {
-  render(<App />, rootElement);
+  createRoot(
+    document.getElementById("root"),
+  )
+  .render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  );
 }
 
 // If you want your app to work offline and load faster, you can change

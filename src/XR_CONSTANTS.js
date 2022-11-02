@@ -140,6 +140,12 @@ module.exports = Object.freeze({
 				'image' : 'connor.jpg'
 			},
 			{
+				'name' : 'Oladotun Oladimejij',
+				'title' : 'Mentor',
+				'linkedin' : 'https://www.linkedin.com/in/oladotun-oladimejij/',
+				'image' : 'dotun.jpg'
+			},
+			{
 				'name' : 'Marilyn Ortega',
 				'title' : 'Graphic Design Lead',
 				'web' : 'https://mariortegajx.wixsite.com/marior',
@@ -151,6 +157,18 @@ module.exports = Object.freeze({
 				'title' : 'Graphic Designer',
 				'linkedin' : 'https://www.linkedin.com/in/elaineyien/',
 				'image' : 'elaine.jpg',
+			},
+			{
+				'name' : 'Amy Tran',
+				'title' : 'Graphic Designer',
+				'linkedin' : 'https://www.linkedin.com/in/amytran-0/',
+			},
+			{
+				'name' : 'Yiting Zheng',
+				'title' : 'Graphic Designer',
+				'web' : 'https://yitingzarts.wixsite.com/website',
+				'linkedin' : 'https://www.linkedin.com/in/yitingzheng13/',
+				'image' : 'yiting.png'
 			},
 			{
 				'name' : 'Samson Mulugeta',
@@ -172,11 +190,17 @@ module.exports = Object.freeze({
 				'image' : 'caroline.jpg',
 			},
 			{
+				'name' : 'Ethan Yu',
+				'title' : 'Web Developer',
+				'linkedin' : 'https://www.linkedin.com/in/ethan-yu-b016161b6',
+				'image' : 'ethan.jpg',
+			},
+			{
 				'name' : 'Ajitesh Kaladi',
 				'title' : 'Media Producer',
 				'linkedin' : 'https://www.linkedin.com/in/ajkaladi/',
 				'image' : 'aj.JPG',
-			}
+			},
 		],
 	
 		

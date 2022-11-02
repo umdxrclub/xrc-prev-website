@@ -30,7 +30,6 @@ function Error() {
         <div id="Error">
 
             <HalfBanner pageName="Error" headerImage="404" subheading={ERROR_PAGE.DESCRIPTION}/>
-            <TorusText image="not_found.png"/>
             <p className="text-align-center">Go back <Link to="/">home</Link></p>
 
         </div>
