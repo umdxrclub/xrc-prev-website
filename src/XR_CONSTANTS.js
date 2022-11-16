@@ -296,7 +296,7 @@ module.exports = Object.freeze({
 				'time' : '5:00 PM',
 				'location' : 'IRB 0110',
 				'url' : 'https://terplink.umd.edu/event/8434940',
-				'image' : 'fall2022/beat_saber.jpg',
+				'youtube_id' : 'cmfVwWq5T_c',
 			},
 			{
 				'name' : 'Introduction to VR Development (Part 1)',
@@ -330,16 +330,46 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8506410',
 				'image' : 'fall2022/joshua_berenhause.jpg',
 			},
-			/*
+			{
+				'name' : 'Blaston Tournament',
+				'date' : new Date(2022, 10, 4),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8569199',
+				'image' : 'fall2022/blaston.jpg',
+			},
+			{
+				'name' : 'HoloLens + Mixed Reality Toolkit Dev Workshop',
+				'date' : new Date(2022, 10, 8),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8569196',
+				'image' : 'fall2022/hololens.jpg',
+			},
 			{
 				'name' : 'Van Gogh Exhibit: The Immersive Experience',
-				'date' : new Date(2022, 9, 28),
+				'date' : new Date(2022, 10, 11),
 				'time' : '5:00 PM',
-				'location' : 'AVW 4176 (CHECK-IN)',
-				'url' : 'https://terplink.umd.edu/event/8434940',
+				'location' : 'IRB 0110 (CHECK-IN)',
+				'url' : 'https://terplink.umd.edu/event/8527142',
 				'image' : 'fall2022/van_gogh.jpg',
 			},
-			*/
+			{
+				'name' : 'Blender Workshop',
+				'date' : new Date(2022, 10, 15),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8586291',
+				'image' : 'fall2022/blender.jpg',
+			},
+			{
+				'name' : 'Among Us VR Game Session',
+				'date' : new Date(2022, 10, 18),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8594110',
+				'image' : 'fall2022/amongus.jpg',
+			},
 			
 		],
 
