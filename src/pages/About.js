@@ -6,6 +6,7 @@ import '../App.css';
 import React from 'react';
 import PersonCard from '../components/PersonCard';
 import HalfBanner from '../components/HalfBanner';
+import EmbedHDR from '../components/EmbedHDR';
 import {ABOUT_PAGE } from '../XR_CONSTANTS';
 import ReactMarkdown from 'react-markdown';
 import { getAnalytics, logEvent } from "firebase/analytics";

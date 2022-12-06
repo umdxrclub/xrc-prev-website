@@ -370,6 +370,30 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8594110',
 				'image' : 'fall2022/amongus.jpg',
 			},
+			{
+				'name' : 'AWE FIGHT CLIMATE CHANGE XR Challenge Interest Meeting',
+				'date' : new Date(2022, 11, 2),
+				'time' : '4:30 PM',
+				'location' : 'AVW 4178',
+				'url' : 'https://terplink.umd.edu/event/8620431',
+				'image' : 'fall2022/awe.jpg',
+			},
+			{
+				'name' : 'Introduction to Shader Programming & Shader Graph',
+				'date' : new Date(2022, 11, 6),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8620429',
+				'image' : 'fall2022/shader.jpg',
+			},
+			{
+				'name' : 'Reality Night (Fall 2022)',
+				'date' : new Date(2022, 11, 9),
+				'time' : '5:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8630463',
+				'image' : 'fall2022/reality_night.jpg',
+			},
 			
 		],
 
