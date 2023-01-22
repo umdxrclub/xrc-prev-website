@@ -39,6 +39,10 @@ module.exports = Object.freeze({
 			' resources and opportunities to explore XR through hands-on tutorials, projects, hackathons, game nights, open lab' +
 			' hours, mentor office hours, and more!',
 
+		TERPLINK_ALERT : 'Before you join the XR Club on TerpLink, please ensure that your TerpLink account is registered with an ' + 
+			'@umd.edu email address (NOT a @terpmail.umd.edu address). To change your registered email address, contact ' + 
+			'[sorc@umd.edu](mailto://sorc.umd.edu).',
+
 
 		HOME_ACTION_CARDS : [
 			{

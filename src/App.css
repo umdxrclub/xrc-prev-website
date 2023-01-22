@@ -28,6 +28,7 @@
     --xr-indigo: #4d1798;
     --background-color: #000000;
     --text-color: #ffffff;
+    --discord-blue: #5865F2;
 }
 
 /* ================ General Styles ================ */
@@ -346,6 +347,7 @@ canvas {
     color: var(--xr-purple);
 }
 
+
 /* ================ Navbar ================ */
 
 nav {
@@ -400,6 +402,77 @@ nav {
 
 #menu-checkbox {
     display: none;
+}
+
+/* ================ Modal ================ */
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.modal-content a {
+    color: var(--xr-cool-red);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--text-color);
+  margin: 15vh auto;
+  border: 2px solid var(--xr-cool-red);
+  border-radius: 25px;
+  width: 40vw; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p {
+    padding: 2vw;
+  color: var(--background-color);
+}
+
+/* The Close Button */
+.modal-close {
+  margin-right: 4vh;
+  margin-top: 2vh;
+  color: var(--xr-cool-red);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+#modal-action-button {
+    width: 24vw;
+    background-color: var(--xr-cool-red);
+    color: var(--text-color);
+    padding: 2vh 8vw;
+    text-align: center;
+    border: 1px solid var(--xr-cool-red);
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 0;
+    transition: 0.2s;
+}
+
+#modal-action-button:hover {
+    background-color: var(--xr-purple);
 }
 
 /* ================ Cards ================ */
@@ -542,6 +615,10 @@ nav {
 
 /* ================ Home ================ */
 
+#invisible-header {
+    display: none;
+}
+
 #header {
     position: relative;
     margin-bottom: 45vh;
@@ -555,8 +632,58 @@ nav {
 }
 
 #header-text {
-    width: 50vw;
-    margin-bottom: 4vh;
+    width: 45vw;
+    margin-bottom: 2vh;
+}
+
+#discord-button {
+    color: white;
+    background-color: var(--discord-blue);
+    border: 3px solid white;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+
+#terplink-button {
+    color: white;
+    background-color: var(--xr-red);
+    border: 3px solid white;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+
+.button-text {
+    height: 1em;
+    line-height: 1em;
+    display: table-cell;
+    padding-bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1vh;
+}
+
+#discord-button:hover {
+    background-color: white;
+    color: var(--discord-blue);
+}
+
+#terplink-button:hover {
+    background-color: white;
+    color: var(--xr-red);
 }
 
 #home-about {
@@ -1118,15 +1245,20 @@ nav {
         width: 70vw;
     }
 
+    nav {
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
     #navbar {
         visibility: hidden;
         opacity: 0;
         justify-content: flex-start;
-        margin-top: -40vh;
         padding-bottom: 10vh;
-        margin-bottom: -10vh;
+        margin-bottom: -5vh;
         margin-left: 10vw;
         transition: 0.3s ease-in;
+        font-size: 1.25em;
     }
 
     .nav-wrapper a {
@@ -1134,11 +1266,23 @@ nav {
         margin-bottom: 2vh;
     }
 
+    .modal-content {
+        width: 80vw;
+    }
+
+    .modal-content p {
+        padding: 4vw;
+    }
+
+    #modal-action-button {
+        width: 64vw;
+    }
+
     /* ================ Header ================ */
 
     #header-logo {
-        width: 30vh;
-        height: 30vh;
+        width: 10vh;
+        height: 10vh;
         object-fit: contain;
         margin-left: 0;
         margin-left: 8vw;
@@ -1149,17 +1293,25 @@ nav {
     }
 
     #header-text {
-        width: 80vw;
+        width: 70vw;
         margin-top: 4vh;
         margin-left: 8vw;
     }
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.25em;
         margin-left: 8vw;
+        margin-right: 8vw;
     }
 
     /* ================ Home ================ */
+
+    #button-row {
+        flex-direction: column !important;
+        margin-left: 8vw;
+        width: 80%;
+    }
+
 
     #home-headset-img {
         position: static;
@@ -1179,6 +1331,10 @@ nav {
 
     #home-events {
         margin-top: 0;
+    }
+
+    .button-text {
+        font-size: 0.7em;
     }
 
     /* ================ Lab ================ */

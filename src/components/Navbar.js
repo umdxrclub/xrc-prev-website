@@ -30,7 +30,7 @@ class Navbar extends React.Component {
     if (!isMobile) {
         nav.style.visibility = "visible";
         nav.style.opacity = 1;
-        nav.style.marginTop = 0;
+        nav.style.marginTop = "0vh";
         if (banner) {
           banner.style.height = "60vh";
         }
