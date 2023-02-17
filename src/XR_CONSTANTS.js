@@ -398,6 +398,94 @@ module.exports = Object.freeze({
 				'url' : 'https://terplink.umd.edu/event/8630463',
 				'image' : 'fall2022/reality_night.jpg',
 			},
+			{
+				'name' : 'Beyond King Tut: The Immersive Experience',
+				'date' : new Date(2023, 1, 4),
+				'time' : '10:00 AM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8807190',
+				'image' : 'spring2023/kingtut.jpeg',
+			},
+			{
+				'name' : 'Spring 2023 Kickoff',
+				'date' : new Date(2023, 1, 10),
+				'time' : '5:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8848081',
+				'image' : 'spring2023/kickoff.jpeg',
+			},
+			{
+				'name' : 'Introduction to Unity',
+				'date' : new Date(2023, 1, 20),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8875629',
+				'image' : 'spring2023/unity.jpeg',
+			},
+			{
+				'name' : 'Project Grind Night',
+				'date' : new Date(2023, 1, 27),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8905286',
+				'image' : 'spring2023/grind.jpeg',
+			},
+			{
+				'name' : 'Project Kickoff Night',
+				'date' : new Date(2023, 2, 3),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8893424',
+				'image' : 'spring2023/proj_kickoff.jpeg',
+			},
+			{
+				'name' : 'Introduction to AR Development',
+				'date' : new Date(2023, 2, 6),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8875642',
+				'image' : 'spring2023/ar.jpeg',
+			},
+			{
+				'name' : 'Project Grind Night',
+				'date' : new Date(2023, 2, 13),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8905345',
+				'image' : 'spring2023/grind.jpeg',
+			},
+			{
+				'name' : 'Introduction to VR Development',
+				'date' : new Date(2023, 2, 27),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8875646',
+				'image' : 'spring2023/vr.jpeg',
+			},
+			{
+				'name' : 'Project Grind Night',
+				'date' : new Date(2023, 3, 3),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8905347',
+				'image' : 'spring2023/grind.jpeg',
+			},
+			{
+				'name' : 'Project Grind Night',
+				'date' : new Date(2023, 3, 17),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8905352',
+				'image' : 'spring2023/grind.jpeg',
+			},
+			{
+				'name' : 'Project Grind Night',
+				'date' : new Date(2023, 4, 1),
+				'time' : '6:00 PM',
+				'location' : 'AVW 3258',
+				'url' : 'https://terplink.umd.edu/event/8905354',
+				'image' : 'spring2023/grind.jpeg',
+			},
 			
 		],
 
@@ -476,6 +564,14 @@ module.exports = Object.freeze({
 			"the week; check out the [XR Club Google Calendar](https://ter.ps/xrcalendar) for the latest timings."
 			
 		,
+
+		DIRECTIONS : 
+			{
+				AVW: "The A.V. Williams Building is connected to the Computer Science Instructional Center by a bridge on the 4th floor.",
+				ELEVATORS: "From the A.V. Williams lobby, take the elevators to the 4th floor. Turn left. The XR Lab (4176) is two doors down.",
+				BRIDGE: "Take the Sky Bridge from the 3rd floor of the Computer Science Instructional Center. Once you reach A.V. Williams, turn left and proceed until you see a hallway to the right (across from 3159). Enter this hallway and find the staircase to the left. Go up one floor. Exit and continue left. The entrace to the XR Lab (4176) will be on the right.",
+				MAP_URL: "https://clarknet.eng.umd.edu/maps/avwilliams"
+			}
 
 	},
 

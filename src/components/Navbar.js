@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
   // Switch between mobile or desktop state
   resize() {
-    let isMobile = window.innerWidth <= 800;
+    let isMobile = window.innerWidth <= 1200;
     let banner = document.getElementsByClassName("halfpage-banner");
     let nav = document.getElementById("navbar");
     banner = (banner.length > 0) ? banner[0] : null;

@@ -72,6 +72,8 @@ class App extends React.Component {
 					itemID = "TerpLink Event";
 				} if (link.href.indexOf("mailchi.mp") > 0) {
 					itemID = "Newsletter Post"
+				} if (link.id == "terplink-button") { // Home TerpLink button (no href but still counts)
+					itemID = "TerpLink"
 				}
 				if (itemID != "") {
 					link.addEventListener("click", function() {

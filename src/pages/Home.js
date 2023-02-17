@@ -68,7 +68,7 @@ class Home extends React.Component {
 
         const white = "#ffffff";
         const discordBlue = "#5865F2";
-        const xrRed = "#e61a31"
+        const xrRed = "#a52256"
 
         return (
             <div id="Home">

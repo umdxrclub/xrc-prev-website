@@ -645,7 +645,7 @@ nav {
     display: flex;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    padding-left: 25px;
+    padding-left: 20px;
     padding-right: 25px;
     margin-top: 2vh;
     margin-right: 2vh;
@@ -653,7 +653,7 @@ nav {
 
 #terplink-button {
     color: white;
-    background-color: var(--xr-red);
+    background-color: var(--xr-cool-red);
     border: 3px solid white;
     border-radius: 25px;
     transition: 0.3s;
@@ -683,7 +683,7 @@ nav {
 
 #terplink-button:hover {
     background-color: white;
-    color: var(--xr-red);
+    color: var(--xr-cool-red);
 }
 
 #home-about {
@@ -765,6 +765,7 @@ nav {
 
 #lab-description {
     margin-top: 20vw;
+    margin-bottom: 8vh;
 }
 
 #lab-heading {
@@ -776,8 +777,34 @@ nav {
     vertical-align: top;
 }
 
+#directions-heading {
+    width: 30%;
+    height: 100%;
+    display: inline;
+    text-align: right;
+    margin-right: auto;
+    vertical-align: top;
+}
+
+#lab-directions {
+    margin-bottom: 8vh;
+}
+
+#lab-directions h4 {
+    color: var(--xr-cool-red);
+}
+
+#lab-directions .underline {
+    background-image: linear-gradient(var(--xr-cool-red), var(--xr-cool-red));
+}
+
+
 #lab-description-text {
     width: 60%;
+}
+
+#lab-map-link {
+    display: inline;
 }
 
 #lab-hours-table {
@@ -1211,7 +1238,7 @@ nav {
 
 /****************************************************** MOBILE ****************************************************************/
 
-@media (max-width:800px) { 
+@media (max-width:1200px) { 
 
     h2 {
         font-size: 3.5em;
@@ -1340,7 +1367,10 @@ nav {
     /* ================ Lab ================ */
 
     #lab-heading {
-        margin-top: 40vh;
+        width: 100%;
+    }
+
+    #directions-heading {
         width: 100%;
     }
 
