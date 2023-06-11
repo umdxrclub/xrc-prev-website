@@ -13,7 +13,7 @@ class LabHeader extends React.Component {
         };
 
         this.getLabStatus().then(res => {
-            if (res.open || res.totalCheckedIn > 0) {
+            if (res.open || res.numberOfMembers > 0) {
                 this.setState({
                     status: "open"
                 });
@@ -29,14 +29,9 @@ class LabHeader extends React.Component {
 
     getLabStatus = async () => {
 
-        const response = await fetch('https://umdxrc.figsware.net/api/v1/lab');
+        const response = await fetch('https://umdxrc.figsware.net/api/globals/lab/status');
         const body = await response.json();
-
-        if (body.success !== true) {
-            throw Error(body.message);
-        }
-
-        return body.data;
+        return body;
 
     };
 

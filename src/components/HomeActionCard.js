@@ -11,9 +11,7 @@ function HomeActionCard(props) {
         <img className="card-icon" src={props.icon} alt=""/>
         <p className="card-header">{props.title}</p>
         <p className="text-align-center">{props.description}</p>
-        <div className="card-button-container">
-          <Link to={props.link} className={`button card-action-button white bg-${color}`}>{props.action}</Link>
-        </div>
+        <Link to={props.link} className={`button card-action-button white bg-${color}`}>{props.action}</Link>
     </div>
   );
 }

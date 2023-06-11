@@ -18,14 +18,24 @@ function EventCard(props) {
 	}
 
 
-  var getNiceDayDateString = function(date) {
-		var str = date.toLocaleDateString('en-US', {weekday : 'long', month : 'long', day : 'numeric'});
+  let getNiceDayDateString = function(date) {
+		let str = date.toLocaleDateString('en-US', {weekday : 'long', month : 'long', day : 'numeric'});
 		str += getDateSuffix(parseInt(str.match(/\d+$/g).sort((a,b) => b.length-a.length)[0])) + ', ' + (date.getYear() + 1900);
 		return str;
 	}
 
-  const action = (props.color == "red") ? "RSVP" : "VIEW EVENT"
+  let getDirections = function(location) {
+    if (location == "AVW 3258") {
+      return "https://xr.umd.edu/lab#vis-studio"
+    } else if (location == "IRB 0110") {
+      return "https://xr.umd.edu/lab#imd-lab"
+    } else {
+      return "https://xr.umd.edu/lab/"
+    }
+  }
 
+  const action = (props.color == "red") ? "RSVP" : "VIEW EVENT"
+  
   return (
     <div className={`card event-card action ${props.color}-glass`}>
         {
@@ -34,17 +44,23 @@ function EventCard(props) {
               <div className="card-header-video">
                   <iframe src={`https://www.youtube.com/embed/${props.youtube_id}`} title="YouTube video player" frameborder="0" 
                   allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen></iframe> 
+                  allowfullscreen className="event-video"></iframe> 
               </div>
             : "")
         }
         <p className="card-header">{props.name.toUpperCase()}</p>
         <p className="event-location text-align-center">{props.location}</p>
         <p className="event-date text-align-center">{getNiceDayDateString(props.date)} @ {props.time}</p>
-        <div className="card-button-container">
           <a href={props.url} className={`button card-action-button white bg-${props.color}`} 
             target="_blank" rel="noopener noreferrer">{action}</a>
-        </div>
+        {
+          ( props.color == "red" ? 
+              <a href={getDirections(props.location)} className={`button card-action-button white bg-${props.color}`} 
+                target="_blank" rel="noopener noreferrer">DIRECTIONS</a>
+            :
+            <span></span>
+          )
+        }
     </div>
   );
 }

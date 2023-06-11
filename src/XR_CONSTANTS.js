@@ -84,16 +84,16 @@ module.exports = Object.freeze({
 		LEADERSHIP_INFORMATION : [
 			
 			{
-				'name' : 'Jason Fotso-Puepi',
-				'title' : 'President',
-				'linkedin' : 'https://www.linkedin.com/in/jason-fotso/',
-				'image' : 'jason.JPG',
-			},
-			{
 				'name' : 'Damian Figueroa',
-				'title' : 'Vice President, Web Developer',
+				'title' : 'President, Web Developer',
 				'github' : 'https://github.com/djfigs1',
 				'image' : 'dj.png',
+			},
+			{
+				'name' : 'Jason Fotso-Puepi',
+				'title' : 'Vice President',
+				'linkedin' : 'https://www.linkedin.com/in/jason-fotso/',
+				'image' : 'jason.JPG',
 			},
 			{
 				'name' : 'Andrew Yuan',
@@ -447,6 +447,14 @@ module.exports = Object.freeze({
 				'image' : 'spring2023/ar.jpeg',
 			},
 			{
+				'name' : 'Beat Saber Tournament',
+				'date' : new Date(2023, 2, 10),
+				'time' : '5:00 PM',
+				'location' : 'IRB 0110',
+				'url' : 'https://terplink.umd.edu/event/8966186',
+				'image' : 'spring2023/beatsaber.jpeg',
+			},
+			{
 				'name' : 'Project Grind Night',
 				'date' : new Date(2023, 2, 13),
 				'time' : '6:00 PM',
@@ -562,15 +570,18 @@ module.exports = Object.freeze({
 			"Want to brainstorm new ideas and chat about the future of XR with other members of the club? \n" + 
 			"If so, then stop by the XR Lab (AVW 4176) for our Open Lab Hours for all your XR needs! We’re open several times throughout " + 
 			"the week; check out the [XR Club Google Calendar](https://ter.ps/xrcalendar) for the latest timings."
-			
 		,
 
 		DIRECTIONS : 
 			{
 				AVW: "The A.V. Williams Building is connected to the Computer Science Instructional Center by a bridge on the 4th floor.",
 				ELEVATORS: "From the A.V. Williams lobby, take the elevators to the 4th floor. Turn left. The XR Lab (4176) is two doors down.",
-				BRIDGE: "Take the Sky Bridge from the 3rd floor of the Computer Science Instructional Center. Once you reach A.V. Williams, turn left and proceed until you see a hallway to the right (across from 3159). Enter this hallway and find the staircase to the left. Go up one floor. Exit and continue left. The entrace to the XR Lab (4176) will be on the right.",
-				MAP_URL: "https://clarknet.eng.umd.edu/maps/avwilliams"
+				BRIDGE: "Take the Sky Bridge from the 3rd floor of the Computer Science Instructional Center. Once you reach A.V. Williams, turn left and follow the EXIT signs to the staircase. Go up one floor. Exit and continue left. The entrace to the XR Lab (4176) will be on the right.",
+				MAP_URL: "https://clarknet.eng.umd.edu/maps/avwilliams",
+
+				VISLAB_ELEVATORS: "From the A.V. Williams lobby, take the elevator to the 3rd floor. Exit and turn left, following the sign to CSIC. When you reach the end of the hall, turn right in the opposite direction of CSIC. Proceed until you see 3258 on the right.",
+				VISLAB_BRIDGE: "Take the Sky Bridge from the 3rd floor of the Computer Science Instructional Center. Once you reach A.V. Williams, turn left following the IMD sign and proceed until you see 3258 on the right.",
+				IMD_LAB: "Enter the lobby of the Iribe Center for Computer Science and Engineering. The IMD Lab is located to the left of the Breakpoint Cafe."
 			}
 
 	},
