@@ -102,7 +102,7 @@ class App extends React.Component {
 							<Route path="/events" element={<Events/>}/>
 							<Route path="/lab" element={<Lab/>}/>
 							<Route path="/projects" element={<Projects/>}/>
-							<Route path="/donate" element={<Donate/>}/>
+							{/* <Route path="/donate" element={<Donate/>}/> */}
 							<Route path="*" element={<Error/>}/>
 						</Routes>
 					</div>

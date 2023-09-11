@@ -59,6 +59,10 @@ function Footer () {
 
                         {/* Hidden in mobile view */}
                         <SocialLinks id="social-icons-1"></SocialLinks>
+                        <a href={LINKS.ICXR_STR} target="_blank" rel="noopener noreferrer">
+                            <img src="images/ICXR-Member-Transparent-White.png" alt="a member of ICXR"
+                            style={{width: "200px", marginTop: "4vh"}} />
+                        </a>
 
                     </div>
 
@@ -69,7 +73,7 @@ function Footer () {
                         <Link to="/about" className="footer-link underline" onClick={scrollToTop}>About</Link>
                         <Link to="/lab" className="footer-link underline" onClick={scrollToTop}>Lab</Link>
                         <Link to="/projects" className="footer-link underline" onClick={scrollToTop}>Projects</Link>
-                        <Link to="/donate" className="footer-link underline" onClick={scrollToTop}>Donate</Link>
+                        {/*<Link to="/donate" className="footer-link underline" onClick={scrollToTop}>Donate</Link> */}
                     </div>
                     <div id="footer-community">
                         <p><strong>Community</strong></p>
@@ -79,6 +83,7 @@ function Footer () {
                             className="footer-link underline">TerpLink</a>
                         <a href={LINKS.DISCORD_STR} target="_blank" 
                             className="footer-link underline">Discord</a>
+
                     </div>
                 </div>
 
