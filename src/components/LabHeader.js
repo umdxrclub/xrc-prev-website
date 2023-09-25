@@ -29,7 +29,7 @@ class LabHeader extends React.Component {
 
     getLabStatus = async () => {
 
-        const response = await fetch('https://umdxrc.figsware.net/api/globals/lab/status');
+        const response = await fetch('https://umdxr.club/api/globals/lab/status');
         const body = await response.json();
         return body;
 
