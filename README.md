@@ -6,7 +6,7 @@ https://xr.umd.edu
 
 This is the repo for the UMD XR Club's website. This project was created using the popular [facebook/create-react-app](https://github.com/facebook/create-react-app). The website is mostly static with no backend, and primarily utilizes react function components for organization. The content of each section of the website is defined in the src/XR_CONSTANTS.js file.
 
-The app is hosted on AWS Amplify in Paul's AWS account (contact: paul83637@gmail.com). Any changes made to this repo will be reflected on the website within a few minutes. The AWS Amplify app is configured to use node 16 right now. If the project becomes unable to build on node 16 then we will have to update the build configuration.
+The app is hosted on GitHub Pages via the `gh-pages` branch. Any changes made to this repo will be reflected on the website within a few minutes. For information on how to build and deploy, see below.  
 
 ## Developing Locally
 
