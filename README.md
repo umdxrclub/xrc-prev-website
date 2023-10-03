@@ -20,12 +20,4 @@ I would recommend that you make sure things build and look fine locally before c
 So you've made your changes, everything looks good, and you're ready to deploy to GitHub pages.   
 * Run `npm run build`
 * Make sure your build looks alright when you run `serve -s build`
-* Copy the contents of your `build` folder in the root of the repository
-* `git checkout gh-pages`
-* Paste everything you just copied into the branch, replacing all existing files.
-* `git add .`
-* `git commit -m "your commit message"`
-* `git push origin gh-pages`
-* Check the "Actions" tab of the GitHub repository to track the progress of your build.
-  
-I would recommend having two separate folders on your machine - one with the `main` branch checked out and one with the `gh-pages` branch checked out - so that you don't have to keep switching between branches.
+* `npm run deploy`
